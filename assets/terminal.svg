@@ -17,7 +17,7 @@
   <!-- $ cat focus.txt -->
   <text x="22" y="128" font-size="14" font-weight="600" fill="#58A6FF">$ cat focus.txt</text>
   <text x="22" y="152" font-size="14" fill="#C9D1D9">reinforcement-learning  &#183;  eeg-biosignals  &#183;  markerless-motion-capture</text>
-  <text x="22" y="176" font-size="14" fill="#C9D1D9">flutter  &#183;  react  &#183;  fastapi  &#183;  systems programming in C</text>
+  <text x="22" y="176" font-size="14" fill="#C9D1D9">flutter android apps  &#183;  react + go web  &#183;  systems programming in C</text>
 
   <!-- $ gh search prs -->
   <text x="22" y="212" font-size="14" font-weight="600" fill="#58A6FF">$ gh search prs --author ManoharPaturi</text>
