@@ -1,218 +1,180 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:A371F7,100:F778BA&height=180&section=header&text=Manohar%20Paturi&fontSize=55&fontColor=ffffff&fontAlignY=34&desc=AI%20%C2%B7%20RL%20%C2%B7%20EEG%20Biosignals%20%C2%B7%20Motion%20Capture&descAlignY=55&descSize=18&animation=fadeIn" width="100%" alt="banner" />
+  <img src="assets/terminal.svg" width="740" alt="terminal — Manohar Paturi" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=640&lines=AI+Engineering+undergrad+@+Amrita;Reinforcement+Learning+%E2%80%A2+EEG+%E2%80%A2+Motion+Capture;Python+%7C+C+%7C+Dart%2FFlutter+%7C+TypeScript+%7C+Go;contributing+to+Meta+%C2%B7+DeepMind+%C2%B7+Microsoft+%C2%B7+Anthropic;building+tools+that+actually+ship" alt="Typing SVG" />
-</div>
-
-<div align="center">
-
-[![Profile Views](https://komarev.com/ghpvc/?username=ManoharPaturi&color=A371F7&style=flat-square&label=Profile+Views)](https://github.com/ManoharPaturi)
-[![Open PRs](https://img.shields.io/badge/dynamic/json?query=%24.total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3AManoharPaturi%2Bis%3Aopen&label=Open%20PRs&color=58A6FF&style=flat-square&cacheSeconds=3600)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi)
-[![Merged PRs](https://img.shields.io/badge/dynamic/json?query=%24.total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%3Apr%2Bauthor%3AManoharPaturi%2Bis%3Amerged&label=Merged%20PRs&color=2EA043&style=flat-square&cacheSeconds=3600)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+is%3Amerged)
-
-</div>
-
-<br>
-
----
-
-# 🌍 Open Source — Contributing Where It Counts
-
-I actively contribute fixes & features to production OSS maintained by **Meta, Google DeepMind, Microsoft, AWS, Anthropic, Hugging Face, Mistral AI** and more — **27+ PRs across 15 orgs** (bug fixes, race conditions, accessibility, security tooling).
-
-<div align="center">
-
-[![Meta](https://img.shields.io/badge/Meta-0866FF?style=for-the-badge&logo=meta&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Afacebook)
-[![Google DeepMind](https://img.shields.io/badge/Google_DeepMind-4285F4?style=for-the-badge&logo=googledeepmind&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Agoogle-deepmind)
-[![Microsoft](https://img.shields.io/badge/Microsoft-5E5E5E?style=for-the-badge&logo=microsoft&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Amicrosoft)
-[![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Aaws)
-[![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=for-the-badge&logo=anthropic&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Aanthropics)
-[![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Ahuggingface)
-[![Mistral AI](https://img.shields.io/badge/Mistral_AI-FF7000?style=for-the-badge&logo=mistralai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Amistralai)
-[![vLLM](https://img.shields.io/badge/vLLM-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://github.com/vllm-project/vllm/pulls?q=author%3AManoharPaturi)
-[![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://github.com/ollama/ollama/pulls?q=author%3AManoharPaturi)
-[![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://github.com/keras-team/keras/pulls?q=author%3AManoharPaturi)
-[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://github.com/langchain-ai/langchain/pulls?q=author%3AManoharPaturi)
-[![Weaviate](https://img.shields.io/badge/Weaviate-39C1CF?style=for-the-badge&logo=weaviate&logoColor=white)](https://github.com/weaviate/weaviate/pulls?q=author%3AManoharPaturi)
-[![haystack](https://img.shields.io/badge/deepset%20%C2%B7%20haystack-7E56C2?style=for-the-badge&logo=bookstack&logoColor=white)](https://github.com/deepset-ai/haystack/pulls?q=author%3AManoharPaturi)
-[![EleutherAI](https://img.shields.io/badge/EleutherAI-7C3AED?style=for-the-badge&logo=eleutherai&logoColor=white)](https://github.com/EleutherAI/lm-evaluation-harness/pulls?q=author%3AManoharPaturi)
-[![ComfyUI](https://img.shields.io/badge/ComfyUI-208EA5?style=for-the-badge)](https://github.com/Comfy-Org/ComfyUI/pulls?q=author%3AManoharPaturi)
-
-</div>
-
-### 🏆 Selected PRs
-
-| Repo | PR | Status |
-|------|----|--------|
-| **Meta** · [astryx](https://github.com/facebook/astryx) (design system) | [#6037](https://github.com/facebook/astryx/pull/6037) — added `elevation` prop to `ToggleButton` | ![merged](https://img.shields.io/badge/merged-2EA043?style=flat-square) |
-| **Meta** · astryx | [#6083](https://github.com/facebook/astryx/pull/6083) — guard `TextInput.onEnter` against IME conversion commits | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **Meta** · astryx | [#6084](https://github.com/facebook/astryx/pull/6084) — floor `SegmentedControlItem` to 44px touch targets (a11y) | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **Meta** · astryx | [#6085](https://github.com/facebook/astryx/pull/6085) — scope the 16px input font floor to iOS | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **Meta** · astryx | [#6086](https://github.com/facebook/astryx/pull/6086) — scale `TextInput`/`TextArea` with control size + theme target | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **deepset-ai** · [haystack](https://github.com/deepset-ai/haystack) 🚀 | [#12628](https://github.com/deepset-ai/haystack/pull/12628) — resolve cross-batch write–write conflicts by LLM call order in tool scheduling | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **Keras** | [#23566](https://github.com/keras-team/keras/pull/23566) — fix `-inf` gradients in `normalize()` for float16 (L2 norm in float32) | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **vLLM** | [#55433](https://github.com/vllm-project/vllm/pull/55433) — install `numactl` in ROCm images so `--numa-bind` isn't a silent no-op | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **Ollama** | [#18248](https://github.com/ollama/ollama/pull/18248) — normalize escaped pattern literals in tool/format schemas for `llama-server` | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **Microsoft** · autogen | [#8195](https://github.com/microsoft/autogen/pull/8195) — reject stale hunks in `TextCanvas.apply_patch` with context validation | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **Microsoft** · PyRIT | [#2576](https://github.com/microsoft/PyRIT/pull/2576) — Garak exploitation scenario (Jinja template injection + SQLi echo) | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **Anthropic** · claude-code-action | [#1797](https://github.com/anthropics/claude-code-action/pull/1797) — skip malformed buffered comment lines instead of failing the post step | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **ComfyUI** | [#16141](https://github.com/Comfy-Org/ComfyUI/pull/16141) — repair mask-editor painted uploads so the original image survives | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| **LangChain** | [#40211](https://github.com/langchain-ai/langchain/pull/40211) — remove stale `Args`/`Raises` docstrings in core callbacks/generation | ![merged](https://img.shields.io/badge/merged-2EA043?style=flat-square) |
-
-<details>
-<summary>📋 <b>More contributions</b> (transformers, weaviate, mujoco, mistral-common, datasets, aws-cdk, lm-eval-harness…)</summary>
-
-| Repo | PR | Status |
-|------|----|--------|
-| [huggingface/transformers](https://github.com/huggingface/transformers) | [#48530](https://github.com/huggingface/transformers/pull/48530) — skip symlinked hub-cache test when the platform can't create symlinks | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [weaviate/weaviate](https://github.com/weaviate/weaviate) | [#12951](https://github.com/weaviate/weaviate/pull/12951) — fix `object_count` metric help text (copy-pasted from `async_operations_running`) | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [weaviate/weaviate](https://github.com/weaviate/weaviate) | [#12950](https://github.com/weaviate/weaviate/pull/12950) — docs: add `rq-4` to `ALLOWED_COMPRESSION_TYPES` valid entries | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | [#3548](https://github.com/google-deepmind/mujoco/pull/3548) — fix inconsistent axis labels in `solimp` documentation figures | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [microsoft/autogen](https://github.com/microsoft/autogen) | [#8196](https://github.com/microsoft/autogen/pull/8196) — docs: fix typos across 16 documentation files | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [aws/aws-cdk](https://github.com/aws/aws-cdk) | [#38775](https://github.com/aws/aws-cdk/pull/38775) — drop stale `sep` reference from `ArnComponents.arnFormat` default docs | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [ollama/ollama](https://github.com/ollama/ollama) | [#18249](https://github.com/ollama/ollama/pull/18249) — log the source of the loaded context length | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | [#16114](https://github.com/Comfy-Org/ComfyUI/pull/16114) — fix Trellis2 `UppsampleStage` hardcoded `lr_resolution` for 64-grid decodes | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | [#4102](https://github.com/EleutherAI/lm-evaluation-harness/pull/4102) — fix typos across 16 task documentation files | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [facebook/astryx](https://github.com/facebook/astryx) | [#6038](https://github.com/facebook/astryx/pull/6038) — render plain `Link` anchors inline so ancestor `Text` clamps truncate them | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | [#1799](https://github.com/anthropics/claude-code-action/pull/1799) — only extract the user request from word-boundary trigger occurrences | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [huggingface/datasets](https://github.com/huggingface/datasets) | [#8567](https://github.com/huggingface/datasets/pull/8567) — fix typo in guide template | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [mistralai/mistral-common](https://github.com/mistralai/mistral-common) | [#306](https://github.com/mistralai/mistral-common/pull/306) — docs: fix typo in experimental usage guide | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-| [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) — fix typos in documentation | ![open](https://img.shields.io/badge/open-58A6FF?style=flat-square) |
-
-</details>
-
----
-
-# 🔬 What I Work On
-
-- 🧠 **Reinforcement learning** — Double/Dueling DQN, NoisyNets, Prioritized Experience Replay, self-play training
-- 🩺 **Biosignal processing** — EEG artifact removal & reconstruction (SVD, ADMM, graph signal processing) on real Emotiv EPOC X recordings
-- 🎥 **Markerless motion capture** — MediaPipe pose pipelines, stereo DLT triangulation, kinematics engines, live 3D dashboards
-- 📱 **Full-stack & systems** — Flutter apps with on-device OpenCV, React + Go platforms, GTK/file-systems programming in C
-
----
-
-# 🚀 Featured Projects
-
-| Project | What it is | Stack |
-|---------|------------|-------|
-| [**mocapX1**](https://github.com/ManoharPaturi/manu_mocap) | Offline-first markerless motion capture — MediaPipe pose → stereo DLT triangulation → filtering → kinematics → JSON/CSV/TRC/C3D/BVH exports, with a FastAPI + React/Three.js web UI | `Python` `MediaPipe` `FastAPI` `React` `Three.js` |
-| [**VS7.1 Motion Capture**](https://github.com/ManoharPaturi/mocap_mac) | Real-time multi-person mocap with dual-laptop stereo 3D reconstruction, kinematics engine, validation pipeline & Plotly reports | `Python` `MediaPipe` `OpenCV` `ZeroMQ` `React` |
-| [**MOCAP_MANU**](https://github.com/ManoharPaturi/MOCAP_MANU) | Monocular motion capture — EasyMocap + SMPL body fitting with a preset CLI and FastAPI upload-to-analyze web app | `Python` `EasyMocap` `SMPL` `FastAPI` |
-| [**SVD EEG Denoising**](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-) | EOG artifact removal from real EEG recordings via SVD, reproducing Sadasivan & Dutt (1996) | `MATLAB` `Signal Processing` |
-| [**Tic-Tac-Toe × Double DQN**](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL) | Double Dueling DQN with NoisyNet exploration & PER trained by self-play — plus an unbeatable minimax opponent | `PyTorch` `raylib/C` `tkinter` |
-| [**File Manager on raw syscalls**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C) | Dual-pane GTK3 file manager where every op runs on POSIX system calls + libzip | `C` `GTK3` `POSIX` |
-
-<details>
-<summary>📦 <b>More projects</b></summary>
-
-| Project | What it is |
-|---------|------------|
-| [OSI Model Simulator](https://github.com/ManoharPaturi/OSI-Model-Stimulation-in-python) | 7-layer OSI simulator — five networked tkinter processes (clients, switch, router, server) with real socket traffic & per-layer encapsulation |
-| [DMD Power Systems](https://github.com/ManoharPaturi/dmd-) | Dynamic Mode Decomposition of forced oscillations — regularized DMD on 29-generator PMU data with mode/damping/participation analysis |
-| [Chef Tony](https://github.com/ManoharPaturi/Chatbot-for-recepies-with-images) | Desktop recipe chatbot powered by Gemini 2.0 Flash with automatic dish photos |
-| [SRMS Seating System](https://github.com/ManoharPaturi/Seating-Arrangement-) | Seat & venue reservation — Java Swing desktop app + Spring REST API over one domain model |
-| [C Data Structures](https://github.com/ManoharPaturi/Basic-Datastructures-implementation-in-C-) | Header-only C++17 structures from scratch — heaps, BST, graphs with BFS/DFS, each with interactive demos |
-| [T1D Protein Network Analysis](https://github.com/ManoharPaturi/bio-analysis) | PPI network analysis for Type 1 Diabetes from STRING data — centrality ranking with NetworkX |
-
-</details>
-
-> 🔨 *Currently building (private): **projX** — offline OMR sheet evaluation for coaching institutes (Flutter + on-device OpenCV detection + grading), and **SchoolMate** — a school-management platform (React + Go + SQLite).*
-
----
-
-# 🛠️ Tech Stack
-
-<div align="center"><table border="0">
-  <tr>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" /><br>Python</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=c" width="48" height="48" alt="C" /><br>C</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=cpp" width="48" height="48" alt="C++" /><br>C++</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=java" width="48" height="48" alt="Java" /><br>Java</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=dart" width="48" height="48" alt="Dart" /><br>Dart</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" /><br>TypeScript</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=go" width="48" height="48" alt="Go" /><br>Go</td>
-    <td align="center" width="96"><img src="https://techstack-generator.vercel.app/matlab-icon.svg" alt="MATLAB" width="48" height="48" /><br>MATLAB</td>
-  </tr>
-  <tr>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=flutter" width="48" height="48" alt="Flutter" /><br>Flutter</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" /><br>React</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=fastapi" width="48" height="48" alt="FastAPI" /><br>FastAPI</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=spring" width="48" height="48" alt="Spring" /><br>Spring</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" /><br>Tailwind</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" /><br>Docker</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=linux" width="48" height="48" alt="Linux" /><br>Linux</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" /><br>Git</td>
-  </tr>
-  <tr>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=pytorch" width="48" height="48" alt="PyTorch" /><br>PyTorch</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=opencv" width="48" height="48" alt="OpenCV" /><br>OpenCV</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=mysql" width="48" height="48" alt="MySQL" /><br>MySQL</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" /><br>PostgreSQL</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=githubactions" width="48" height="48" alt="GitHub Actions" /><br>GH Actions</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VS Code" /><br>VS Code</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=raspberrypi" width="48" height="48" alt="Raspberry Pi" /><br>Raspberry Pi</td>
-    <td align="center" width="96"><img src="https://skillicons.dev/icons?i=blender" width="48" height="48" alt="Blender" /><br>Blender</td>
-  </tr>
-</table></div>
-
-<div align="center">
-
-`MediaPipe` · `EasyMocap` · `SMPL` · `ZeroMQ` · `NetworkX` · `GTK3` · `POSIX` · `SQLite` · `raylib` · `Three.js`
-
-</div>
-
----
-
-# 📊 GitHub Analytics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ManoharPaturi&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=A371F7&icon_color=58A6FF&text_color=C9D1D9&ring_color=58A6FF" height="170" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManoharPaturi&layout=compact&hide_border=true&langs_count=8&bg_color=0D1117&title_color=A371F7&icon_color=58A6FF&text_color=C9D1D9" height="170" alt="languages graph" />
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=ManoharPaturi&hide_border=true&background=0D1117&ring=58A6FF&fire=A371F7&currStreakLabel=C9D1D9&sideLabels=C9D1D9&dates=8B949E" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ManoharPaturi&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=8" alt="Trophies" />
-</div>
-
-<br>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ManoharPaturi&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
-</p>
-
----
-
-# 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ManoharPaturi/ManoharPaturi/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ManoharPaturi/ManoharPaturi/output/github-contribution-grid-snake.svg" />
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/ManoharPaturi/ManoharPaturi/output/github-contribution-grid-snake.svg" />
-  </picture>
-</div>
-
----
-
-<div align="center">
-  <a href="mailto:manoharpaturi777@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail" height="40" alt="Email" />
-  </a>
+  <br/>
+  <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="https://img.shields.io/badge/motion%20capture-%F0%9F%8E%A5-58A6FF?style=flat-square" alt="motion capture"/></a>
   &nbsp;
-  <a href="https://github.com/ManoharPaturi">
-    <img src="https://skillicons.dev/icons?i=github" height="40" alt="GitHub" />
-  </a>
+  <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="https://img.shields.io/badge/biosignals-%F0%9F%A7%A0-A371F7?style=flat-square" alt="biosignals"/></a>
+  &nbsp;
+  <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="https://img.shields.io/badge/reinforcement%20learning-%F0%9F%A7%A0?style=flat-square&color=3FB950" alt="RL"/></a>
+  &nbsp;
+  <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi"><img src="https://img.shields.io/badge/PR%20hunting-%F0%9F%8F%B9?style=flat-square&color=F778BA" alt="PR hunting"/></a>
 </div>
 
-<br>
+<br/>
+
+---
+
+## 🏆 Open Source Scoreboard
+
+I contribute fixes and features to production open source maintained by big orgs — **27+ PRs across 15 orgs** so far: concurrency bugs, a11y gaps, inference/DX fixes, security tooling. Two merged and counting.
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F778BA,50:A371F7,100:58A6FF&height=120&section=footer" width="100%" alt="footer" />
+
+[![Meta](https://img.shields.io/badge/Meta-0866FF?style=flat-square&logo=meta&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Afacebook)
+[![Google DeepMind](https://img.shields.io/badge/DeepMind-4285F4?style=flat-square&logo=googledeepmind&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Agoogle-deepmind)
+[![Microsoft](https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Amicrosoft)
+[![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Aaws)
+[![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Aanthropics)
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Ahuggingface)
+[![Mistral AI](https://img.shields.io/badge/Mistral_AI-FF7000?style=flat-square&logo=mistralai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Amistralai)
+[![vLLM](https://img.shields.io/badge/vLLM-76B900?style=flat-square&logo=nvidia&logoColor=white)](https://github.com/vllm-project/vllm/pulls?q=author%3AManoharPaturi)
+[![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)](https://github.com/ollama/ollama/pulls?q=author%3AManoharPaturi)
+[![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white)](https://github.com/keras-team/keras/pulls?q=author%3AManoharPaturi)
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://github.com/langchain-ai/langchain/pulls?q=author%3AManoharPaturi)
+[![Weaviate](https://img.shields.io/badge/Weaviate-39C1CF?style=flat-square&logo=weaviate&logoColor=white)](https://github.com/weaviate/weaviate/pulls?q=author%3AManoharPaturi)
+[![haystack](https://img.shields.io/badge/deepset-haystack-7E56C2?style=flat-square&logo=bookstack&logoColor=white)](https://github.com/deepset-ai/haystack/pulls?q=author%3AManoharPaturi)
+[![EleutherAI](https://img.shields.io/badge/EleutherAI-7C3AED?style=flat-square&logo=eleutherai&logoColor=white)](https://github.com/EleutherAI/lm-evaluation-harness/pulls?q=author%3AManoharPaturi)
+[![ComfyUI](https://img.shields.io/badge/ComfyUI-208EA5?style=flat-square)](https://github.com/Comfy-Org/ComfyUI/pulls?q=author%3AManoharPaturi)
+
+</div>
+
+### Highlights
+
+| Where | What I shipped | PR | |
+|-------|----------------|----|-|
+| **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — went through full review loop with Meta's design-system team | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
+| **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟢 open |
+| **Meta** · astryx | 44px touch-target floor for `SegmentedControlItem` on coarse pointers | [#6084](https://github.com/facebook/astryx/pull/6084) | 🟢 open |
+| **Meta** · astryx | scope the 16px input font floor to iOS only | [#6085](https://github.com/facebook/astryx/pull/6085) | 🟢 open |
+| **Meta** · astryx | type-scale-aware `TextInput`/`TextArea` + new theme target | [#6086](https://github.com/facebook/astryx/pull/6086) | 🟢 open |
+| **deepset** · [haystack](https://github.com/deepset-ai/haystack) | cross-batch write–write conflicts in the agent tool scheduler now resolve by LLM call order 🚀 | [#12628](https://github.com/deepset-ai/haystack/pull/12628) | 🟢 open |
+| **Keras** | `-inf` gradients in `normalize()` for float16 — L2 norm computed in float32 | [#23566](https://github.com/keras-team/keras/pull/23566) | 🟢 open |
+| **vLLM** | install `numactl` in ROCm images so `--numa-bind` isn't a silent no-op | [#55433](https://github.com/vllm-project/vllm/pull/55433) | 🟢 open |
+| **Ollama** | normalize escaped pattern literals in tool/format schemas at the `llama-server` boundary | [#18248](https://github.com/ollama/ollama/pull/18248) | 🟢 open |
+| **Microsoft** · autogen | reject stale hunks in `TextCanvas.apply_patch` with context validation | [#8195](https://github.com/microsoft/autogen/pull/8195) | 🟢 open |
+| **Microsoft** · PyRIT | Garak exploitation scenario — Jinja template injection + SQLi echo | [#2576](https://github.com/microsoft/PyRIT/pull/2576) | 🟢 open |
+| **Anthropic** · claude-code-action | skip malformed buffered comment lines instead of failing the CI post step | [#1797](https://github.com/anthropics/claude-code-action/pull/1797) | 🟢 open |
+| **ComfyUI** | mask-editor painted uploads no longer destroy the original image under the mask | [#16141](https://github.com/Comfy-Org/ComfyUI/pull/16141) | 🟢 open |
+| **LangChain** | removed stale `Args`/`Raises` docstrings from core callbacks/generation | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
+
+<details>
+<summary><b>…and the rest of the board</b> (transformers, weaviate, mujoco, datasets, mistral-common, aws-cdk, lm-eval-harness)</summary>
+
+| Where | What I shipped | PR | |
+|-------|----------------|----|-|
+| [huggingface/transformers](https://github.com/huggingface/transformers) | skip the symlinked hub-cache test on platforms that can't create symlinks | [#48530](https://github.com/huggingface/transformers/pull/48530) | 🟢 open |
+| [weaviate/weaviate](https://github.com/weaviate/weaviate) | fix `object_count` Prometheus help text (copy-pasted from `async_operations_running`) | [#12951](https://github.com/weaviate/weaviate/pull/12951) | 🟢 open |
+| [weaviate/weaviate](https://github.com/weaviate/weaviate) | docs: add `rq-4` to `ALLOWED_COMPRESSION_TYPES` valid entries | [#12950](https://github.com/weaviate/weaviate/pull/12950) | 🟢 open |
+| [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | fix inconsistent axis labels in `solimp` documentation figures | [#3548](https://github.com/google-deepmind/mujoco/pull/3548) | 🟢 open |
+| [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | documentation typo sweep | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟢 open |
+| [microsoft/autogen](https://github.com/microsoft/autogen) | docs typo sweep — 16 files | [#8196](https://github.com/microsoft/autogen/pull/8196) | 🟢 open |
+| [aws/aws-cdk](https://github.com/aws/aws-cdk) | drop stale `sep` reference from `ArnComponents.arnFormat` default docs | [#38775](https://github.com/aws/aws-cdk/pull/38775) | 🟢 open |
+| [ollama/ollama](https://github.com/ollama/ollama) | log the provenance of the loaded context length | [#18249](https://github.com/ollama/ollama/pull/18249) | 🟢 open |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | fix Trellis2 `UppsampleStage` hardcoded `lr_resolution` for 64-grid decodes | [#16114](https://github.com/Comfy-Org/ComfyUI/pull/16114) | 🟢 open |
+| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | verified typo fixes across 16 task docs | [#4102](https://github.com/EleutherAI/lm-evaluation-harness/pull/4102) | 🟢 open |
+| [facebook/astryx](https://github.com/facebook/astryx) | render plain `Link` anchors inline so ancestor `Text` clamps can truncate them | [#6038](https://github.com/facebook/astryx/pull/6038) | 🟢 open |
+| [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | extract the user request only from word-boundary trigger occurrences | [#1799](https://github.com/anthropics/claude-code-action/pull/1799) | 🟢 open |
+| [huggingface/datasets](https://github.com/huggingface/datasets) | fix typo in guide template | [#8567](https://github.com/huggingface/datasets/pull/8567) | 🟢 open |
+| [mistralai/mistral-common](https://github.com/mistralai/mistral-common) | docs typo fix in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟢 open |
+
+</details>
+
+---
+
+## 🔬 What I actually do
+
+- 🧠 **Reinforcement learning** — Double/Dueling DQN, NoisyNets, prioritized replay, self-play training
+- 🩺 **Biosignal processing** — EEG artifact removal & reconstruction (SVD, ADMM, graph signal processing) on real Emotiv EPOC X recordings
+- 🎥 **Markerless motion capture** — MediaPipe pose → stereo DLT triangulation → kinematics → C3D/BVH exports, live 3D dashboards
+- 📱 **Full-stack & systems** — Flutter apps with on-device OpenCV, React + Go platforms, POSIX-level C
+
+---
+
+## 🚀 Projects I'm proud of
+
+| Project | The one-liner | Stack |
+|---------|---------------|-------|
+| [**mocapX1**](https://github.com/ManoharPaturi/manu_mocap) | Offline-first markerless mocap — pose → stereo DLT → filtering → kinematics → JSON/CSV/TRC/C3D/BVH, with a FastAPI + Three.js web UI | Python · MediaPipe · FastAPI · React |
+| [**VS7.1 mocap**](https://github.com/ManoharPaturi/mocap_mac) | Real-time multi-person capture across two laptops — stereo 3D reconstruction, kinematics engine, validation pipeline | Python · OpenCV · ZeroMQ · React |
+| [**MOCAP_MANU**](https://github.com/ManoharPaturi/MOCAP_MANU) | Monocular capture — EasyMocap + SMPL body fitting with an upload-to-analyze web app | Python · SMPL · FastAPI |
+| [**SVD EEG denoising**](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-) | EOG artifact removal from real EEG recordings, reproducing Sadasivan & Dutt (1996) | MATLAB |
+| [**Tic-Tac-Toe × Double DQN**](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL) | Double Dueling DQN + NoisyNet + PER trained by self-play; unbeatable minimax on the side | PyTorch · raylib/C |
+| [**File manager on raw syscalls**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C) | Dual-pane GTK3 file manager where every operation is POSIX calls + libzip, nothing else | C · GTK3 |
+
+<details>
+<summary><b>more on the shelf</b></summary>
+
+- [OSI Model Simulator](https://github.com/ManoharPaturi/OSI-Model-Stimulation-in-python) — five networked processes (clients, switch, router, server) exchanging real socket traffic with per-layer encapsulation
+- [DMD Power Systems](https://github.com/ManoharPaturi/dmd-) — dynamic mode decomposition of forced oscillations on 29-generator PMU data
+- [Chef Tony](https://github.com/ManoharPaturi/Chatbot-for-recepies-with-images) — recipe chatbot on Gemini 2.0 Flash that finds dish photos by itself
+- [SRMS Seating System](https://github.com/ManoharPaturi/Seating-Arrangement-) — Java Swing + Spring REST seat & venue reservation over one domain model
+- [C Data Structures](https://github.com/ManoharPaturi/Basic-Datastructures-implementation-in-C-) — header-only heaps, BSTs, graphs with BFS/DFS, each with an interactive demo
+- [T1D PPI network analysis](https://github.com/ManoharPaturi/bio-analysis) — centrality ranking of Type 1 Diabetes protein interactions from STRING data
+
+</details>
+
+> 🔨 Currently building (private): **projX** — offline OMR sheet evaluation for coaching institutes (Flutter + on-device OpenCV), and **SchoolMate** — school management (React + Go + SQLite).
+
+---
+
+## 🧰 Toolbox
+
+**Languages**
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/-Java-B07219?style=flat-square&logo=openjdk&logoColor=white)
+![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![MATLAB](https://img.shields.io/badge/-MATLAB-E16737?style=flat-square)
+
+**Apps & frameworks**
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![React](https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Spring](https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Tailwind](https://img.shields.io/badge/-Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Three.js](https://img.shields.io/badge/-Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+
+**AI · CV · signals**
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/-MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white)
+![NetworkX](https://img.shields.io/badge/-NetworkX-2B7ABC?style=flat-square)
+![EasyMocap/SMPL](https://img.shields.io/badge/-EasyMocap%20%2F%20SMPL-444444?style=flat-square)
+
+**Infra & data**
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/-Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![ZeroMQ](https://img.shields.io/badge/-ZeroMQ-DC1C1C?style=flat-square)
+![GTK](https://img.shields.io/badge/-GTK-77767B?style=flat-square&logo=gtk&logoColor=white)
+
+---
+
+## 📈
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ManoharPaturi&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=58A6FF&icon_color=A371F7&text_color=C9D1D9&ring_color=58A6FF" height="165" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManoharPaturi&layout=compact&hide_border=true&langs_count=8&bg_color=0D1117&title_color=58A6FF&icon_color=A371F7&text_color=C9D1D9" height="165" alt="languages" />
+</div>
+
+---
+
+<div align="center">
+
+📬 **manoharpaturi777@gmail.com** — open to research internships (AI/ML, Summer 2027) and interesting OSS collabs
+
+<a href="mailto:manoharpaturi777@gmail.com"><img src="https://img.shields.io/badge/email%20me-manoharpaturi777-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="email"/></a>
+&nbsp;
+<a href="https://github.com/ManoharPaturi"><img src="https://img.shields.io/badge/-ManoharPaturi-181717?style=flat-square&logo=github&logoColor=white" alt="github"/></a>
+
 </div>
