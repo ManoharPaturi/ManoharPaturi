@@ -89,7 +89,9 @@ I contribute fixes and features to production open source maintained by big orgs
 - 🧠 **Reinforcement learning** — Double/Dueling DQN, NoisyNets, prioritized replay, self-play training
 - 🩺 **Biosignal processing** — EEG artifact removal & reconstruction (SVD, ADMM, graph signal processing) on real Emotiv EPOC X recordings
 - 🎥 **Markerless motion capture** — MediaPipe pose → stereo DLT triangulation → kinematics → C3D/BVH exports, live 3D dashboards
-- 📱 **Full-stack & systems** — Flutter apps with on-device OpenCV, React + Go platforms, POSIX-level C
+- 📱 **Android · Flutter** — offline-first mobile apps with on-device OpenCV; my OMR grader never needs a server
+- 🌐 **Full-stack** — React + Go platforms, FastAPI + React/Three.js app UIs, Spring REST backends over MySQL
+- 🖥️ **Systems** — POSIX-level C, GTK, raw syscalls
 
 ---
 
@@ -106,6 +108,8 @@ One project per problem domain — each chosen because the interesting part is t
 | 🧬 **graph theory · bioinformatics** | [**T1D protein network**](https://github.com/ManoharPaturi/bio-analysis) | Degree / betweenness / closeness centrality over the Type-1-Diabetes protein interactome from STRING data — ranks candidate hub genes with NetworkX |
 | 🔌 **computer networks** | [**OSI model simulator**](https://github.com/ManoharPaturi/OSI-Model-Stimulation-in-python) | Five networked processes (clients, switch, router, server) passing real socket traffic through hand-built per-layer encapsulation/decapsulation |
 | 🖥️ **systems programming** | [**File manager on raw syscalls**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C) | Dual-pane GTK3 file manager where listing, copy, recursive delete and zip run directly on POSIX system calls + libzip — no stdio file wrappers |
+| 📱 **mobile · Android** | [**projX — OMR evaluation**](https://github.com/ManoharPaturi/projX) | Android-first Flutter app that grades OMR answer sheets **fully offline** — camera capture → on-device OpenCV bubble detection → versioned answer keys → PDF/XLSX marksheets. The sheet layout is authored once in mm and compiles to both the print PDF and the detection grid, so print-vs-detection drift is impossible by construction |
+| 🌐 **full-stack · client–server** | [**SRMS seating**](https://github.com/ManoharPaturi/Seating-Arrangement-) | Seat & venue reservation built twice over one shared domain model — a Java Swing desktop client and a Spring REST API, both against MySQL persistence |
 
 <details>
 <summary><b>more on the shelf</b></summary>
@@ -114,11 +118,10 @@ One project per problem domain — each chosen because the interesting part is t
 - [MOCAP_MANU](https://github.com/ManoharPaturi/MOCAP_MANU) — EasyMocap + SMPL monocular body fitting with an upload-to-analyze web app
 - [C Data Structures](https://github.com/ManoharPaturi/Basic-Datastructures-implementation-in-C-) — header-only C++17 heaps, BSTs, graphs with BFS/DFS, each with an interactive demo
 - [Chef Tony](https://github.com/ManoharPaturi/Chatbot-for-recepies-with-images) — Gemini 2.0 Flash recipe chatbot that finds its own dish photos
-- [SRMS Seating System](https://github.com/ManoharPaturi/Seating-Arrangement-) — Java Swing + Spring REST seat & venue reservation over one domain model
 
 </details>
 
-> 🔨 Currently building (private): **projX** — offline OMR sheet evaluation for coaching institutes (Flutter + on-device OpenCV), and **SchoolMate** — school management (React + Go + SQLite).
+> 🔨 Currently building (private): **SchoolMate** — a school-management platform (React + Go + SQLite) that pairs with projX.
 
 ---
 
