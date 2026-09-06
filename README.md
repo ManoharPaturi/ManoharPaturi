@@ -95,24 +95,26 @@ I contribute fixes and features to production open source maintained by big orgs
 
 ## 🚀 Projects I'm proud of
 
-| Project | The one-liner | Stack |
-|---------|---------------|-------|
-| [**mocapX1**](https://github.com/ManoharPaturi/manu_mocap) | Offline-first markerless mocap — pose → stereo DLT → filtering → kinematics → JSON/CSV/TRC/C3D/BVH, with a FastAPI + Three.js web UI | Python · MediaPipe · FastAPI · React |
-| [**VS7.1 mocap**](https://github.com/ManoharPaturi/mocap_mac) | Real-time multi-person capture across two laptops — stereo 3D reconstruction, kinematics engine, validation pipeline | Python · OpenCV · ZeroMQ · React |
-| [**MOCAP_MANU**](https://github.com/ManoharPaturi/MOCAP_MANU) | Monocular capture — EasyMocap + SMPL body fitting with an upload-to-analyze web app | Python · SMPL · FastAPI |
-| [**SVD EEG denoising**](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-) | EOG artifact removal from real EEG recordings, reproducing Sadasivan & Dutt (1996) | MATLAB |
-| [**Tic-Tac-Toe × Double DQN**](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL) | Double Dueling DQN + NoisyNet + PER trained by self-play; unbeatable minimax on the side | PyTorch · raylib/C |
-| [**File manager on raw syscalls**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C) | Dual-pane GTK3 file manager where every operation is POSIX calls + libzip, nothing else | C · GTK3 |
+One project per problem domain — each chosen because the interesting part is the underlying subject, not the boilerplate around it.
+
+| Domain | Project | What's under the hood |
+|--------|---------|----------------------|
+| 🧠 **reinforcement learning** | [**Tic-Tac-Toe × Double DQN**](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL) | Double Q-learning targets (overestimation bias fix) + dueling value/advantage streams + NoisyNet exploration + prioritized replay — every trick implemented from its paper, trained purely by self-play |
+| ⚡ **dynamical systems** | [**DMD power oscillations**](https://github.com/ManoharPaturi/dmd-) | Regularized Dynamic Mode Decomposition on 29-generator PMU recordings — recovers oscillation-mode frequency, damping ratio and generator participation factors |
+| 🩺 **biomedical signals** | [**SVD EEG denoising**](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-) | EOG artifacts isolated as a low-rank subspace of real Emotiv EPOC X recordings via SVD — reproducing Sadasivan & Dutt (1996) |
+| 🎥 **3D vision · biomechanics** | [**mocapX1**](https://github.com/ManoharPaturi/manu_mocap) | Markerless motion capture end-to-end — pose → stereo DLT triangulation → filtering → joint kinematics → JSON/CSV/TRC/C3D/BVH exports, with a FastAPI + Three.js web UI |
+| 🧬 **graph theory · bioinformatics** | [**T1D protein network**](https://github.com/ManoharPaturi/bio-analysis) | Degree / betweenness / closeness centrality over the Type-1-Diabetes protein interactome from STRING data — ranks candidate hub genes with NetworkX |
+| 🔌 **computer networks** | [**OSI model simulator**](https://github.com/ManoharPaturi/OSI-Model-Stimulation-in-python) | Five networked processes (clients, switch, router, server) passing real socket traffic through hand-built per-layer encapsulation/decapsulation |
+| 🖥️ **systems programming** | [**File manager on raw syscalls**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C) | Dual-pane GTK3 file manager where listing, copy, recursive delete and zip run directly on POSIX system calls + libzip — no stdio file wrappers |
 
 <details>
 <summary><b>more on the shelf</b></summary>
 
-- [OSI Model Simulator](https://github.com/ManoharPaturi/OSI-Model-Stimulation-in-python) — five networked processes (clients, switch, router, server) exchanging real socket traffic with per-layer encapsulation
-- [DMD Power Systems](https://github.com/ManoharPaturi/dmd-) — dynamic mode decomposition of forced oscillations on 29-generator PMU data
-- [Chef Tony](https://github.com/ManoharPaturi/Chatbot-for-recepies-with-images) — recipe chatbot on Gemini 2.0 Flash that finds dish photos by itself
+- [VS7.1 mocap](https://github.com/ManoharPaturi/mocap_mac) — dual-laptop real-time multi-person capture with stereo 3D reconstruction, kinematics engine & validation pipeline
+- [MOCAP_MANU](https://github.com/ManoharPaturi/MOCAP_MANU) — EasyMocap + SMPL monocular body fitting with an upload-to-analyze web app
+- [C Data Structures](https://github.com/ManoharPaturi/Basic-Datastructures-implementation-in-C-) — header-only C++17 heaps, BSTs, graphs with BFS/DFS, each with an interactive demo
+- [Chef Tony](https://github.com/ManoharPaturi/Chatbot-for-recepies-with-images) — Gemini 2.0 Flash recipe chatbot that finds its own dish photos
 - [SRMS Seating System](https://github.com/ManoharPaturi/Seating-Arrangement-) — Java Swing + Spring REST seat & venue reservation over one domain model
-- [C Data Structures](https://github.com/ManoharPaturi/Basic-Datastructures-implementation-in-C-) — header-only heaps, BSTs, graphs with BFS/DFS, each with an interactive demo
-- [T1D PPI network analysis](https://github.com/ManoharPaturi/bio-analysis) — centrality ranking of Type 1 Diabetes protein interactions from STRING data
 
 </details>
 
@@ -163,9 +165,12 @@ I contribute fixes and features to production open source maintained by big orgs
 ## 📈
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ManoharPaturi&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=58A6FF&icon_color=A371F7&text_color=C9D1D9&ring_color=58A6FF" height="165" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManoharPaturi&layout=compact&hide_border=true&langs_count=8&bg_color=0D1117&title_color=58A6FF&icon_color=A371F7&text_color=C9D1D9" height="165" alt="languages" />
+  <a href="https://github.com/ManoharPaturi"><img src="assets/stats.svg" alt="stats" /></a>
+  &nbsp;
+  <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="assets/languages.svg" alt="languages" /></a>
 </div>
+
+<p align="center"><sub>cards are generated by <a href="https://github.com/ManoharPaturi/ManoharPaturi/blob/main/scripts/gen_stats.py"><code>scripts/gen_stats.py</code></a> — a tiny GitHub Action hits the GitHub API daily and rewrites these SVGs. No third-party card service involved.</sub></p>
 
 ---
 
