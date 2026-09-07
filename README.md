@@ -159,131 +159,25 @@ status: "⚡ Training agents · Denoising biosignals · Shipping PRs"
 
 Every project here was chosen because the interesting challenge lives in the **underlying mathematical and physical subject matter**, not in boilerplate frameworks.
 
-<table>
-
-<!-- ROW 1: RL & BIOMEDICAL SIGNALS -->
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 [Tic-Tac-Toe × Double DQN](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![RL](https://img.shields.io/badge/Algorithm-Double%20DQN%20%2B%20PER-58A6FF?style=flat-square)
-![Self Play](https://img.shields.io/badge/Mode-Self--Play-3FB950?style=flat-square)
-
-Double Q-learning targets (fixing value overestimation bias) coupled with dueling state-value and advantage streams, parametric **NoisyNet** exploration, and **Prioritized Experience Replay (PER)**.
-- Trained purely via self-play without heuristics.
-- Proved unbeatable by pitching it against an optimal minimax opponent — they draw indefinitely.
-
-</td>
-<td width="50%" valign="top">
-
-### 🩺 [SVD EEG Denoising](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Hardware](https://img.shields.io/badge/Hardware-Emotiv%20EPOC%20X-A371F7?style=flat-square)
-![Signal](https://img.shields.io/badge/Method-Subspace%20SVD-F778BA?style=flat-square)
-
-Isolates high-amplitude ocular (EOG) artifacts as a low-rank subspace of raw electroencephalogram recordings via Singular Value Decomposition.
-- Reproduces foundational results from Sadasivan & Dutt (1996).
-- Validated on real **14-channel Emotiv EPOC X** biosignal hardware rather than idealized synthetic datasets.
-
-</td>
-</tr>
-
-<!-- ROW 2: 3D VISION & DYNAMICAL SYSTEMS -->
-<tr>
-<td width="50%" valign="top">
-
-### 🎥 [mocapX1 — Markerless Motion Capture](https://github.com/ManoharPaturi/manu_mocap)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
-![OpenCV](https://img.shields.io/badge/CV-Stereo%20DLT-5C3EE8?style=flat-square)
-
-End-to-end multi-view markerless human motion capture pipeline.
-- 2D keypoint extraction $\to$ **Stereo Direct Linear Transform (DLT)** triangulation $\to$ Butterworth kinematic smoothing $\to$ joint angle calculation.
-- Full biomechanical export engine supporting **JSON, CSV, TRC, C3D, and BVH** formats with a live FastAPI + Three.js 3D visualizer.
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ [DMD Power Oscillations](https://github.com/ManoharPaturi/dmd-)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![NumPy](https://img.shields.io/badge/Math-Linear%20Operators-013243?style=flat-square&logo=numpy&logoColor=white)
-![Power Systems](https://img.shields.io/badge/Domain-Smart%20Grids-FFA657?style=flat-square)
-
-Applies regularized **Dynamic Mode Decomposition (DMD)** across 29-generator Phasor Measurement Unit (PMU) temporal recordings.
-- Accurately decomposes non-linear power system oscillations into dominant spatio-temporal coherent modes.
-- Recovers modal frequencies, damping ratios, and generator participation factors directly from state trajectories.
-
-</td>
-</tr>
-
-<!-- ROW 3: BIOINFORMATICS & SYSTEMS PROGRAMMING -->
-<tr>
-<td width="50%" valign="top">
-
-### 🧬 [T1D Protein Network](https://github.com/ManoharPaturi/bio-analysis)
-![NetworkX](https://img.shields.io/badge/NetworkX-2B7ABC?style=flat-square)
-![STRING DB](https://img.shields.io/badge/Data-STRING%20Interactome-E16737?style=flat-square)
-![Bio](https://img.shields.io/badge/Domain-Systems%20Genomics-3FB950?style=flat-square)
-
-Graph-theoretic topological analysis of the Type-1-Diabetes protein-protein interaction (PPI) network.
-- Computes degree, betweenness, and closeness centrality distributions over massive interactome subgraphs.
-- Statistically ranks key bottleneck and candidate hub genes implicated in autoimmune etiology.
-
-</td>
-<td width="50%" valign="top">
-
-### 🖥️ [Raw Syscalls File Manager in C](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![POSIX](https://img.shields.io/badge/Core-Raw%20Syscalls-FCC624?style=flat-square&logo=linux&logoColor=black)
-![GTK3](https://img.shields.io/badge/UI-GTK3%20Dual--Pane-77767B?style=flat-square&logo=gtk&logoColor=white)
-
-Dual-pane desktop file manager written in C without standard library file abstractions (`stdio.h`).
-- File directory listing, copy, recursive deletion, and compression run strictly on primitive POSIX system calls (`open`, `read`, `write`, `getdents`, `unlink`).
-- Integrated with `libzip` for in-memory stream compression.
-
-</td>
-</tr>
-
-<!-- ROW 4: MOBILE CV & COMPUTER NETWORKS -->
-<tr>
-<td width="50%" valign="top">
-
-### 📱 [projX — Offline OMR Evaluation](https://github.com/ManoharPaturi/projX)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-Mobile%20Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![Android](https://img.shields.io/badge/Platform-100%25%20Offline-3DDC84?style=flat-square&logo=android&logoColor=white)
-
-Production Android-first Flutter app that grades high-density OMR answer sheets **100% offline** on-device.
-- Single millimetre-based specification generates both the print PDF and the OpenCV detection grid.
-- Grades 180-question NEET-density answer sheets in milliseconds from a 12 MP phone camera with automated perspective warp.
-
-</td>
-<td width="50%" valign="top">
-
-### 🔌 [OSI 7-Layer Socket Simulator](https://github.com/ManoharPaturi/OSI-Model-Stimulation-in-python)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Sockets](https://img.shields.io/badge/IPC-BSD%20Sockets-2088FF?style=flat-square)
-![Architecture](https://img.shields.io/badge/Design-Multi--Process-FF7000?style=flat-square)
-
-Five concurrent networked operating system processes (clients, layer-2 switch, layer-3 router, server).
-- Passes real BSD socket traffic through per-layer encapsulation and decapsulation pipelines.
-- Simulates real MAC framing, IP packet routing, and transport-layer payload sequencing.
-
-</td>
-</tr>
-
-</table>
+| domain | project | what's under the hood |
+|--------|---------|----------------------|
+| 🧠 **reinforcement learning** | [**Tic-Tac-Toe × Double DQN**](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL) | Double Q-learning targets (overestimation bias fix) + dueling value/advantage streams + NoisyNet exploration + prioritized replay — every trick implemented from its paper, trained purely by self-play |
+| ⚡ **dynamical systems** | [**DMD power oscillations**](https://github.com/ManoharPaturi/dmd-) | Regularized Dynamic Mode Decomposition on 29-generator PMU recordings — recovers oscillation-mode frequency, damping ratio and generator participation factors |
+| 🩺 **biomedical signals** | [**SVD EEG denoising**](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-) | EOG artifacts isolated as a low-rank subspace of real Emotiv EPOC X recordings via SVD — reproducing Sadasivan & Dutt (1996) |
+| 🎥 **3D vision · biomechanics** | [**mocapX1**](https://github.com/ManoharPaturi/manu_mocap) | Markerless motion capture end-to-end — pose → stereo DLT triangulation → filtering → joint kinematics → JSON/CSV/TRC/C3D/BVH exports, with a FastAPI + Three.js web UI |
+| 🧬 **graph theory · bioinformatics** | [**T1D protein network**](https://github.com/ManoharPaturi/bio-analysis) | Degree / betweenness / closeness centrality over the Type-1-Diabetes protein interactome from STRING data — ranks candidate hub genes with NetworkX |
+| 🔌 **computer networks** | [**OSI model simulator**](https://github.com/ManoharPaturi/OSI-Model-Stimulation-in-python) | Five networked processes (clients, switch, router, server) passing real socket traffic through per-layer encapsulation/decapsulation |
+| 🖥️ **systems programming** | [**File manager on raw syscalls**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C) | Dual-pane GTK3 file manager where listing, copy, recursive delete and zip run directly on POSIX system calls + libzip |
+| 📱 **mobile · Android** | [**projX — OMR evaluation**](https://github.com/ManoharPaturi/projX) | Android-first Flutter app that grades OMR answer sheets **fully offline** — camera → on-device OpenCV bubble detection → versioned answer keys → PDF/XLSX marksheets, all derived from one sheet spec authored in mm |
+| 🌐 **full-stack · client–server** | [**SRMS seating**](https://github.com/ManoharPaturi/Seating-Arrangement-) | Seat & venue reservation built twice over one shared domain model — a Java Swing desktop client and a Spring REST API, both against MySQL persistence |
 
 <details>
-<summary><b>🧪 More from the Lab Archive</b></summary>
-<br/>
+<summary><b>more on the shelf</b></summary>
 
-- **[VS7.1 mocap](https://github.com/ManoharPaturi/mocap_mac)** — Dual-laptop real-time multi-person capture system with stereo 3D reconstruction, kinematics engine & validation pipeline.
-- **[MOCAP_MANU](https://github.com/ManoharPaturi/MOCAP_MANU)** — EasyMocap + SMPL monocular 3D parametric human body mesh fitting with a web upload analyzer.
-- **[SRMS Seating](https://github.com/ManoharPaturi/Seating-Arrangement-)** — Venue reservation engine implemented twice over a single domain model: Java Swing desktop client and Spring REST API over MySQL.
-- **[C Data Structures](https://github.com/ManoharPaturi/Basic-Datastructures-implementation-in-C-)** — Header-only C++17 heaps, BSTs, graphs with BFS/DFS, each featuring an interactive CLI test harness.
-- **[Chef Tony](https://github.com/ManoharPaturi/Chatbot-for-recepies-with-images)** — Multimodal recipe chatbot powered by Gemini 2.0 Flash that queries dish images and culinary instructions.
+- [VS7.1 mocap](https://github.com/ManoharPaturi/mocap_mac) — dual-laptop real-time multi-person capture with stereo 3D reconstruction, kinematics engine & validation pipeline
+- [MOCAP_MANU](https://github.com/ManoharPaturi/MOCAP_MANU) — EasyMocap + SMPL monocular body fitting with an upload-to-analyze web app
+- [C Data Structures](https://github.com/ManoharPaturi/Basic-Datastructures-implementation-in-C-) — header-only C++17 heaps, BSTs, graphs with BFS/DFS, each with an interactive demo
+- [Chef Tony](https://github.com/ManoharPaturi/Chatbot-for-recepies-with-images) — Gemini 2.0 Flash recipe chatbot that finds its own dish photos
 
 </details>
 
@@ -369,16 +263,6 @@ Five concurrent networked operating system processes (clients, layer-2 switch, l
   <p align="center"><sub>Generated by <a href="https://github.com/ManoharPaturi/ManoharPaturi/blob/main/scripts/gen_stats.py"><code>scripts/gen_stats.py</code></a> & <a href="https://github.com/ManoharPaturi/ManoharPaturi/blob/main/.github/workflows/snake.yml"><code>.github/workflows/snake.yml</code></a> — re-runs against the GitHub API daily with zero broken images.</sub></p>
 
 </div>
-
----
-
-## 🎲 `$ cat /dev/random`
-
-- 🎥 **Dual-Laptop Mocap**: My primary motion-capture rig is two laptops running stereo DLT calibration and reconstruction in real time.
-- 🧠 **Double DQN Mastery**: Trained a Double DQN agent to never lose tic-tac-toe — then wrote an unbeatable minimax algorithm to prove it; they draw infinitely.
-- 📱 **Offline Computer Vision**: `projX` grades NEET-density OMR sheets (180 questions, 4 columns) from a plain 12 MP phone camera without touching a server.
-- 🩺 **Raw Biosignals**: My EEG denoising algorithms run directly on real 14-channel Emotiv EPOC X hardware streams, not textbook toy CSVs.
-- 🌐 **Upstream Impact**: Shipped fixes into repositories with hundreds of thousands of stars (Meta, DeepMind, Anthropic, Hugging Face, vLLM).
 
 ---
 
