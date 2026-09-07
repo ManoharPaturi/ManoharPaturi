@@ -12,7 +12,7 @@
 
   <!-- $ whoami -->
   <text x="22" y="68" font-size="14" font-weight="600" fill="#58A6FF">$ whoami</text>
-  <text x="22" y="92" font-size="14" fill="#E6EDF3">Manohar Paturi &#183; AI engineering undergrad @ Amrita (grad '28)</text>
+  <text x="22" y="92" font-size="14" fill="#E6EDF3">Manohar Paturi &#183; AI engineering undergrad @ Amrita</text>
 
   <!-- $ cat focus.txt -->
   <text x="22" y="128" font-size="14" font-weight="600" fill="#58A6FF">$ cat focus.txt</text>
@@ -21,7 +21,7 @@
 
   <!-- $ gh search prs -->
   <text x="22" y="212" font-size="14" font-weight="600" fill="#58A6FF">$ gh search prs --author ManoharPaturi</text>
-  <text x="22" y="236" font-size="14" fill="#E6EDF3">27 PRs &#8594; 15 orgs  (bug fixes, race conditions, a11y, security tooling)</text>
+  <text x="22" y="236" font-size="14" fill="#E6EDF3">29 PRs &#8594; 15 orgs  (bug fixes, race conditions, a11y, security tooling)</text>
   <text x="22" y="260" font-size="14" fill="#D2A8FF">Meta &#183; Google DeepMind &#183; Microsoft &#183; AWS &#183; Anthropic</text>
   <text x="22" y="284" font-size="14" fill="#D2A8FF">Hugging Face &#183; Mistral &#183; vLLM &#183; Ollama &#183; Keras &#183; LangChain ...</text>
 
