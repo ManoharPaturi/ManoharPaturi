@@ -26,7 +26,7 @@ $ tree -L 1 .
 
 ---
 
-## `$ cat principles.md`
+## $ cat principles.md
 
 > A bug I can't reproduce is a rumor. Repro it on pristine code first — *then* ship the smallest diff that kills it.
 >
@@ -38,7 +38,7 @@ $ tree -L 1 .
 
 ---
 
-## `$ gh pr list --author @me --state=all`
+## $ gh pr list --author @me
 
 **29 pull requests across 15 orgs** — concurrency bugs, a11y gaps, inference & DX fixes, security tooling. Two merged and counting.
 
@@ -105,7 +105,7 @@ $ tree -L 1 .
 
 ---
 
-## `$ cat focus.txt`
+## $ cat focus.txt
 
 - 🧠 **reinforcement learning** — Double/Dueling DQN, NoisyNets, prioritized replay, self-play training
 - 🩺 **biosignal processing** — EEG artifact removal & reconstruction (SVD, ADMM, graph signal processing) on real Emotiv EPOC X recordings
@@ -116,7 +116,7 @@ $ tree -L 1 .
 
 ---
 
-## `$ ls -la ~/projects`
+## $ ls ~/projects
 
 One project per problem domain — each chosen because the interesting part is the underlying subject, not the boilerplate around it.
 
@@ -144,7 +144,7 @@ One project per problem domain — each chosen because the interesting part is t
 
 ---
 
-## `$ which -a`
+## $ which -a
 
 **languages**
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -184,7 +184,7 @@ One project per problem domain — each chosen because the interesting part is t
 
 ---
 
-## `$ cat /dev/random`
+## $ cat /dev/random
 
 - my motion-capture rig is two laptops doing stereo DLT reconstruction in real time
 - I trained a Double DQN to never lose tic-tac-toe — then wrote an unbeatable minimax to prove it; they draw forever
@@ -194,7 +194,7 @@ One project per problem domain — each chosen because the interesting part is t
 
 ---
 
-## `$ git log --stat`
+## $ git log --stat
 
 <div align="center">
   <a href="https://github.com/ManoharPaturi"><img src="assets/stats.svg" alt="stats" /></a>
@@ -212,7 +212,7 @@ One project per problem domain — each chosen because the interesting part is t
 
 ---
 
-## `$ finger manohar`
+## $ finger manohar
 
 📬 **manoharpaturi777@gmail.com** — open to collaborations on interesting problems
 
