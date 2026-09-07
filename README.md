@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/terminal.svg" width="760" alt="terminal — Manohar Paturi" />
+  <img src="assets/terminal.svg" width="828" alt="terminal — Manohar Paturi" />
 </div>
 
 <div align="center">
@@ -38,9 +38,9 @@ $ tree -L 1 .
 
 ---
 
-## $ gh pr list --author @me
+## $ gh pr list --author @me — 29 PRs · 15 orgs · 2 merged
 
-**29 pull requests across 15 orgs** — concurrency bugs, a11y gaps, inference & DX fixes, security tooling. Two merged and counting.
+*concurrency bugs · a11y gaps · inference & DX fixes · security tooling*
 
 <div align="center">
 
@@ -116,9 +116,7 @@ $ tree -L 1 .
 
 ---
 
-## $ ls ~/projects
-
-One project per problem domain — each chosen because the interesting part is the underlying subject, not the boilerplate around it.
+## $ ls ~/projects — one per domain
 
 | domain | project | what's under the hood |
 |--------|---------|----------------------|
@@ -129,7 +127,7 @@ One project per problem domain — each chosen because the interesting part is t
 | 🧬 **graph theory · bioinformatics** | [**T1D protein network**](https://github.com/ManoharPaturi/bio-analysis) | Degree / betweenness / closeness centrality over the Type-1-Diabetes protein interactome from STRING data — ranks candidate hub genes with NetworkX |
 | 🔌 **computer networks** | [**OSI model simulator**](https://github.com/ManoharPaturi/OSI-Model-Stimulation-in-python) | Five networked processes (clients, switch, router, server) passing real socket traffic through per-layer encapsulation/decapsulation |
 | 🖥️ **systems programming** | [**File manager on raw syscalls**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C) | Dual-pane GTK3 file manager where listing, copy, recursive delete and zip run directly on POSIX system calls + libzip |
-| 📱 **mobile · Android** | [**projX — OMR evaluation**](https://github.com/ManoharPaturi/projX) | Android-first Flutter app that grades OMR answer sheets **fully offline** — camera capture → on-device OpenCV bubble detection → versioned answer keys → PDF/XLSX marksheets. The sheet layout is authored once in mm and compiles to both the print PDF and the detection grid |
+| 📱 **mobile · Android** | [**projX — OMR evaluation**](https://github.com/ManoharPaturi/projX) | Android-first Flutter app that grades OMR answer sheets **fully offline** — camera → on-device OpenCV bubble detection → versioned answer keys → PDF/XLSX marksheets, all derived from one sheet spec authored in mm |
 | 🌐 **full-stack · client–server** | [**SRMS seating**](https://github.com/ManoharPaturi/Seating-Arrangement-) | Seat & venue reservation built twice over one shared domain model — a Java Swing desktop client and a Spring REST API, both against MySQL persistence |
 
 <details>
@@ -197,9 +195,9 @@ One project per problem domain — each chosen because the interesting part is t
 ## $ git log --stat
 
 <div align="center">
-  <a href="https://github.com/ManoharPaturi"><img src="assets/stats.svg" alt="stats" /></a>
+  <a href="https://github.com/ManoharPaturi"><img src="assets/stats.svg" width="400" alt="stats" /></a>
   &nbsp;
-  <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="assets/languages.svg" alt="languages" /></a>
+  <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="assets/languages.svg" width="400" alt="languages" /></a>
 </div>
 
 <br/>
