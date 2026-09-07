@@ -28,13 +28,13 @@ $ tree -L 1 .
 
 ## $ cat principles.md
 
-> A bug I can't reproduce is a rumor. Repro it on pristine code first — *then* ship the smallest diff that kills it.
+> Never trust one camera to tell you where anything is — triangulate.
 >
-> Small diffs open big doors. A three-line fix can land you inside an 80k-star codebase.
+> Noise isn't garbage, it just lives in the wrong subspace. Separate it, don't delete it.
 >
-> Trust verified code, not clout.
+> Read the paper, then build it from scratch — the trick hides in what a library call would skip.
 >
-> Read the issue twice. Claim it once. Ship within the hour.
+> Author the spec once, in millimetres, and let everything else compile from it.
 
 ---
 
