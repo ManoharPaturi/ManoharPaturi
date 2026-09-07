@@ -28,13 +28,13 @@ $ tree -L 1 .
 
 ## $ cat principles.md
 
-> Never trust one camera to tell you where anything is — triangulate.
+> Build it from scratch at least once — the magic disappears, the understanding stays.
 >
-> Noise isn't garbage, it just lives in the wrong subspace. Separate it, don't delete it.
+> If you can't reproduce it, you don't understand it yet.
 >
-> Read the paper, then build it from scratch — the trick hides in what a library call would skip.
+> Real data over clean examples — messy input teaches what tutorials hide.
 >
-> Author the spec once, in millimetres, and let everything else compile from it.
+> Know what's underneath your abstractions. They all leak eventually.
 
 ---
 
