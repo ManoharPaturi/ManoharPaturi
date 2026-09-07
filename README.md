@@ -17,9 +17,21 @@
 
 ---
 
-## 🏆 Open Source Scoreboard
+## `$ cat principles.md`
 
-I contribute fixes and features to production open source maintained by big orgs — **27+ PRs across 15 orgs** so far: concurrency bugs, a11y gaps, inference/DX fixes, security tooling. Two merged and counting.
+> A bug I can't reproduce is a rumor. Repro it on pristine code first — *then* ship the smallest diff that kills it.
+
+> Small diffs open big doors. A three-line fix can land you inside an 80k-star codebase.
+
+> Trust verified code, not clout.
+
+> Read the issue twice. Claim it once. Ship within the hour.
+
+---
+
+## `$ gh pr list --author @me --state=all`
+
+The scoreboard — **27+ pull requests across 15 orgs**: concurrency bugs, a11y gaps, inference & DX fixes, security tooling. Two merged and counting.
 
 <div align="center">
 
@@ -41,11 +53,11 @@ I contribute fixes and features to production open source maintained by big orgs
 
 </div>
 
-### Highlights
+### highlights
 
-| Where | What I shipped | PR | |
+| where | what I shipped | PR | |
 |-------|----------------|----|-|
-| **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — went through full review loop with Meta's design-system team | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
+| **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — went through the full review loop with Meta's design-system team | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
 | **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟢 open |
 | **Meta** · astryx | 44px touch-target floor for `SegmentedControlItem` on coarse pointers | [#6084](https://github.com/facebook/astryx/pull/6084) | 🟢 open |
 | **Meta** · astryx | scope the 16px input font floor to iOS only | [#6085](https://github.com/facebook/astryx/pull/6085) | 🟢 open |
@@ -63,7 +75,7 @@ I contribute fixes and features to production open source maintained by big orgs
 <details>
 <summary><b>…and the rest of the board</b> (transformers, weaviate, mujoco, datasets, mistral-common, aws-cdk, lm-eval-harness)</summary>
 
-| Where | What I shipped | PR | |
+| where | what I shipped | PR | |
 |-------|----------------|----|-|
 | [huggingface/transformers](https://github.com/huggingface/transformers) | skip the symlinked hub-cache test on platforms that can't create symlinks | [#48530](https://github.com/huggingface/transformers/pull/48530) | 🟢 open |
 | [weaviate/weaviate](https://github.com/weaviate/weaviate) | fix `object_count` Prometheus help text (copy-pasted from `async_operations_running`) | [#12951](https://github.com/weaviate/weaviate/pull/12951) | 🟢 open |
@@ -84,22 +96,22 @@ I contribute fixes and features to production open source maintained by big orgs
 
 ---
 
-## 🔬 What I actually do
+## `$ cat focus.txt`
 
-- 🧠 **Reinforcement learning** — Double/Dueling DQN, NoisyNets, prioritized replay, self-play training
-- 🩺 **Biosignal processing** — EEG artifact removal & reconstruction (SVD, ADMM, graph signal processing) on real Emotiv EPOC X recordings
-- 🎥 **Markerless motion capture** — MediaPipe pose → stereo DLT triangulation → kinematics → C3D/BVH exports, live 3D dashboards
+- 🧠 **reinforcement learning** — Double/Dueling DQN, NoisyNets, prioritized replay, self-play training
+- 🩺 **biosignal processing** — EEG artifact removal & reconstruction (SVD, ADMM, graph signal processing) on real Emotiv EPOC X recordings
+- 🎥 **markerless motion capture** — MediaPipe pose → stereo DLT triangulation → kinematics → C3D/BVH exports, live 3D dashboards
 - 📱 **Android · Flutter** — offline-first mobile apps with on-device OpenCV; my OMR grader never needs a server
-- 🌐 **Full-stack** — React + Go platforms, FastAPI + React/Three.js app UIs, Spring REST backends over MySQL
-- 🖥️ **Systems** — POSIX-level C, GTK, raw syscalls
+- 🌐 **full-stack** — React + Go platforms, FastAPI + React/Three.js app UIs, Spring REST backends over MySQL
+- 🖥️ **systems** — POSIX-level C, GTK, raw syscalls
 
 ---
 
-## 🚀 Projects I'm proud of
+## `$ ls -la ~/projects`
 
 One project per problem domain — each chosen because the interesting part is the underlying subject, not the boilerplate around it.
 
-| Domain | Project | What's under the hood |
+| domain | project | what's under the hood |
 |--------|---------|----------------------|
 | 🧠 **reinforcement learning** | [**Tic-Tac-Toe × Double DQN**](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL) | Double Q-learning targets (overestimation bias fix) + dueling value/advantage streams + NoisyNet exploration + prioritized replay — every trick implemented from its paper, trained purely by self-play |
 | ⚡ **dynamical systems** | [**DMD power oscillations**](https://github.com/ManoharPaturi/dmd-) | Regularized Dynamic Mode Decomposition on 29-generator PMU recordings — recovers oscillation-mode frequency, damping ratio and generator participation factors |
@@ -121,13 +133,13 @@ One project per problem domain — each chosen because the interesting part is t
 
 </details>
 
-> 🔨 Currently building (private): **SchoolMate** — a school-management platform (React + Go + SQLite) that pairs with projX.
+> 🔨 currently building (private): **SchoolMate** — a school-management platform (React + Go + SQLite) that pairs with projX.
 
 ---
 
-## 🧰 Toolbox
+## `$ which -a`
 
-**Languages**
+**languages**
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
@@ -137,7 +149,7 @@ One project per problem domain — each chosen because the interesting part is t
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/-MATLAB-E16737?style=flat-square)
 
-**Apps & frameworks**
+**apps & frameworks**
 ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![React](https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -152,7 +164,7 @@ One project per problem domain — each chosen because the interesting part is t
 ![NetworkX](https://img.shields.io/badge/-NetworkX-2B7ABC?style=flat-square)
 ![EasyMocap/SMPL](https://img.shields.io/badge/-EasyMocap%20%2F%20SMPL-444444?style=flat-square)
 
-**Infra & data**
+**infra & data**
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
@@ -165,7 +177,40 @@ One project per problem domain — each chosen because the interesting part is t
 
 ---
 
-## 📈
+## `$ history | tail -6`
+
+| when | what happened |
+|------|---------------|
+| `2024.12` | first repo pushed — then straight into the deep end: GTK file manager on raw POSIX syscalls |
+| `2025` | the coursework core — self-play Double DQN, OSI simulator on real sockets, DMD on power-grid data, PPI network analysis, SRMS client/server |
+| `2026.01 → 03` | biosignals & mocap era — SVD EEG denoising on real recordings, VS7.1 dual-laptop stereo capture, SMPL body fitting |
+| `2026.08` | **mocapX1** — the whole capture-to-C3D pipeline consolidated into one repo |
+| `2026.09` | OSS campaign — 27+ PRs across 15 orgs; first **Meta** merge (astryx #6037) + **LangChain** #40211 |
+| `next` | projX v1 + SchoolMate · hunting Summer 2027 research internships |
+
+---
+
+## `$ uptime`
+
+- 📍 **where** — 3rd-year B.Tech CSE(AI) @ Amrita Coimbatore, class of 2028
+- 🔨 **building** — SchoolMate (React + Go + SQLite) · projX capture presets
+- 🏹 **in review queues** — five PRs @ Meta astryx · flagship scheduler fix @ deepset/haystack
+- 🎯 **hunting** — Summer 2027 AI/ML research internships
+- 📚 **reading** — Koopman-operator methods · EEG source reconstruction
+
+---
+
+## `$ cat /dev/random`
+
+- my motion-capture lab is two laptops, a phone tripod and a suspicious amount of tape
+- I trained a Double DQN to never lose tic-tac-toe — then wrote a minimax player to prove it; they draw forever
+- projX grades NEET-density OMR sheets (180 questions, 4 columns) from a plain 12 MP phone camera, fully offline
+- I've shipped fixes into repos with more stars than I have followers — working on flipping that ratio too
+- the EEG denoisers run on real Emotiv EPOC X recordings, not textbook CSVs
+
+---
+
+## `$ git log --stat`
 
 <div align="center">
   <a href="https://github.com/ManoharPaturi"><img src="assets/stats.svg" alt="stats" /></a>
@@ -173,16 +218,26 @@ One project per problem domain — each chosen because the interesting part is t
   <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="assets/languages.svg" alt="languages" /></a>
 </div>
 
-<p align="center"><sub>cards are generated by <a href="https://github.com/ManoharPaturi/ManoharPaturi/blob/main/scripts/gen_stats.py"><code>scripts/gen_stats.py</code></a> — a tiny GitHub Action hits the GitHub API daily and rewrites these SVGs. No third-party card service involved.</sub></p>
+<div align="center">
+  <a href="https://github.com/ManoharPaturi"><img src="assets/heatmap.svg" alt="contribution heatmap — last 12 months" /></a>
+</div>
+
+<p align="center"><sub>everything above is generated by <a href="https://github.com/ManoharPaturi/ManoharPaturi/blob/main/scripts/gen_stats.py"><code>scripts/gen_stats.py</code></a> — a tiny GitHub Action re-runs it against the GitHub API daily and rewrites the SVGs in place. No third-party card service, no broken images, no rate limits.</sub></p>
 
 ---
 
-<div align="center">
+## `$ finger manohar`
 
-📬 **manoharpaturi777@gmail.com** — open to research internships (AI/ML, Summer 2027) and interesting OSS collabs
+📬 **manoharpaturi777@gmail.com** — open to research internships (AI/ML, Summer 2027), OSS collaborations and interesting problems
+
+<div align="center">
 
 <a href="mailto:manoharpaturi777@gmail.com"><img src="https://img.shields.io/badge/email%20me-manoharpaturi777-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="email"/></a>
 &nbsp;
 <a href="https://github.com/ManoharPaturi"><img src="https://img.shields.io/badge/-ManoharPaturi-181717?style=flat-square&logo=github&logoColor=white" alt="github"/></a>
 
 </div>
+
+<br/>
+
+<div align="center"><sub>$ exit 👋</sub></div>
