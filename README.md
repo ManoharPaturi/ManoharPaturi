@@ -114,6 +114,37 @@ I contribute the small, sharp improvements that make other people’s software b
 
 </div>
 
+## PR contributions
+
+<table>
+  <tr>
+    <td width="18%"><sub>MERGED</sub><br/><b>mistral-common</b></td>
+    <td width="62%">Documentation correction for the experimental usage guide.</td>
+    <td width="20%" align="right"><a href="https://github.com/mistralai/mistral-common/pull/306">PR #306 ↗</a></td>
+  </tr>
+  <tr>
+    <td><sub>MERGED</sub><br/><b>MuJoCo</b></td>
+    <td>Documentation accuracy fixes for a physics-engine reference.</td>
+    <td align="right"><a href="https://github.com/google-deepmind/mujoco/pull/3550">PR #3550 ↗</a></td>
+  </tr>
+  <tr>
+    <td><sub>ACTIVE</sub><br/><b>AstryX</b></td>
+    <td>IME-safe handling for <code>TextInput.onEnter</code> conversion commits.</td>
+    <td align="right"><a href="https://github.com/facebook/astryx/pull/6083">PR #6083 ↗</a></td>
+  </tr>
+  <tr>
+    <td><sub>ACTIVE</sub><br/><b>NVIDIA NeMo</b></td>
+    <td>Developer-experience fixes across the Run and DataDesigner toolchain.</td>
+    <td align="right"><a href="https://github.com/NVIDIA-NeMo/Run/pulls?q=author%3AManoharPaturi">View work ↗</a></td>
+  </tr>
+</table>
+
+<div align="center">
+
+<sub>Selected recent work · <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi">open the full contribution ledger →</a></sub>
+
+</div>
+
 <div align="center">
 
 <br/>
