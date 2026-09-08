@@ -160,7 +160,7 @@ def langs_svg(top, total):
 def now_svg(live):
     repo, number = live["review"]
     rows = [
-        ("live review", f"{repo} #{number}"),
+        ("latest review", f"{repo} #{number}"),
         ("7-day signal", f"{live['week']} contributions"),
         ("public systems", f"{live['systems']}"),
         ("merged upstream", f"{live['merged']} PRs"),
@@ -169,12 +169,12 @@ def now_svg(live):
     y = 65
     for label, value in rows:
         body.append(
-            f'  <text x="18" y="{y}" font-size="12.5" fill="{MUTED}">{label}</text>\n'
-            f'  <text x="482" y="{y}" font-size="12.5" text-anchor="end" fill="{TEXT}">{value}</text>\n'
+            f'  <text x="18" y="{y}" font-size="13" fill="{MUTED}">{label}</text>\n'
+            f'  <text x="342" y="{y}" font-size="13" text-anchor="end" fill="{TEXT}">{value}</text>\n'
         )
         y += 30
     body.append(f'  <text x="18" y="224" font-size="10" fill="{MUTED}">updated {live["updated"]}</text>\n')
-    return card(500, 240, "NOW / MISSION FEED", "".join(body))
+    return card(360, 240, "NOW / MISSION FEED", "".join(body))
 
 
 def main():
