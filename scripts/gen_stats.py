@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate assets/stats.svg and assets/languages.svg from the GitHub API.
+"""Generate the profile telemetry SVGs from the GitHub API.
 
 Runs locally (GH_TOKEN env) and inside .github/workflows/stats.yml.
 Uses only the stdlib so no pip install is needed anywhere.
@@ -7,7 +7,7 @@ Uses only the stdlib so no pip install is needed anywhere.
 import json
 import os
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from urllib.parse import quote
 
 USER = "ManoharPaturi"
@@ -45,6 +45,16 @@ def search_count(q):
     return call(f"{API}/search/issues?per_page=1&q={quote(q)}")["total_count"]
 
 
+def latest_pr():
+    result = call(
+        f"{API}/search/issues?per_page=1&sort=updated&order=desc"
+        f"&q={quote(f'is:pr author:{USER}')}"
+    )
+    item = result["items"][0]
+    repo = item["repository_url"].rsplit("repos/", 1)[1]
+    return repo, item["number"]
+
+
 def collect():
     user = call(f"{API}/users/{USER}")
     repos = call(f"{API}/users/{USER}/repos?per_page=100&type=owner")
@@ -78,6 +88,13 @@ def collect():
     prs = search_count(f"is:pr author:{USER}")
     merged = search_count(f"is:pr author:{USER} is:merged")
     issues = search_count(f"is:issue author:{USER}")
+    week_cutoff = (now - timedelta(days=7)).date().isoformat()
+    week_contributions = sum(
+        day["contributionCount"]
+        for week in cal["weeks"]
+        for day in week["contributionDays"]
+        if day["date"] >= week_cutoff
+    )
 
     rows = [
         ("total stars", f"{stars:,}"),
@@ -89,7 +106,14 @@ def collect():
         ("issues opened", f"{issues}"),
         ("followers", f"{user['followers']}"),
     ]
-    return rows, top_langs, total, cal
+    live = {
+        "review": latest_pr(),
+        "week": week_contributions,
+        "systems": user["public_repos"],
+        "merged": merged,
+        "updated": now.strftime("%Y-%m-%d %H:%M UTC"),
+    }
+    return rows, top_langs, total, cal, live
 
 
 def card(w, h, title, body):
@@ -133,16 +157,39 @@ def langs_svg(top, total):
     return card(500, h, "$ gh linguist --breakdown", "".join(body))
 
 
+def now_svg(live):
+    repo, number = live["review"]
+    rows = [
+        ("live review", f"{repo} #{number}"),
+        ("7-day signal", f"{live['week']} contributions"),
+        ("public systems", f"{live['systems']}"),
+        ("merged upstream", f"{live['merged']} PRs"),
+    ]
+    body = []
+    y = 65
+    for label, value in rows:
+        body.append(
+            f'  <text x="18" y="{y}" font-size="12.5" fill="{MUTED}">{label}</text>\n'
+            f'  <text x="482" y="{y}" font-size="12.5" text-anchor="end" fill="{TEXT}">{value}</text>\n'
+        )
+        y += 30
+    body.append(f'  <text x="18" y="224" font-size="10" fill="{MUTED}">updated {live["updated"]}</text>\n')
+    return card(500, 240, "NOW / MISSION FEED", "".join(body))
+
+
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
-    rows, top, total, cal = collect()
+    rows, top, total, cal, live = collect()
     with open(os.path.join(OUT_DIR, "stats.svg"), "w") as f:
         f.write(stats_svg(rows))
     with open(os.path.join(OUT_DIR, "languages.svg"), "w") as f:
         f.write(langs_svg(top, total))
+    with open(os.path.join(OUT_DIR, "now.svg"), "w") as f:
+        f.write(now_svg(live))
     print("stats rows:", rows)
     print("langs:", top)
     print(f"contributions (12 mo): {cal['totalContributions']:,}")
+    print("mission feed:", live)
 
 
 if __name__ == "__main__":

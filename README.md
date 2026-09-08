@@ -1,69 +1,101 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="Manohar Paturi — research engineer for intelligent systems" />
+<img src="assets/console.svg" width="100%" alt="Manohar Paturi’s intelligent-systems field console" />
 
 </div>
 
-> **I build intelligent systems that have to agree with the world outside the notebook.**
->
-> AI Engineering undergraduate at **Amrita Vishwa Vidyapeetham**, working across reinforcement learning, motion capture, computer vision, and EEG biosignals. My work starts with a question, continues through imperfect real-world data, and ends in something people can run.
-
-<div align="center">
-
-<img src="assets/signal-map.svg" width="100%" alt="Manohar's build process: question, instrument, model, deploy" />
-
-</div>
-
-## Selected work
+## Mission brief
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharPaturi/mocap">mocapX1 ↗</a></h3>
-      <sub>MARKERLESS MOTION INTELLIGENCE</sub>
-      <br/><br/>
-      MediaPipe pose, stereo DLT triangulation, filtering, joint kinematics, live visualization, and motion-capture exports in one offline-first pipeline.
-      <br/><br/>
-      <code>Python</code> <code>FastAPI</code> <code>React</code> <code>Three.js</code>
+    <td width="38%" valign="top">
+      <img src="assets/now.svg" width="100%" alt="Current GitHub mission feed" />
     </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL">Self-play RL ↗</a></h3>
-      <sub>DECISION SYSTEMS FROM FIRST PRINCIPLES</sub>
-      <br/><br/>
-      A Double/Dueling DQN agent with NoisyNet exploration and prioritized replay, trained by self-play and compared against a minimax baseline.
-      <br/><br/>
-      <code>Python</code> <code>PyTorch</code> <code>Reinforcement learning</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-">EEG denoising ↗</a></h3>
-      <sub>BIOSIGNAL RECOVERY</sub>
-      <br/><br/>
-      SVD-based EOG artifact removal for real 14-channel Emotiv EPOC X recordings—separating measurement artifacts from neural structure.
-      <br/><br/>
-      <code>MATLAB</code> <code>SVD</code> <code>Signal processing</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharPaturi/projX">projX ↗</a></h3>
-      <sub>ON-DEVICE COMPUTER VISION</sub>
-      <br/><br/>
-      A mobile OMR evaluation workflow that captures sheets, detects bubbles with OpenCV, matches answer keys, and exports results without a server round trip.
-      <br/><br/>
-      <code>Flutter</code> <code>Dart</code> <code>OpenCV</code>
+    <td width="62%" valign="top">
+      <h3>Operator brief</h3>
+      <p>I’m <strong>Manohar Paturi</strong>, an AI Engineering undergraduate at <strong>Amrita Vishwa Vidyapeetham</strong>. I don’t want models that only behave after the data has been politely cleaned. I build systems that meet cameras, electrodes, users, and imperfect inputs as they actually are.</p>
+      <p><strong>Operating principles</strong></p>
+      <ul>
+        <li><strong>Instrument first.</strong> Understand what the sensor measures before choosing the model.</li>
+        <li><strong>Keep a boring baseline.</strong> If minimax beats the fancy agent, the fancy agent hasn’t won.</li>
+        <li><strong>Preserve failure evidence.</strong> The bad recordings and failed runs are part of the result.</li>
+        <li><strong>Ship something runnable.</strong> A notebook is a lab bench, not the finished instrument.</li>
+      </ul>
     </td>
   </tr>
 </table>
 
+## Case files
+
+<details open>
+<summary><b>CASE 01 · MOTION</b> — mocapX1</summary>
+
+**Friction:** useful motion capture still looks like a laboratory setup: special suits, special cameras, special rooms.
+
+**Approach:** connect two ordinary views through MediaPipe pose landmarks, triangulate with stereo DLT, filter the trajectory, and derive joint kinematics instead of stopping at landmarks.
+
+**Proof:** an offline-first pipeline with live 3D inspection and motion-capture export formats.
+
+<div><code>Python</code> <code>FastAPI</code> <code>React</code> <code>Three.js</code> <code>OpenCV</code></div>
+
+[Open case file ↗](https://github.com/ManoharPaturi/mocap)
+
+</details>
+
+<details open>
+<summary><b>CASE 02 · DECISIONS</b> — self-play reinforcement learning</summary>
+
+**Friction:** “the agent learned something” is not evidence unless the learning is tested against a known-optimal opponent.
+
+**Approach:** train a Double/Dueling DQN agent with NoisyNet exploration and prioritized experience replay, then confront it with self-play pressure and a minimax baseline.
+
+**Proof:** the system exposes both the learned policy and the sanity check—not just the exciting score.
+
+<div><code>Python</code> <code>PyTorch</code> <code>Reinforcement learning</code></div>
+
+[Open case file ↗](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL)
+
+</details>
+
+<details open>
+<summary><b>CASE 03 · BIOSIGNALS</b> — EEG artifact recovery</summary>
+
+**Friction:** real EEG is eye movement, muscle activity, electrode noise, and—somewhere in there—neural signal.
+
+**Approach:** use SVD to separate low-rank artifact structure from the underlying 14-channel Emotiv EPOC X recordings rather than pretending the acquisition was sterile.
+
+**Proof:** denoising treated as signal recovery, with the assumptions made visible.
+
+<div><code>MATLAB</code> <code>SVD</code> <code>Signal processing</code></div>
+
+[Open case file ↗](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-)
+
+</details>
+
+<details open>
+<summary><b>CASE 04 · ON-DEVICE VISION</b> — projX</summary>
+
+**Friction:** document evaluation often becomes “upload everything to a server and wait.”
+
+**Approach:** keep capture, bubble detection, answer-key comparison, and result export on the mobile device.
+
+**Proof:** a complete workflow that works without a server round trip.
+
+<div><code>Flutter</code> <code>Dart</code> <code>OpenCV</code></div>
+
+[Open case file ↗](https://github.com/ManoharPaturi/projX)
+
+</details>
+
 <div align="center">
 
-[Explore all repositories →](https://github.com/ManoharPaturi?tab=repositories)
+[Open the full repository cabinet →](https://github.com/ManoharPaturi?tab=repositories)
 
 </div>
 
-## Upstream contributions
+## Upstream ship log
 
-I look for the place where a small, precise change removes a real developer paper-cut—then add the regression test or documentation correction that keeps it fixed.
+I contribute where a small, precise change removes a real developer paper-cut—then add the regression test or documentation correction that keeps it fixed.
 
 <table>
   <tr>
@@ -88,25 +120,32 @@ I look for the place where a small, precise change removes a real developer pape
   </tr>
 </table>
 
+<details>
+<summary><b>ACTIVE REVIEW QUEUE</b></summary>
+
+- [NeMo Run — remove stray CLI debug output](https://github.com/NVIDIA-NeMo/Run/pull/611)
+- [NeMo DataDesigner — tolerate literal braces in prompts](https://github.com/NVIDIA-NeMo/DataDesigner/pull/923)
+- [vLLM — make ROCm <code>numactl</code> binding real](https://github.com/vllm-project/vllm/pull/55433)
+- [Weaviate — correct <code>object_count</code> metric help text](https://github.com/weaviate/weaviate/pull/12951)
+- [Claude Code Action — skip malformed buffered comment lines](https://github.com/anthropics/claude-code-action/pull/1797)
+
+[Explore every upstream pull request →](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi)
+
+</details>
+
+## Instrument rack
+
 <div align="center">
 
-<sub>Active reviews currently cover NeMo, vLLM, Weaviate, and Claude Code Action · <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi">open the full contribution ledger →</a></sub>
+<img src="assets/rack.svg" width="100%" alt="Manohar’s instrument rack: sensing, learning, operating, and delivery tools" />
 
 </div>
 
-## Toolkit
+## Telemetry
 
 <div align="center">
 
-<img src="assets/toolkit.svg" width="100%" alt="Manohar's toolkit: Python, PyTorch, TensorFlow, OpenCV, MATLAB, C, C++, Java, FastAPI, Docker, Linux, Flutter, Dart, TypeScript, React, Three.js, Git, GitHub Actions" />
-
-</div>
-
-## Live signal
-
-<div align="center">
-
-<a href="https://github.com/ManoharPaturi"><img src="assets/stats.svg" width="410" alt="GitHub profile statistics" /></a>
+<a href="https://github.com/ManoharPaturi"><img src="assets/stats.svg" width="410" alt="GitHub profile telemetry" /></a>
 &nbsp;
 <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="assets/languages.svg" width="410" alt="Language breakdown" /></a>
 
@@ -116,10 +155,10 @@ I look for the place where a small, precise change removes a real developer pape
 
 <br/>
 
-### Let’s build something that has to work in the real world.
+### Bring me a signal that refuses to behave.
 
 [Email](mailto:manoharpaturi777@gmail.com) · [LinkedIn](https://linkedin.com/in/manoharpaturi) · [Repositories](https://github.com/ManoharPaturi?tab=repositories)
 
-<sub>A living research log — updated nightly with versioned, self-contained graphics.</sub>
+<sub>A self-updating field log · telemetry regenerated nightly from public GitHub data.</sub>
 
 </div>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" fill="none">
+  <title>Manohar Paturi intelligent systems field console</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1120" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#04070D"/><stop offset=".48" stop-color="#081226"/><stop offset="1" stop-color="#120A24"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#61D6FF"/><stop offset=".55" stop-color="#A78BFA"/><stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="620" y1="50" x2="1040" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1B2B" stop-opacity=".96"/><stop offset="1" stop-color="#160F28" stop-opacity=".9"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#7DD3FC" stroke-opacity=".05"/>
+    </pattern>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <rect width="1120" height="500" rx="24" fill="url(#bg)"/>
+  <rect width="1120" height="500" rx="24" fill="url(#grid)"/>
+  <path d="M0 375C128 336 236 428 412 381C598 331 700 374 835 321C943 279 1022 260 1120 279V500H0V375Z" fill="#04070F" opacity=".82"/>
+  <path d="M0 375C128 336 236 428 412 381C598 331 700 374 835 321C943 279 1022 260 1120 279" stroke="url(#accent)" stroke-width="1.6"/>
+
+  <g transform="translate(54 52)">
+    <rect width="188" height="31" rx="15" fill="#071525" stroke="#2C647D"/>
+    <circle cx="18" cy="15.5" r="5" fill="#4ADE80">
+      <animate attributeName="r" values="5;7;5" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;.45;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="35" y="20" fill="#BBF7D0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="1.4">FIELD MODE // LIVE</text>
+
+    <text y="101" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="-2.2">MANOHAR</text>
+    <text y="156" fill="url(#accent)" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="-2.2">PATURI</text>
+    <rect y="181" width="52" height="3" rx="1.5" fill="#61D6FF"/>
+    <text y="219" fill="#C4D3E8" font-family="Arial, Helvetica, sans-serif" font-size="16">Intelligent-systems research console</text>
+    <text y="245" fill="#71839F" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">motion · decisions · biosignals · on-device vision</text>
+
+    <g transform="translate(0 281)" font-family="ui-monospace, Menlo, Consolas, monospace">
+      <rect width="132" height="31" rx="8" fill="#081B2B" stroke="#2F6280"/><text x="14" y="20" fill="#8CDFFF" font-size="10" font-weight="700">NOISY INPUT</text>
+      <rect x="143" width="132" height="31" rx="8" fill="#151231" stroke="#4B4180"/><text x="157" y="20" fill="#CAB7FF" font-size="10" font-weight="700">RUNNABLE PROOF</text>
+      <rect x="286" width="112" height="31" rx="8" fill="#0D2622" stroke="#2C655C"/><text x="300" y="20" fill="#9DE7D8" font-size="10" font-weight="700">UPSTREAM FIX</text>
+    </g>
+  </g>
+
+  <g transform="translate(578 62)">
+    <rect width="490" height="293" rx="18" fill="url(#panel)" stroke="#374B66"/>
+    <rect x="18" y="18" width="454" height="257" rx="12" fill="#060B14" stroke="#26364D"/>
+    <text x="42" y="50" fill="#7A94B4" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" font-weight="700" letter-spacing="1.4">ACTIVE CHANNELS</text>
+    <path d="M42 64H448" stroke="#273850"/>
+
+    <g transform="translate(42 86)" font-family="ui-monospace, Menlo, Consolas, monospace">
+      <circle cx="6" cy="7" r="4.5" fill="#61D6FF"/><text x="23" y="11" fill="#E8F4FF" font-size="13.5" font-weight="700">01 / MOTION</text><text x="23" y="31" fill="#71839F" font-size="11">stereo cameras → pose → DLT → kinematics</text>
+      <path d="M0 50H416" stroke="#22344B"/>
+      <circle cx="6" cy="72" r="4.5" fill="#A78BFA"/><text x="23" y="76" fill="#E8F4FF" font-size="13.5" font-weight="700">02 / DECISION</text><text x="23" y="96" fill="#71839F" font-size="11">self-play DQN · noisy rewards · baselines</text>
+      <path d="M0 115H416" stroke="#22344B"/>
+      <circle cx="6" cy="137" r="4.5" fill="#34D399"/><text x="23" y="141" fill="#E8F4FF" font-size="13.5" font-weight="700">03 / BIOSIGNAL</text><text x="23" y="161" fill="#71839F" font-size="11">EEG artifacts · SVD separation · validation</text>
+      <path d="M0 180H416" stroke="#22344B"/>
+      <circle cx="6" cy="202" r="4.5" fill="#F472B6"/><text x="23" y="206" fill="#E8F4FF" font-size="13.5" font-weight="700">04 / VISION</text><text x="23" y="226" fill="#71839F" font-size="11">on-device capture · OpenCV detection · export</text>
+    </g>
+  </g>
+
+  <g transform="translate(54 403)">
+    <rect x="-14" y="-23" width="1094" height="78" fill="#61D6FF" opacity=".035" filter="url(#soft)"/>
+    <path d="M0 23C45 23 45 -10 90 -10S135 48 180 48 225 -18 270 -18 315 34 360 34 405 -24 450 -24 495 41 540 41 585 -18 630 -18 675 47 720 47 765 -21 810 -21 855 35 900 35 945 -12 990 -12 1035 27 1066 27" stroke="#61D6FF" stroke-width="2" stroke-linecap="round" stroke-dasharray="14 10">
+      <animate attributeName="stroke-dashoffset" values="0;-240" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 30C52 30 52 3 104 3s52 45 104 45 52-44 104-44 52 39 104 39 52-34 104-34 52 43 104 43 52-34 104-34 52 40 104 40 52-28 104-28 52 31 104 31 52-19 104-19" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity=".65" stroke-dasharray="6 12">
+      <animate attributeName="stroke-dashoffset" values="0;180" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+    <rect x="0" y="-18" width="2" height="76" fill="#F8FAFC" opacity=".65">
+      <animate attributeName="x" values="0;1066;0" dur="14s" repeatCount="indefinite"/>
+    </rect>
+    <text y="68" fill="#65758D" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10">SIGNAL ACQUISITION</text>
+    <text x="1066" y="68" text-anchor="end" fill="#65758D" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10">RENDERED AS DATA</text>
+  </g>
+</svg>
