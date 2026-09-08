@@ -1,0 +1,75 @@
+<svg width="1120" height="460" viewBox="0 0 1120 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="0" x2="1080" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080D18"/>
+      <stop offset="0.52" stop-color="#0D1530"/>
+      <stop offset="1" stop-color="#180E2D"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#61D6FF" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#B784FF" stop-opacity=".15"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="730" y1="90" x2="1040" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1BD1FF" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity=".04"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity=".38"/>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#A9C5FF" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+
+  <rect width="1120" height="460" rx="22" fill="url(#bg)"/>
+  <rect width="1120" height="460" rx="22" fill="url(#grid)"/>
+  <path d="M0 378C160 338 260 440 442 384C642 322 719 375 847 316C935 276 1013 252 1120 270V460H0V378Z" fill="#070B14" fill-opacity=".72"/>
+  <path d="M0 378C160 338 260 440 442 384C642 322 719 375 847 316C935 276 1013 252 1120 270" stroke="url(#line)" stroke-width="1.5"/>
+
+  <g opacity=".72">
+    <circle cx="873" cy="216" r="160" stroke="#79DFFF" stroke-opacity=".16"/>
+    <circle cx="873" cy="216" r="113" stroke="#B784FF" stroke-opacity=".12" stroke-dasharray="4 8"/>
+    <circle cx="873" cy="216" r="63" stroke="#79DFFF" stroke-opacity=".16"/>
+    <circle cx="873" cy="216" r="7" fill="#78DDFF"/>
+    <circle cx="1032" cy="215" r="4" fill="#C89BFF"/>
+    <circle cx="827" cy="112" r="4" fill="#78DDFF"/>
+    <path d="M873 216L1032 215M873 216L827 112M873 216L771 294" stroke="#83DFFF" stroke-opacity=".22"/>
+  </g>
+
+  <g transform="translate(58 58)">
+    <rect width="191" height="30" rx="15" fill="#0D2031" stroke="#3B7795" stroke-opacity=".65"/>
+    <circle cx="17" cy="15" r="4" fill="#42E6A4"/>
+    <text x="31" y="19" fill="#BFEFDB" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">BUILDING IN PUBLIC</text>
+    <text x="0" y="104" fill="#F4F7FF" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" letter-spacing="-1.8">MANOHAR</text>
+    <text x="0" y="159" fill="#8CDFFF" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" letter-spacing="-1.8">PATURI</text>
+    <rect y="187" width="48" height="3" rx="1.5" fill="#66D9FF"/>
+    <text x="0" y="230" fill="#B7C3DA" font-family="Arial, Helvetica, sans-serif" font-size="16">Research engineer for intelligent systems</text>
+    <text x="0" y="256" fill="#71819D" font-family="Arial, Helvetica, sans-serif" font-size="13">AI  /  perception  /  biosignals  /  real-world deployment</text>
+    <g transform="translate(0 296)">
+      <rect width="101" height="30" rx="7" fill="#111E34" stroke="#315377"/>
+      <text x="15" y="20" fill="#9CCEFF" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">RESEARCH</text>
+      <rect x="110" width="75" height="30" rx="7" fill="#151331" stroke="#51457A"/>
+      <text x="125" y="20" fill="#CAB7FF" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">SYSTEMS</text>
+      <rect x="194" width="96" height="30" rx="7" fill="#102B2B" stroke="#2B6562"/>
+      <text x="209" y="20" fill="#9DE7D8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">OPEN SOURCE</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(724 60)">
+    <rect width="337" height="276" rx="16" fill="#091221" fill-opacity=".88" stroke="#385071"/>
+    <rect width="337" height="276" rx="16" fill="url(#glow)"/>
+    <text x="24" y="32" fill="#87A6CB" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">SYSTEM MAP  /  2026</text>
+    <path d="M24 50H313" stroke="#2A3D59"/>
+    <g transform="translate(24 70)">
+      <circle cx="6" cy="7" r="5" fill="#5EDBFF"/><text x="22" y="11" fill="#E8F4FF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Reinforcement learning</text>
+      <text x="22" y="30" fill="#7286A3" font-family="Arial, Helvetica, sans-serif" font-size="11">agents • evaluation • self-play</text>
+      <path d="M0 48H289" stroke="#243750"/>
+      <circle cx="6" cy="68" r="5" fill="#B78CFF"/><text x="22" y="72" fill="#E8F4FF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Motion intelligence</text>
+      <text x="22" y="91" fill="#7286A3" font-family="Arial, Helvetica, sans-serif" font-size="11">stereo vision • kinematics • 3D</text>
+      <path d="M0 109H289" stroke="#243750"/>
+      <circle cx="6" cy="129" r="5" fill="#55E2AD"/><text x="22" y="133" fill="#E8F4FF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Biosignal systems</text>
+      <text x="22" y="152" fill="#7286A3" font-family="Arial, Helvetica, sans-serif" font-size="11">EEG • denoising • real sensors</text>
+    </g>
+  </g>
+  <text x="58" y="425" fill="#52627C" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.8">PAPER → PROTOTYPE → REAL SIGNAL → USABLE SYSTEM</text>
+</svg>
