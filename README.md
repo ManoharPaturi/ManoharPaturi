@@ -2,23 +2,15 @@
 
 <img src="assets/hero.svg" width="100%" alt="Manohar Paturi — research engineer for intelligent systems" />
 
-<br/>
-
-[![Profile signal](https://komarev.com/ghpvc/?username=ManoharPaturi&style=flat-square&color=1B9FC6&label=PROFILE+SIGNAL)](https://github.com/ManoharPaturi)
-[![Open source](https://img.shields.io/badge/UPSTREAM-CONTRIBUTOR-6F5CE7?style=flat-square&logo=git&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi)
-[![Focus](https://img.shields.io/badge/FOCUS-REAL--WORLD%20AI-20AE81?style=flat-square&logo=target&logoColor=white)](https://github.com/ManoharPaturi?tab=repositories)
-
 </div>
-
-<br/>
 
 > **I build intelligent systems that have to agree with the world outside the notebook.**
 >
-> AI Engineering undergraduate at **Amrita Vishwa Vidyapeetham**, working across reinforcement learning, computer vision, motion capture, and EEG biosignals. My default mode is to follow an idea all the way from paper, to prototype, to real and imperfect input data.
+> AI Engineering undergraduate at **Amrita Vishwa Vidyapeetham**, working across reinforcement learning, motion capture, computer vision, and EEG biosignals. My work starts with a question, continues through imperfect real-world data, and ends in something people can run.
 
 <div align="center">
 
-<img src="assets/signal-map.svg" width="100%" alt="Question, instrument, model, deploy" />
+<img src="assets/signal-map.svg" width="100%" alt="Manohar's build process: question, instrument, model, deploy" />
 
 </div>
 
@@ -27,64 +19,78 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/ManoharPaturi/manu_mocap">mocapX1 ↗</a></h3>
+      <h3><a href="https://github.com/ManoharPaturi/mocap">mocapX1 ↗</a></h3>
       <sub>MARKERLESS MOTION INTELLIGENCE</sub>
       <br/><br/>
-      A full offline-first motion-capture pipeline: MediaPipe pose detection, stereo DLT triangulation, filtering, joint kinematics, and production-ready exports.
+      MediaPipe pose, stereo DLT triangulation, filtering, joint kinematics, live visualization, and motion-capture exports in one offline-first pipeline.
       <br/><br/>
-      <code>FastAPI</code> <code>React</code> <code>Three.js</code> <code>OpenCV</code>
+      <code>Python</code> <code>FastAPI</code> <code>React</code> <code>Three.js</code>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL">Self-play RL ↗</a></h3>
-      <sub>AGENTS BUILT FROM FIRST PRINCIPLES</sub>
+      <sub>DECISION SYSTEMS FROM FIRST PRINCIPLES</sub>
       <br/><br/>
-      A Tic-Tac-Toe agent trained through self-play with Double/Dueling DQN, NoisyNet exploration, and prioritized experience replay—paired with a minimax baseline.
+      A Double/Dueling DQN agent with NoisyNet exploration and prioritized replay, trained by self-play and compared against a minimax baseline.
       <br/><br/>
-      <code>PyTorch</code> <code>RL</code> <code>self-play</code>
+      <code>Python</code> <code>PyTorch</code> <code>Reinforcement learning</code>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-">EEG denoising ↗</a></h3>
-      <sub>BIOSIGNALS / LINEAR ALGEBRA</sub>
+      <sub>BIOSIGNAL RECOVERY</sub>
       <br/><br/>
-      SVD-based EOG artifact removal for real 14-channel Emotiv EPOC X recordings: separating noise structure from neural signal without pretending the data is clean.
+      SVD-based EOG artifact removal for real 14-channel Emotiv EPOC X recordings—separating measurement artifacts from neural structure.
       <br/><br/>
-      <code>MATLAB</code> <code>SVD</code> <code>EEG</code>
+      <code>MATLAB</code> <code>SVD</code> <code>Signal processing</code>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManoharPaturi/projX">projX ↗</a></h3>
-      <sub>OFFLINE MOBILE COMPUTER VISION</sub>
+      <sub>ON-DEVICE COMPUTER VISION</sub>
       <br/><br/>
-      A mobile-first OMR evaluation workflow that runs entirely on device: capture, OpenCV bubble detection, answer-key matching, and exportable reports.
+      A mobile OMR evaluation workflow that captures sheets, detects bubbles with OpenCV, matches answer keys, and exports results without a server round trip.
       <br/><br/>
-      <code>Flutter</code> <code>OpenCV</code> <code>on-device</code>
+      <code>Flutter</code> <code>Dart</code> <code>OpenCV</code>
     </td>
   </tr>
 </table>
 
 <div align="center">
 
-[View all systems →](https://github.com/ManoharPaturi?tab=repositories)
+[Explore all repositories →](https://github.com/ManoharPaturi?tab=repositories)
 
 </div>
 
-## Open source field notes
+## Upstream contributions
 
-I contribute the small, sharp improvements that make other people’s software better: fixes, accessibility work, documentation accuracy, and developer experience across AI frameworks, inference tooling, and systems libraries.
+I look for the place where a small, precise change removes a real developer paper-cut—then add the regression test or documentation correction that keeps it fixed.
+
+<table>
+  <tr>
+    <td width="18%" valign="top"><sub>MERGED</sub><br/><b>AstryX</b></td>
+    <td width="62%">Added an <code>elevation</code> prop to <code>ToggleButton</code>.</td>
+    <td width="20%" align="right"><a href="https://github.com/facebook/astryx/pull/6037">PR #6037 ↗</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>MERGED</sub><br/><b>LangChain</b></td>
+    <td>Removed stale parameter and exception documentation from public APIs.</td>
+    <td align="right"><a href="https://github.com/langchain-ai/langchain/pull/40211">PR #40211 ↗</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>MERGED</sub><br/><b>MuJoCo</b></td>
+    <td>Corrected misleading terminology in physics-engine reference docs.</td>
+    <td align="right"><a href="https://github.com/google-deepmind/mujoco/pull/3550">PR #3550 ↗</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><sub>MERGED</sub><br/><b>Mistral AI</b></td>
+    <td>Fixed an error in the experimental usage guide.</td>
+    <td align="right"><a href="https://github.com/mistralai/mistral-common/pull/306">PR #306 ↗</a></td>
+  </tr>
+</table>
 
 <div align="center">
 
-[![Meta](https://img.shields.io/badge/Meta-0866FF?style=for-the-badge&logo=meta&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Afacebook)
-[![Google DeepMind](https://img.shields.io/badge/Google%20DeepMind-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Agoogle-deepmind)
-[![Microsoft](https://img.shields.io/badge/Microsoft-5E5E5E?style=for-the-badge&logo=microsoft&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Amicrosoft)
-[![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=for-the-badge&logo=anthropic&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Aanthropics)
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Ahuggingface)
-[![vLLM](https://img.shields.io/badge/vLLM-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://github.com/vllm-project/vllm/pulls?q=author%3AManoharPaturi)
-
-<br/>
-
-[Explore every upstream contribution →](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi)
+<sub>Active reviews currently cover NeMo, vLLM, Weaviate, and Claude Code Action · <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi">open the full contribution ledger →</a></sub>
 
 </div>
 
@@ -92,7 +98,7 @@ I contribute the small, sharp improvements that make other people’s software b
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,c,cpp,java,dart,ts,pytorch,tensorflow,opencv,flutter,fastapi,react,threejs,docker,linux,git&theme=dark" alt="Python, C, C++, Java, Dart, TypeScript, PyTorch, TensorFlow, OpenCV, Flutter, FastAPI, React, Three.js, Docker, Linux, Git" />
+<img src="assets/toolkit.svg" width="100%" alt="Manohar's toolkit: Python, PyTorch, TensorFlow, OpenCV, MATLAB, C, C++, Java, FastAPI, Docker, Linux, Flutter, Dart, TypeScript, React, Three.js, Git, GitHub Actions" />
 
 </div>
 
@@ -104,45 +110,6 @@ I contribute the small, sharp improvements that make other people’s software b
 &nbsp;
 <a href="https://github.com/ManoharPaturi?tab=repositories"><img src="assets/languages.svg" width="410" alt="Language breakdown" /></a>
 
-<br/><br/>
-
-<img src="assets/heatmap.svg" width="100%" alt="Contribution heatmap" />
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/ManoharPaturi/ManoharPaturi/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution activity animation" />
-
-</div>
-
-## PR contributions
-
-<table>
-  <tr>
-    <td width="18%"><sub>MERGED</sub><br/><b>mistral-common</b></td>
-    <td width="62%">Documentation correction for the experimental usage guide.</td>
-    <td width="20%" align="right"><a href="https://github.com/mistralai/mistral-common/pull/306">PR #306 ↗</a></td>
-  </tr>
-  <tr>
-    <td><sub>MERGED</sub><br/><b>MuJoCo</b></td>
-    <td>Documentation accuracy fixes for a physics-engine reference.</td>
-    <td align="right"><a href="https://github.com/google-deepmind/mujoco/pull/3550">PR #3550 ↗</a></td>
-  </tr>
-  <tr>
-    <td><sub>ACTIVE</sub><br/><b>AstryX</b></td>
-    <td>IME-safe handling for <code>TextInput.onEnter</code> conversion commits.</td>
-    <td align="right"><a href="https://github.com/facebook/astryx/pull/6083">PR #6083 ↗</a></td>
-  </tr>
-  <tr>
-    <td><sub>ACTIVE</sub><br/><b>NVIDIA NeMo</b></td>
-    <td>Developer-experience fixes across the Run and DataDesigner toolchain.</td>
-    <td align="right"><a href="https://github.com/NVIDIA-NeMo/Run/pulls?q=author%3AManoharPaturi">View work ↗</a></td>
-  </tr>
-</table>
-
-<div align="center">
-
-<sub>Selected recent work · <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi">open the full contribution ledger →</a></sub>
-
 </div>
 
 <div align="center">
@@ -151,9 +118,8 @@ I contribute the small, sharp improvements that make other people’s software b
 
 ### Let’s build something that has to work in the real world.
 
-[![Email](https://img.shields.io/badge/EMAIL-MANOHARPATURI777%40GMAIL.COM-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manoharpaturi777@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/manoharpaturi)
+[Email](mailto:manoharpaturi777@gmail.com) · [LinkedIn](https://linkedin.com/in/manoharpaturi) · [Repositories](https://github.com/ManoharPaturi?tab=repositories)
 
-<sub>Designed as a living research log, not a résumé.</sub>
+<sub>A living research log — updated nightly with versioned, self-contained graphics.</sub>
 
 </div>

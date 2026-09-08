@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate assets/stats.svg, assets/languages.svg, assets/heatmap.svg from the GitHub API.
+"""Generate assets/stats.svg and assets/languages.svg from the GitHub API.
 
 Runs locally (GH_TOKEN env) and inside .github/workflows/stats.yml.
 Uses only the stdlib so no pip install is needed anywhere.
@@ -29,9 +29,6 @@ COLORS = {
     "CMake": "#DA3434", "Makefile": "#427819", "Batchfile": "#C1F12E",
     "Swift": "#F05138", "Kotlin": "#A97BFF", "Rust": "#dea584", "R": "#198CE7",
 }
-
-HEAT_LEVELS = ["#161B22", "#0E4429", "#006D32", "#26A641", "#39D353"]
-MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
 def call(url, gql=None):
@@ -136,74 +133,6 @@ def langs_svg(top, total):
     return card(500, h, "$ gh linguist --breakdown", "".join(body))
 
 
-def heatmap_svg(cal):
-    weeks = [w["contributionDays"] for w in cal["weeks"]]
-    max_count = max((d["contributionCount"] for w in weeks for d in w), default=1) or 1
-
-    def level(c):
-        if c == 0:
-            return 0
-        if c <= max_count * 0.25:
-            return 1
-        if c <= max_count * 0.5:
-            return 2
-        if c <= max_count * 0.75:
-            return 3
-        return 4
-
-    flat = [d for w in weeks for d in w]
-    longest = cur = 0
-    for d in flat:
-        cur = cur + 1 if d["contributionCount"] else 0
-        longest = max(longest, cur)
-    scan = flat[:-1] if flat and flat[-1]["contributionCount"] == 0 else flat
-    cur_streak = 0
-    for d in reversed(scan):
-        if d["contributionCount"]:
-            cur_streak += 1
-        else:
-            break
-
-    body = []
-    # month labels (place a label wherever the month changes)
-    prev_m = None
-    for i, w in enumerate(weeks):
-        m = int(w[0]["date"][5:7])
-        if i and m != prev_m:
-            body.append(
-                f'  <text x="{28 + i * 13}" y="46" font-size="9.5" fill="{MUTED}">{MONTHS[m - 1]}</text>\n'
-            )
-        prev_m = m
-    # day labels: Mon / Wed / Fri (rows 1 / 3 / 5, grid rows are Sun..Sat)
-    for row, lab in [(1, "Mon"), (3, "Wed"), (5, "Fri")]:
-        body.append(
-            f'  <text x="24" y="{61 + row * 13}" font-size="9.5" text-anchor="end" fill="{MUTED}">{lab}</text>\n'
-        )
-    # cells
-    for i, w in enumerate(weeks):
-        for j, d in enumerate(w):
-            body.append(
-                f'  <rect x="{28 + i * 13}" y="{52 + j * 13}" width="11" height="11" rx="2.5" '
-                f'fill="{HEAT_LEVELS[level(d["contributionCount"])]}"/>\n'
-            )
-    # footer: totals left, legend right
-    total = cal["totalContributions"]
-    body.append(
-        f'  <text x="18" y="168" font-size="11" fill="{TEXT}">{total:,} contributions</text>\n'
-        f'  <text x="150" y="168" font-size="11" fill="{MUTED}">current streak {cur_streak}d</text>\n'
-        f'  <text x="290" y="168" font-size="11" fill="{MUTED}">longest {longest}d</text>\n'
-    )
-    lx = 470
-    body.append(f'  <text x="{lx}" y="168" font-size="9.5" fill="{MUTED}">less</text>\n')
-    for k, c in enumerate(HEAT_LEVELS):
-        body.append(f'  <rect x="{lx + 30 + k * 13}" y="159" width="10" height="10" rx="2" fill="{c}"/>\n')
-    body.append(f'  <text x="{lx + 30 + 5 * 13 + 4}" y="168" font-size="9.5" fill="{MUTED}">more</text>\n')
-
-    w = 28 + len(weeks) * 13 + 12
-    h = 182
-    return card(w, h, "$ git log --since=1y --pretty=contributions", "".join(body))
-
-
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     rows, top, total, cal = collect()
@@ -211,11 +140,9 @@ def main():
         f.write(stats_svg(rows))
     with open(os.path.join(OUT_DIR, "languages.svg"), "w") as f:
         f.write(langs_svg(top, total))
-    with open(os.path.join(OUT_DIR, "heatmap.svg"), "w") as f:
-        f.write(heatmap_svg(cal))
     print("stats rows:", rows)
     print("langs:", top)
-    print(f"heatmap: {cal['totalContributions']} contributions, {len(cal['weeks'])} weeks")
+    print(f"contributions (12 mo): {cal['totalContributions']:,}")
 
 
 if __name__ == "__main__":
