@@ -47,15 +47,30 @@ def P(x, y, c, w=1, h=1):
 # ---------- 5x7 pixel font ----------
 FONT = {
     "A": ["01110", "10001", "10001", "11111", "10001", "10001", "10001"],
+    "B": ["11110", "10001", "10001", "11110", "10001", "10001", "11110"],
+    "C": ["01110", "10001", "10000", "10000", "10000", "10001", "01110"],
+    "D": ["11110", "10001", "10001", "10001", "10001", "10001", "11110"],
+    "E": ["11111", "10000", "10000", "11110", "10000", "10000", "11111"],
+    "G": ["01110", "10001", "10000", "10111", "10001", "10001", "01111"],
     "H": ["10001", "10001", "10001", "11111", "10001", "10001", "10001"],
     "I": ["11111", "00100", "00100", "00100", "00100", "00100", "11111"],
+    "L": ["10000", "10000", "10000", "10000", "10000", "10000", "11111"],
     "M": ["10001", "11011", "10101", "10101", "10001", "10001", "10001"],
     "N": ["10001", "11001", "11001", "10101", "10011", "10011", "10001"],
     "O": ["01110", "10001", "10001", "10001", "10001", "10001", "01110"],
     "P": ["11110", "10001", "10001", "11110", "10000", "10000", "10000"],
     "R": ["11110", "10001", "10001", "11110", "10100", "10010", "10001"],
+    "S": ["01111", "10000", "10000", "01110", "00001", "00001", "11110"],
     "T": ["11111", "00100", "00100", "00100", "00100", "00100", "00100"],
     "U": ["10001", "10001", "10001", "10001", "10001", "10001", "01110"],
+    "0": ["01110", "10001", "10011", "10101", "11001", "10001", "01110"],
+    "1": ["00100", "01100", "00100", "00100", "00100", "00100", "01110"],
+    "2": ["01110", "10001", "00001", "00110", "01000", "10000", "11111"],
+    "3": ["11110", "00001", "00001", "01110", "00001", "00001", "11110"],
+    "4": ["00010", "00110", "01010", "10010", "11111", "00010", "00010"],
+    "5": ["11111", "10000", "10000", "11110", "00001", "00001", "11110"],
+    ".": ["00000", "00000", "00000", "00000", "00000", "01100", "01100"],
+    "·": ["00000", "00000", "00000", "01100", "01100", "00000", "00000"],
 }
 
 
@@ -493,6 +508,46 @@ def _ascii_blocks(w, h, blocks):
         print("".join({"#0D1117": "."}.get(grid.get((gx, gy), BG), "X") if False else ("#" if grid.get((gx, gy)) else ".") for gx in range(w)))
 
 
+def draw_heading(blocks_p, num, word, accent, w=126):
+    """Left-aligned pixel heading: CH.0N · WORD with a short accent underline."""
+    c1 = hex2rgb(PURPLE)
+    prefix = f"CH.0{num}"
+    label = f" · {word}"
+    x = 2
+    for ch in prefix:
+        if ch in FONT:
+            for ry, row in enumerate(FONT[ch]):
+                for rx, bit in enumerate(row):
+                    if bit == "1":
+                        blocks_p(x + rx, 1 + ry, STEEL)
+        x += 6
+    for ch in label:
+        if ch in FONT:
+            for ry, row in enumerate(FONT[ch]):
+                for rx, bit in enumerate(row):
+                    if bit == "1":
+                        blocks_p(x + rx, 1 + ry, accent)
+        x += 6
+    for gx in range(2, x - 1):                    # underline, gradient purple->accent
+        t = (gx - 2) / max(1, x - 3)
+        blocks_p(gx, 9, rgb2hex(lerp(c1, hex2rgb(accent), t)))
+
+
+HEADINGS = [
+    ("1", "SHIP LOG", BLUE),
+    ("2", "SPECIMENS", PINK),
+    ("3", "CALIBRATION", PURPLE),
+    ("4", "INSTRUMENT", GREEN),
+    ("5", "GROUND CONTROL", ORANGE),
+]
+
+
+def make_heading_svg(num, word, accent):
+    blocks = []
+    draw_heading(lambda x, y, c, bwr=1, bhr=1: blocks.append((x, y, c, bwr, bhr)), num, word, accent)
+    return blocks
+
+
 def make_section(name):
     builders = {"ship": build_ship, "specimens": build_specimens,
                 "calibrate": build_calibrate, "bench": build_bench, "ground": build_ground}
@@ -537,4 +592,9 @@ if __name__ == "__main__":
             w, h, blocks = make_section(nm)
             p = os.path.join(out_dir, f"pixel-{nm}.svg")
             _render_named(p, w, h, blocks)
+            print(f"wrote {p} ({len(blocks)} blocks)")
+        for num, word, accent in HEADINGS:
+            blocks = make_heading_svg(num, word, accent)
+            p = os.path.join(out_dir, f"pixel-h{num}.svg")
+            _render_named(p, 126, 10, blocks)
             print(f"wrote {p} ({len(blocks)} blocks)")

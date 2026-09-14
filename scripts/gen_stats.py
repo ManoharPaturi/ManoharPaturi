@@ -35,7 +35,7 @@ VIOLET = "#A371F7"    # decision violet
 AMBER = "#FFB454"     # status amber
 TEXT = "#E6F2EC"      # bright readout
 MUTED = "#7E948C"     # dim readout
-MONO = "ui-monospace, Menlo, Consolas, monospace"
+MONO = "JetBrains Mono, Fira Code, SF Mono, Cascadia Code, Menlo, Consolas, monospace"
 
 # GitHub linguist colors for the languages this account actually has
 COLORS = {

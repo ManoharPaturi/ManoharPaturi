@@ -31,7 +31,7 @@
 
 ---
 
-## ch.01 · ship log
+<img src="assets/pixel-h1.svg" width="100%" alt="ch.01 · ship log" />
 
 `gh pr list --author @me --state=all`
 
@@ -108,7 +108,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ---
 
-## ch.02 · specimens
+<img src="assets/pixel-h2.svg" width="100%" alt="ch.02 · specimens" />
 
 `ls ~/lab/specimens`
 
@@ -191,7 +191,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ---
 
-## ch.03 · calibration notes
+<img src="assets/pixel-h3.svg" width="100%" alt="ch.03 · calibration notes" />
 
 `cat calibration.md`
 
@@ -207,7 +207,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ---
 
-## ch.04 · instrument bench
+<img src="assets/pixel-h4.svg" width="100%" alt="ch.04 · instrument bench" />
 
 `./bench --readings`
 
@@ -227,7 +227,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ---
 
-## ch.05 · ground control
+<img src="assets/pixel-h5.svg" width="100%" alt="ch.05 · ground control" />
 
 `ping manohar`
 
