@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/scope-hero.svg" width="100%" alt="Manohar Paturi — signal lab: an oscilloscope bench with three live channels and upstream contribution readouts" />
+<img src="assets/pixel-hero.svg" width="100%" alt="MANOHAR PATURI in pixel letters over a pixel-art signal lab — two-laptop stereo rig, oscilloscope, phone on a tripod, EEG headset" />
 
 <br/>
 
@@ -235,6 +235,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 [Email](mailto:manoharpaturi777@gmail.com) · [LinkedIn](https://linkedin.com/in/manoharpaturi) · [Repositories](https://github.com/ManoharPaturi?tab=repositories)
 
-<sub>a self-updating instrument · hero + telemetry regenerated nightly from public GitHub data</sub>
+<sub>a self-updating instrument · telemetry regenerated nightly from public GitHub data · pixel hero built block by block by <a href="https://github.com/ManoharPaturi/ManoharPaturi/blob/main/scripts/gen_pixel.py"><code>gen_pixel.py</code></a></sub>
 
 </div>
