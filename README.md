@@ -27,10 +27,6 @@
 
 <sub>I build systems that meet cameras, electrodes, users, and imperfect inputs as they actually are — AI engineering undergrad @ Amrita Vishwa Vidyapeetham.</sub>
 
-<br/>
-
-<sub>every card on this page is hand-built SVG, regenerated nightly from public GitHub data. no third-party widgets.</sub>
-
 </div>
 
 ---
@@ -50,12 +46,12 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 | lab | what shipped | pr | state |
 |-------|----------------|----|-------|
-| **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
-| **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
-| **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
-| **Google DeepMind** · [mujoco](https://github.com/google-deepmind/mujoco) | corrected misleading terminology in the physics-engine reference docs | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟣 merged |
-| **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
-| **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
+| <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
+| <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
+| <img src="https://github.com/google-deepmind.png?size=40" width="22" alt=""/> **Google DeepMind** · [mujoco](https://github.com/google-deepmind/mujoco) | corrected misleading terminology in the physics-engine reference docs | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟣 merged |
+| <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
+| <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
 </td>
   </tr>
@@ -65,44 +61,44 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
-| **Meta** · astryx | scale `TextInput`/`TextArea` control type with size + new theme target | [#6086](https://github.com/facebook/astryx/pull/6086) | 🟢 open |
-| **deepset** · haystack | cross-batch write–write conflicts in the agent tool scheduler now resolve by LLM call order | [#12628](https://github.com/deepset-ai/haystack/pull/12628) | 🟢 open |
-| **Keras** | `-inf` gradients in `normalize()` for float16 — L2 norm computed in float32 | [#23566](https://github.com/keras-team/keras/pull/23566) | 🟢 open |
-| **vLLM** | install `numactl` in ROCm images so `--numa-bind` isn't a silent no-op | [#55433](https://github.com/vllm-project/vllm/pull/55433) | 🟢 open |
-| **Ollama** | normalize escaped pattern literals in tool/format schemas at the `llama-server` boundary | [#18248](https://github.com/ollama/ollama/pull/18248) | 🟢 open |
-| **Microsoft** · autogen | reject stale hunks in `TextCanvas.apply_patch` with context validation | [#8195](https://github.com/microsoft/autogen/pull/8195) | 🟢 open |
-| **Microsoft** · PyRIT | Garak exploitation scenario — Jinja template injection + SQLi echo | [#2576](https://github.com/microsoft/PyRIT/pull/2576) | 🟢 open |
-| **Anthropic** · claude-code-action | skip malformed buffered comment lines instead of failing the CI post step | [#1797](https://github.com/anthropics/claude-code-action/pull/1797) | 🟢 open |
-| **NVIDIA** · Megatron-Bridge | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟢 open |
-| **NVIDIA** · Speech | repair `ConvSubsampling` forward paths missed by the `MaskedConvSequential` refactor | [#16225](https://github.com/NVIDIA-NeMo/Speech/pull/16225) | 🟢 open |
-| **NVIDIA** · DataDesigner | tolerate literal braces in prompt validation (valid Jinja text) | [#923](https://github.com/NVIDIA-NeMo/DataDesigner/pull/923) | 🟢 open |
+| <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | scale `TextInput`/`TextArea` control type with size + new theme target | [#6086](https://github.com/facebook/astryx/pull/6086) | 🟢 open |
+| <img src="https://github.com/deepset-ai.png?size=40" width="22" alt=""/> **deepset** · haystack | cross-batch write–write conflicts in the agent tool scheduler now resolve by LLM call order | [#12628](https://github.com/deepset-ai/haystack/pull/12628) | 🟢 open |
+| <img src="https://github.com/keras-team.png?size=40" width="22" alt=""/> **Keras** | `-inf` gradients in `normalize()` for float16 — L2 norm computed in float32 | [#23566](https://github.com/keras-team/keras/pull/23566) | 🟢 open |
+| <img src="https://github.com/vllm-project.png?size=40" width="22" alt=""/> **vLLM** | install `numactl` in ROCm images so `--numa-bind` isn't a silent no-op | [#55433](https://github.com/vllm-project/vllm/pull/55433) | 🟢 open |
+| <img src="https://github.com/ollama.png?size=40" width="22" alt=""/> **Ollama** | normalize escaped pattern literals in tool/format schemas at the `llama-server` boundary | [#18248](https://github.com/ollama/ollama/pull/18248) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · autogen | reject stale hunks in `TextCanvas.apply_patch` with context validation | [#8195](https://github.com/microsoft/autogen/pull/8195) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | Garak exploitation scenario — Jinja template injection + SQLi echo | [#2576](https://github.com/microsoft/PyRIT/pull/2576) | 🟢 open |
+| <img src="https://github.com/anthropics.png?size=40" width="22" alt=""/> **Anthropic** · claude-code-action | skip malformed buffered comment lines instead of failing the CI post step | [#1797](https://github.com/anthropics/claude-code-action/pull/1797) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Megatron-Bridge | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Speech | repair `ConvSubsampling` forward paths missed by the `MaskedConvSequential` refactor | [#16225](https://github.com/NVIDIA-NeMo/Speech/pull/16225) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · DataDesigner | tolerate literal braces in prompt validation (valid Jinja text) | [#923](https://github.com/NVIDIA-NeMo/DataDesigner/pull/923) | 🟢 open |
 
 <details>
 <summary><b>rest of the board</b> — 21 more across astryx, NeMo Run/Curator/Speech, transformers, weaviate, mujoco, datasets, aws-cdk, ComfyUI, lm-eval-harness, autogen, ollama</summary>
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
-| [facebook/astryx](https://github.com/facebook/astryx) | floor `SegmentedControlItem` to a 44px touch target on coarse pointers | [#6084](https://github.com/facebook/astryx/pull/6084) | 🟢 open |
-| [facebook/astryx](https://github.com/facebook/astryx) | scope the 16px input font floor to iOS only | [#6085](https://github.com/facebook/astryx/pull/6085) | 🟢 open |
-| [facebook/astryx](https://github.com/facebook/astryx) | render plain `Link` anchors inline so ancestor `Text` clamps can truncate them | [#6038](https://github.com/facebook/astryx/pull/6038) | 🟢 open |
-| [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | only treat delimited run/executor/plugins prefixes as overwrites | [#605](https://github.com/NVIDIA-NeMo/Run/pull/605) | 🟢 open |
-| [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | handle unparameterized list/dict annotations in the CLI value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟢 open |
-| [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | forward entrypoint `skip_confirmation` to the generated command | [#609](https://github.com/NVIDIA-NeMo/Run/pull/609) | 🟢 open |
-| [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | remove stray "Configuring global options" debug print | [#611](https://github.com/NVIDIA-NeMo/Run/pull/611) | 🟢 open |
-| [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | treat `DocumentSplitter` separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟢 open |
-| [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | fix `split_large_files` RecursionError on single rows larger than target size | [#2377](https://github.com/NVIDIA-NeMo/Curator/pull/2377) | 🟢 open |
+| <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | floor `SegmentedControlItem` to a 44px touch target on coarse pointers | [#6084](https://github.com/facebook/astryx/pull/6084) | 🟢 open |
+| <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | scope the 16px input font floor to iOS only | [#6085](https://github.com/facebook/astryx/pull/6085) | 🟢 open |
+| <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | render plain `Link` anchors inline so ancestor `Text` clamps can truncate them | [#6038](https://github.com/facebook/astryx/pull/6038) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | only treat delimited run/executor/plugins prefixes as overwrites | [#605](https://github.com/NVIDIA-NeMo/Run/pull/605) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | handle unparameterized list/dict annotations in the CLI value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | forward entrypoint `skip_confirmation` to the generated command | [#609](https://github.com/NVIDIA-NeMo/Run/pull/609) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | remove stray "Configuring global options" debug print | [#611](https://github.com/NVIDIA-NeMo/Run/pull/611) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | treat `DocumentSplitter` separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟢 open |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | fix `split_large_files` RecursionError on single rows larger than target size | [#2377](https://github.com/NVIDIA-NeMo/Curator/pull/2377) | 🟢 open |
 | [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | `SubsamplingReductionModule` pooling computes lengths for a single `MaxPool1d` pass | [#16226](https://github.com/NVIDIA-NeMo/Speech/pull/16226) | 🟢 open |
-| [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | extract the user request only from word-boundary trigger occurrences | [#1799](https://github.com/anthropics/claude-code-action/pull/1799) | 🟢 open |
-| [huggingface/transformers](https://github.com/huggingface/transformers) | skip the symlinked hub-cache test on platforms that can't create symlinks | [#48530](https://github.com/huggingface/transformers/pull/48530) | 🟢 open |
-| [huggingface/datasets](https://github.com/huggingface/datasets) | fix typo in guide template | [#8567](https://github.com/huggingface/datasets/pull/8567) | 🟢 open |
-| [weaviate/weaviate](https://github.com/weaviate/weaviate) | fix `object_count` Prometheus help text (copy-pasted from `async_operations_running`) | [#12951](https://github.com/weaviate/weaviate/pull/12951) | 🟢 open |
-| [weaviate/weaviate](https://github.com/weaviate/weaviate) | docs: add `rq-4` to `ALLOWED_COMPRESSION_TYPES` valid entries | [#12950](https://github.com/weaviate/weaviate/pull/12950) | 🟢 open |
-| [aws/aws-cdk](https://github.com/aws/aws-cdk) | drop stale `sep` reference from `ArnComponents.arnFormat` default docs | [#38775](https://github.com/aws/aws-cdk/pull/38775) | 🟢 open |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | mask-editor painted uploads no longer destroy the original image under the mask | [#16141](https://github.com/Comfy-Org/ComfyUI/pull/16141) | 🟢 open |
-| [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | fix inconsistent axis labels in `solimp` documentation figures | [#3548](https://github.com/google-deepmind/mujoco/pull/3548) | 🟢 open |
-| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | verified typo fixes across 16 task docs | [#4102](https://github.com/EleutherAI/lm-evaluation-harness/pull/4102) | 🟢 open |
-| [microsoft/autogen](https://github.com/microsoft/autogen) | docs typo sweep — 16 files | [#8196](https://github.com/microsoft/autogen/pull/8196) | 🟢 open |
-| [ollama/ollama](https://github.com/ollama/ollama) | log the provenance of the loaded context length | [#18249](https://github.com/ollama/ollama/pull/18249) | 🟢 open |
+| <img src="https://github.com/anthropics.png?size=40" width="22" alt=""/> [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | extract the user request only from word-boundary trigger occurrences | [#1799](https://github.com/anthropics/claude-code-action/pull/1799) | 🟢 open |
+| <img src="https://github.com/huggingface.png?size=40" width="22" alt=""/> [huggingface/transformers](https://github.com/huggingface/transformers) | skip the symlinked hub-cache test on platforms that can't create symlinks | [#48530](https://github.com/huggingface/transformers/pull/48530) | 🟢 open |
+| <img src="https://github.com/huggingface.png?size=40" width="22" alt=""/> [huggingface/datasets](https://github.com/huggingface/datasets) | fix typo in guide template | [#8567](https://github.com/huggingface/datasets/pull/8567) | 🟢 open |
+| <img src="https://github.com/weaviate.png?size=40" width="22" alt=""/> [weaviate/weaviate](https://github.com/weaviate/weaviate) | fix `object_count` Prometheus help text (copy-pasted from `async_operations_running`) | [#12951](https://github.com/weaviate/weaviate/pull/12951) | 🟢 open |
+| <img src="https://github.com/weaviate.png?size=40" width="22" alt=""/> [weaviate/weaviate](https://github.com/weaviate/weaviate) | docs: add `rq-4` to `ALLOWED_COMPRESSION_TYPES` valid entries | [#12950](https://github.com/weaviate/weaviate/pull/12950) | 🟢 open |
+| <img src="https://github.com/aws.png?size=40" width="22" alt=""/> [aws/aws-cdk](https://github.com/aws/aws-cdk) | drop stale `sep` reference from `ArnComponents.arnFormat` default docs | [#38775](https://github.com/aws/aws-cdk/pull/38775) | 🟢 open |
+| <img src="https://github.com/Comfy-Org.png?size=40" width="22" alt=""/> [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | mask-editor painted uploads no longer destroy the original image under the mask | [#16141](https://github.com/Comfy-Org/ComfyUI/pull/16141) | 🟢 open |
+| <img src="https://github.com/google-deepmind.png?size=40" width="22" alt=""/> [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | fix inconsistent axis labels in `solimp` documentation figures | [#3548](https://github.com/google-deepmind/mujoco/pull/3548) | 🟢 open |
+| <img src="https://github.com/EleutherAI.png?size=40" width="22" alt=""/> [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | verified typo fixes across 16 task docs | [#4102](https://github.com/EleutherAI/lm-evaluation-harness/pull/4102) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | docs typo sweep — 16 files | [#8196](https://github.com/microsoft/autogen/pull/8196) | 🟢 open |
+| <img src="https://github.com/ollama.png?size=40" width="22" alt=""/> [ollama/ollama](https://github.com/ollama/ollama) | log the provenance of the loaded context length | [#18249](https://github.com/ollama/ollama/pull/18249) | 🟢 open |
 
 [explore every upstream pull request →](https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi)
 
