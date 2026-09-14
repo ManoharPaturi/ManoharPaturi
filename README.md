@@ -35,6 +35,8 @@
 
 `gh pr list --author @me --state=all`
 
+<img src="assets/pixel-ship.svg" width="100%" alt="pixel trophy shelf — six merged medals, a merge graph, and a rocket clearing the pad" />
+
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
 <table>
@@ -109,6 +111,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 ## ch.02 · specimens
 
 `ls ~/lab/specimens`
+
+<img src="assets/pixel-specimens.svg" width="100%" alt="pixel shelf — five artifact cases: EEG, motion figure, OMR sheet, terminal, game grid" />
 
 <details open>
 <summary><b>SPX-01 · MOTION</b> — markerless motion capture</summary>
@@ -191,6 +195,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 `cat calibration.md`
 
+<img src="assets/pixel-calibrate.svg" width="100%" alt="pixel calibration bench — ruler, spirit level, tuning fork" />
+
 > Build it from scratch at least once — the magic disappears, the understanding stays.
 >
 > If you can't reproduce it, you don't understand it yet.
@@ -204,6 +210,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 ## ch.04 · instrument bench
 
 `./bench --readings`
+
+<img src="assets/pixel-bench.svg" width="100%" alt="pixel instrument panel — voltmeter, dials, toggles, LEDs, patch cables" />
 
 <div align="center">
 
@@ -222,6 +230,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 ## ch.05 · ground control
 
 `ping manohar`
+
+<img src="assets/pixel-ground.svg" width="100%" alt="pixel radio tower with signal arcs, a dish and a globe" />
 
 <div align="center">
 
