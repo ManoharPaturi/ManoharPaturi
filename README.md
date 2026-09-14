@@ -9,6 +9,7 @@
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Alangchain-ai"><img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/></a>
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Amistralai"><img src="https://img.shields.io/badge/Mistral_AI-FF7000?style=flat-square&logo=mistralai&logoColor=white" alt="Mistral AI"/></a>
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Amicrosoft"><img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft"/></a>
+<a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Aopenai"><img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/></a>
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Aaws"><img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS"/></a>
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Aanthropics"><img src="https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic"/></a>
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Ahuggingface"><img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/></a>
@@ -36,6 +37,8 @@
 
 ## ch.01 · ship log
 
+`gh pr list --author @me --state=all`
+
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
 <table>
@@ -47,7 +50,9 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 | lab | what shipped | pr | state |
 |-------|----------------|----|-------|
+| **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
 | **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
+| **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
 | **Google DeepMind** · [mujoco](https://github.com/google-deepmind/mujoco) | corrected misleading terminology in the physics-engine reference docs | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟣 merged |
 | **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
@@ -56,11 +61,10 @@ I contribute upstream where a small, precise change removes a real developer pap
   </tr>
 </table>
 
-**in review — 34 signals awaiting a verdict**
+**in review — 47 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
-| **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟢 open |
 | **Meta** · astryx | scale `TextInput`/`TextArea` control type with size + new theme target | [#6086](https://github.com/facebook/astryx/pull/6086) | 🟢 open |
 | **deepset** · haystack | cross-batch write–write conflicts in the agent tool scheduler now resolve by LLM call order | [#12628](https://github.com/deepset-ai/haystack/pull/12628) | 🟢 open |
 | **Keras** | `-inf` gradients in `normalize()` for float16 — L2 norm computed in float32 | [#23566](https://github.com/keras-team/keras/pull/23566) | 🟢 open |
@@ -74,7 +78,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | **NVIDIA** · DataDesigner | tolerate literal braces in prompt validation (valid Jinja text) | [#923](https://github.com/NVIDIA-NeMo/DataDesigner/pull/923) | 🟢 open |
 
 <details>
-<summary><b>rest of the board</b> — 22 more across astryx, NeMo Run/Curator/Speech, transformers, weaviate, mujoco, datasets, aws-cdk, ComfyUI, lm-eval-harness, autogen, ollama</summary>
+<summary><b>rest of the board</b> — 21 more across astryx, NeMo Run/Curator/Speech, transformers, weaviate, mujoco, datasets, aws-cdk, ComfyUI, lm-eval-harness, autogen, ollama</summary>
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -85,7 +89,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | handle unparameterized list/dict annotations in the CLI value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟢 open |
 | [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | forward entrypoint `skip_confirmation` to the generated command | [#609](https://github.com/NVIDIA-NeMo/Run/pull/609) | 🟢 open |
 | [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | remove stray "Configuring global options" debug print | [#611](https://github.com/NVIDIA-NeMo/Run/pull/611) | 🟢 open |
-| [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟢 open |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | treat `DocumentSplitter` separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟢 open |
 | [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | fix `split_large_files` RecursionError on single rows larger than target size | [#2377](https://github.com/NVIDIA-NeMo/Curator/pull/2377) | 🟢 open |
 | [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | `SubsamplingReductionModule` pooling computes lengths for a single `MaxPool1d` pass | [#16226](https://github.com/NVIDIA-NeMo/Speech/pull/16226) | 🟢 open |
@@ -108,6 +111,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 ---
 
 ## ch.02 · specimens
+
+`ls ~/lab/specimens`
 
 <details open>
 <summary><b>SPX-01 · MOTION</b> — markerless motion capture</summary>
@@ -188,6 +193,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ## ch.03 · calibration notes
 
+`cat calibration.md`
+
 > Build it from scratch at least once — the magic disappears, the understanding stays.
 >
 > If you can't reproduce it, you don't understand it yet.
@@ -199,6 +206,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 ---
 
 ## ch.04 · instrument bench
+
+`./bench --readings`
 
 <div align="center">
 
@@ -215,6 +224,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 ---
 
 ## ch.05 · ground control
+
+`ping manohar`
 
 <div align="center">
 
