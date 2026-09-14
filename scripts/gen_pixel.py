@@ -559,6 +559,40 @@ def make_section(name):
     return w, h, blocks
 
 
+
+# ---------- contact icons (14x11 each) ----------
+
+def icon_mail(P):
+    P(1, 3, CREAM, 12, 6)                       # envelope body
+    for i in range(6):                          # flap V
+        P(1 + i, 3 + i, PINK)
+        P(13 - i, 3 + i, PINK)
+    P(1, 8, "#C9B98A", 12, 1)                   # bottom shade
+    P(12, 2, PINK)                              # sparkle
+
+
+def icon_linkedin(P):
+    P(2, 1, "#0A66C2", 10, 9)                   # badge
+    P(4, 3, "#FFFFFF")                          # i dot
+    P(4, 5, "#FFFFFF", 1, 3)                    # i stem
+    P(7, 5, "#FFFFFF", 1, 3)                    # n stem
+    P(8, 5, "#FFFFFF", 2, 1)                    # n arch
+    P(9, 6, "#FFFFFF", 1, 2)                    # n leg
+
+
+def icon_github(P):
+    P(3, 2, "#FFFFFF", 2, 1)                    # ears
+    P(9, 2, "#FFFFFF", 2, 1)
+    P(3, 3, "#FFFFFF", 8, 6)                    # head
+    P(5, 5, BG, 1, 2)                           # eyes
+    P(8, 5, BG, 1, 2)
+    P(6, 8, BG, 2, 1)                           # muzzle notch
+    P(5, 9, "#FFFFFF", 4, 1)                    # chin
+
+
+ICONS = {"mail": icon_mail, "linkedin": icon_linkedin, "github": icon_github}
+
+
 if __name__ == "__main__":
     import os
     here = os.path.dirname(__file__)
@@ -597,4 +631,10 @@ if __name__ == "__main__":
             blocks = make_heading_svg(num, word, accent)
             p = os.path.join(out_dir, f"pixel-h{num}.svg")
             _render_named(p, 126, 10, blocks)
+            print(f"wrote {p} ({len(blocks)} blocks)")
+        for nm, fn in ICONS.items():
+            blocks = []
+            fn(lambda x, y, c, bwr=1, bhr=1: blocks.append((x, y, c, bwr, bhr)))
+            p = os.path.join(out_dir, f"pixel-{nm}.svg")
+            _render_named(p, 14, 11, blocks)
             print(f"wrote {p} ({len(blocks)} blocks)")

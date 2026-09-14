@@ -239,7 +239,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ### Bring me a signal that refuses to behave.
 
-[Email](mailto:manoharpaturi777@gmail.com) · [LinkedIn](https://linkedin.com/in/manoharpaturi) · [Repositories](https://github.com/ManoharPaturi?tab=repositories)
+[<img src="assets/pixel-mail.svg" width="34" alt=""/> **Email**](mailto:manoharpaturi777@gmail.com) &nbsp;·&nbsp; [<img src="assets/pixel-linkedin.svg" width="34" alt=""/> **LinkedIn**](https://linkedin.com/in/manoharpaturi) &nbsp;·&nbsp; [<img src="assets/pixel-github.svg" width="34" alt=""/> **Repositories**](https://github.com/ManoharPaturi?tab=repositories)
 
 <sub>a self-updating instrument · telemetry regenerated nightly from public GitHub data · pixel hero built block by block by <a href="https://github.com/ManoharPaturi/ManoharPaturi/blob/main/scripts/gen_pixel.py"><code>gen_pixel.py</code></a></sub>
 
