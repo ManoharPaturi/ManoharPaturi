@@ -114,82 +114,13 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 <img src="assets/pixel-specimens.svg" width="100%" alt="pixel shelf — five artifact cases: EEG, motion figure, OMR sheet, terminal, game grid" />
 
-<details open>
-<summary><b>SPX-01 · MOTION</b> — markerless motion capture</summary>
-
-**friction:** useful motion capture still lives in laboratories — special suits, special cameras, special rooms.
-
-**approach:** connect two ordinary camera views through MediaPipe pose landmarks, triangulate with stereo DLT, filter the trajectory, and derive joint kinematics instead of stopping at landmarks.
-
-**proof:** an offline-first pipeline with live 3D inspection and motion-capture export formats.
-
-<div><code>Python</code> <code>FastAPI</code> <code>React</code> <code>Three.js</code> <code>OpenCV</code></div>
-
-[open the case file ↗](https://github.com/ManoharPaturi/mocap)
-
-</details>
-
-<details open>
-<summary><b>SPX-02 · DECISIONS</b> — self-play reinforcement learning</summary>
-
-**friction:** "the agent learned something" is not evidence unless the learning is tested against a known-optimal opponent.
-
-**approach:** train a Double/Dueling DQN agent with NoisyNet exploration and prioritized experience replay, then confront it with self-play pressure and a minimax baseline.
-
-**proof:** the system exposes both the learned policy and the sanity check — not just the exciting score.
-
-<div><code>Python</code> <code>PyTorch</code> <code>reinforcement learning</code></div>
-
-[open the case file ↗](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL)
-
-</details>
-
-<details open>
-<summary><b>SPX-03 · BIOSIGNALS</b> — EEG artifact recovery</summary>
-
-**friction:** real EEG is eye movement, muscle activity, electrode noise — and somewhere in there, the neural signal.
-
-**approach:** use SVD to separate low-rank artifact structure from the underlying 14-channel Emotiv EPOC X recordings rather than pretending the acquisition was sterile.
-
-**proof:** denoising treated as signal recovery, with the assumptions made visible.
-
-<div><code>MATLAB</code> <code>SVD</code> <code>signal processing</code></div>
-
-[open the case file ↗](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-)
-
-</details>
-
-<details open>
-<summary><b>SPX-04 · ON-DEVICE VISION</b> — projX OMR grading</summary>
-
-**friction:** document evaluation often becomes "upload everything to a server and wait."
-
-**approach:** keep capture, bubble detection, answer-key comparison, and result export on the mobile device.
-
-**proof:** a complete grading workflow that works without a server round trip.
-
-<div><code>Flutter</code> <code>Dart</code> <code>OpenCV</code></div>
-
-[open the case file ↗](https://github.com/ManoharPaturi/projX)
-
-</details>
-
-<details open>
-<summary><b>SPX-05 · SYSTEMS</b> — POSIX file manager</summary>
-
-**friction:** abstractions hide what the machine actually does.
-
-**approach:** a file manager built directly on raw POSIX system calls — every operation mapped to its visible syscall boundary, no convenience layers.
-
-**proof:** know what's underneath your abstractions.
-
-<div><code>C</code> <code>POSIX</code> <code>system calls</code></div>
-
-[open the case file ↗](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C)
-
-</details>
-
----
+| case | friction | approach | proof | stack |
+|------|----------|----------|-------|-------|
+| [**SPX-01 · MOTION**](https://github.com/ManoharPaturi/mocap)<br>*markerless motion capture* | useful mocap lives in laboratories — special suits, special cameras, special rooms | two ordinary camera views → MediaPipe landmarks → stereo DLT triangulation → filtering → joint kinematics | offline-first pipeline, live 3D inspection, real mocap export formats | `Python` `FastAPI` `React` `Three.js` `OpenCV` |
+| [**SPX-02 · DECISIONS**](https://github.com/ManoharPaturi/TIC-TAC-TOE-Player-By-DOUBLE-DQN-MODEL)<br>*self-play reinforcement learning* | "the agent learned something" isn't evidence until tested against a known-optimal opponent | Double/Dueling DQN + NoisyNet + prioritized replay, pressured by self-play and a minimax baseline | ships both the learned policy and the sanity check — not just the score | `Python` `PyTorch` `RL` |
+| [**SPX-03 · BIOSIGNALS**](https://github.com/ManoharPaturi/D9_MFC4_SVD-BASED-NOISE-REDUCTION-IN-EEG-SIGNALS-)<br>*EEG artifact recovery* | real EEG is eye movement, muscle noise, electrode drift — and somewhere in there, the signal | SVD separates low-rank artifact structure from 14-channel Emotiv EPOC X recordings | denoising as signal recovery, with the assumptions visible | `MATLAB` `SVD` `signal processing` |
+| [**SPX-04 · ON-DEVICE VISION**](https://github.com/ManoharPaturi/projX)<br>*projX OMR grading* | document evaluation usually becomes "upload everything and wait" | capture, bubble detection, key comparison and export all stay on the phone | a complete grading workflow with zero server round trips | `Flutter` `Dart` `OpenCV` |
+| [**SPX-05 · SYSTEMS**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C)<br>*POSIX file manager* | abstractions hide what the machine actually does | built directly on raw POSIX system calls — every operation mapped to its syscall boundary | know what's underneath your abstractions | `C` `POSIX` `system calls` |
 
 <img src="assets/pixel-h3.svg" width="100%" alt="ch.03 · calibration notes" />
 
