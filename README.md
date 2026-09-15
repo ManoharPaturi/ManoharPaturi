@@ -49,13 +49,14 @@ I contribute upstream where a small, precise change removes a real developer pap
 |-------|----------------|----|-------|
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · [agent-framework](https://github.com/microsoft/agent-framework) | handle `Literal` annotations in `is_instance_of` | [#8351](https://github.com/microsoft/agent-framework/pull/8351) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | preserve instruction order in `prepend_instructions_to_messages` dedup | [#8353](https://github.com/microsoft/agent-framework/pull/8353) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
 | <img src="https://github.com/google-deepmind.png?size=40" width="22" alt=""/> **Google DeepMind** · [mujoco](https://github.com/google-deepmind/mujoco) | corrected misleading terminology in the physics-engine reference docs | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟣 merged |
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 46 signals awaiting a verdict**
+**in review — 45 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
