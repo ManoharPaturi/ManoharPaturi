@@ -39,10 +39,9 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-<table>
-  <tr>
-    <td width="34%" valign="top"><img src="assets/now.svg" width="100%" alt="live probe — latest review, weekly signal, merged count" /></td>
-    <td width="66%" valign="top">
+<div align="center">
+  <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
+</div>
 
 **accepted upstream**
 
@@ -54,10 +53,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/google-deepmind.png?size=40" width="22" alt=""/> **Google DeepMind** · [mujoco](https://github.com/google-deepmind/mujoco) | corrected misleading terminology in the physics-engine reference docs | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟣 merged |
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
-
-</td>
-  </tr>
-</table>
 
 **in review — 47 signals awaiting a verdict**
 
