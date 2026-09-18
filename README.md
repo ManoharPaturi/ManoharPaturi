@@ -1,6 +1,44 @@
 <div align="center">
+  <img src="assets/banner_title.png" width="100%" alt="Manohar Paturi" />
+</div>
 
-<img src="assets/pixel-hero.svg" width="100%" alt="MANOHAR PATURI in pixel letters over a pixel-art signal lab — two-laptop stereo rig, oscilloscope, phone on a tripod, EEG headset" />
+<br/>
+
+<div align="center">
+  <img src="assets/signal_workstation.png" width="100%" alt="Cyberpunk Biosignal & Spatial Intelligence Research Lab" />
+</div>
+
+<br/>
+
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=16&pause=1200&color=58A6FF&center=true&vCenter=true&width=750&lines=Applied+AI+%26+Systems+Engineer+%C2%B7+Biosignals+%26+Spatial+Intelligence;Markerless+Motion+Capture+%C2%B7+Stereo+DLT+Triangulation+%C2%B7+Kinematics;EEG+Artifact+Recovery+%C2%B7+SVD+Biomedical+Signal+Processing;Self-Play+RL+(Double+Dueling+DQN)+%C2%B7+Low-Level+POSIX+Syscalls;Tier-1+OSS+Contributor+(NVIDIA%2C+DeepMind%2C+Meta%2C+HuggingFace)" alt="Typing SVG" />
+  </a>
+</div>
+
+<p align="center">
+  <a href="https://linkedin.com/in/manoharpaturi" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="mailto:manoharpaturi777@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/ManoharPaturi?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="#ship-log">Ship Log</a> &nbsp;•&nbsp;
+  <a href="#specimens">Specimens</a> &nbsp;•&nbsp;
+  <a href="#calibration">Calibration</a> &nbsp;•&nbsp;
+  <a href="#instrument">Instrument</a> &nbsp;•&nbsp;
+  <a href="#ground-control">Ground Control</a>
+</p>
+
+<div align="center">
 
 <br/>
 
@@ -31,11 +69,14 @@
 
 ---
 
+<a id="ship-log"></a>
 <img src="assets/pixel-h1.svg" width="100%" alt="ch.01 · ship log" />
 
 `gh pr list --author @me --state=all`
 
-<img src="assets/pixel-ship.svg" width="100%" alt="pixel trophy shelf — six merged medals, a merge graph, and a rocket clearing the pad" />
+<div align="center">
+  <img src="assets/section_ship_log.png" width="100%" alt="Space telemetry mission control & orbital PR merge pipelines" />
+</div>
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
@@ -106,11 +147,14 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ---
 
+<a id="specimens"></a>
 <img src="assets/pixel-h2.svg" width="100%" alt="ch.02 · specimens" />
 
 `ls ~/lab/specimens`
 
-<img src="assets/pixel-specimens.svg" width="100%" alt="pixel shelf — five artifact cases: EEG, motion figure, OMR sheet, terminal, game grid" />
+<div align="center">
+  <img src="assets/section_specimens.png" width="100%" alt="Cyber-laboratory specimen archive: motion capture, reinforcement learning, EEG biosignals, on-device vision, and POSIX systems" />
+</div>
 
 | case | friction | approach | proof | stack |
 |------|----------|----------|-------|-------|
@@ -120,11 +164,14 @@ I contribute upstream where a small, precise change removes a real developer pap
 | [**SPX-04 · ON-DEVICE VISION**](https://github.com/ManoharPaturi/projX)<br>*projX OMR grading* | document evaluation usually becomes "upload everything and wait" | capture, bubble detection, key comparison and export all stay on the phone | a complete grading workflow with zero server round trips | `Flutter` `Dart` `OpenCV` |
 | [**SPX-05 · SYSTEMS**](https://github.com/ManoharPaturi/File-Management-System-Using-Basic-System-Calls-in-C)<br>*POSIX file manager* | abstractions hide what the machine actually does | built directly on raw POSIX system calls — every operation mapped to its syscall boundary | know what's underneath your abstractions | `C` `POSIX` `system calls` |
 
+<a id="calibration"></a>
 <img src="assets/pixel-h3.svg" width="100%" alt="ch.03 · calibration notes" />
 
 `cat calibration.md`
 
-<img src="assets/pixel-calibrate.svg" width="100%" alt="pixel calibration bench — ruler, spirit level, tuning fork" />
+<div align="center">
+  <img src="assets/section_calibration.png" width="100%" alt="Precision engineering calibration bench — phosphor oscilloscope, optical laser prism, tuning fork, and spirit level" />
+</div>
 
 > Build it from scratch at least once — the magic disappears, the understanding stays.
 >
@@ -136,11 +183,14 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ---
 
+<a id="instrument"></a>
 <img src="assets/pixel-h4.svg" width="100%" alt="ch.04 · instrument bench" />
 
 `./bench --readings`
 
-<img src="assets/pixel-bench.svg" width="100%" alt="pixel instrument panel — voltmeter, dials, toggles, LEDs, patch cables" />
+<div align="center">
+  <img src="assets/section_instrument.png" width="100%" alt="Modular telemetry instrument bench — spectrum analyzer, analog VU meters, and phosphor CRT oscilloscopes" />
+</div>
 
 <div align="center">
 
@@ -156,11 +206,14 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 ---
 
+<a id="ground-control"></a>
 <img src="assets/pixel-h5.svg" width="100%" alt="ch.05 · ground control" />
 
 `ping manohar`
 
-<img src="assets/pixel-ground.svg" width="100%" alt="pixel radio tower with signal arcs, a dish and a globe" />
+<div align="center">
+  <img src="assets/section_ground_control.png" width="100%" alt="Deep-space satellite ground station observatory with parabolic dish transmitting into the cosmos" />
+</div>
 
 <div align="center">
 
@@ -170,6 +223,9 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 [<img src="assets/pixel-mail.svg" width="34" alt=""/> **Email**](mailto:manoharpaturi777@gmail.com) &nbsp;·&nbsp; [<img src="assets/pixel-linkedin.svg" width="34" alt=""/> **LinkedIn**](https://linkedin.com/in/manoharpaturi) &nbsp;·&nbsp; [<img src="assets/pixel-github.svg" width="34" alt=""/> **Repositories**](https://github.com/ManoharPaturi?tab=repositories)
 
-<sub>a self-updating instrument · telemetry regenerated nightly from public GitHub data · pixel hero built block by block by <a href="https://github.com/ManoharPaturi/ManoharPaturi/blob/main/scripts/gen_pixel.py"><code>gen_pixel.py</code></a></sub>
+<br/>
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=90&color=0:1f6feb,100:0d1117" width="100%" alt="Terminal Footer" />
+
+<sub>a self-updating instrument · telemetry regenerated nightly from public GitHub data · visual telemetry designed for high-assurance biosignals and spatial systems</sub>
 
 </div>
