@@ -5,14 +5,14 @@
 <br/>
 
 <div align="center">
-  <img src="assets/signal_workstation.png" width="100%" alt="Cyberpunk Biosignal & Spatial Intelligence Research Lab" />
+  <img src="assets/signal_workstation.png" width="100%" alt="Biomechanical & Spatial Intelligence Research Lab // Stereo Mocap & Neural Telemetry" />
 </div>
 
 <br/>
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=16&pause=1200&color=58A6FF&center=true&vCenter=true&width=750&lines=Applied+AI+%26+Systems+Engineer+%C2%B7+Biosignals+%26+Spatial+Intelligence;Markerless+Motion+Capture+%C2%B7+Stereo+DLT+Triangulation+%C2%B7+Kinematics;EEG+Artifact+Recovery+%C2%B7+SVD+Biomedical+Signal+Processing;Self-Play+RL+(Double+Dueling+DQN)+%C2%B7+Low-Level+POSIX+Syscalls;Tier-1+OSS+Contributor+(NVIDIA%2C+DeepMind%2C+Meta%2C+HuggingFace)" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=16&pause=1200&color=58A6FF&center=true&vCenter=true&width=750&lines=Applied+AI+%26+Systems+Engineer+%C2%B7+Biomechanics+%26+Spatial+Intelligence;Markerless+Motion+Capture+%C2%B7+Stereo+DLT+Triangulation+%C2%B7+Kinematics;EEG+Artifact+Recovery+%C2%B7+SVD+Biomedical+Signal+Processing;Self-Play+RL+(Double+Dueling+DQN)+%C2%B7+Low-Level+POSIX+Syscalls;Tier-1+OSS+Contributor+(NVIDIA%2C+DeepMind%2C+Meta%2C+HuggingFace)" alt="Typing SVG" />
   </a>
 </div>
 
