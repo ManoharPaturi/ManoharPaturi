@@ -88,6 +88,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 | lab | what shipped | pr | state |
 |-------|----------------|----|-------|
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | normalize native LiteLLM responses before NeMoGymResponse validation | [#3413](https://github.com/NVIDIA-NeMo/Gym/pull/3413) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | distinguish Bird-SQL result mismatches and timeouts from execution failures in the evaluator | [#3468](https://github.com/NVIDIA-NeMo/Gym/pull/3468) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · [agent-framework](https://github.com/microsoft/agent-framework) | handle `Literal` annotations in `is_instance_of` | [#8351](https://github.com/microsoft/agent-framework/pull/8351) | 🟣 merged |
@@ -98,7 +99,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 59 signals awaiting a verdict**
+**in review — 76 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
