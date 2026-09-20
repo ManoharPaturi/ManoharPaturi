@@ -88,6 +88,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 | lab | what shipped | pr | state |
 |-------|----------------|----|-------|
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Speech](https://github.com/NVIDIA-NeMo/Speech) | `SubsamplingReductionModule` pooling computes lengths for a single `MaxPool1d` pass | [#16226](https://github.com/NVIDIA-NeMo/Speech/pull/16226) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | normalize native LiteLLM responses before NeMoGymResponse validation | [#3413](https://github.com/NVIDIA-NeMo/Gym/pull/3413) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | distinguish Bird-SQL result mismatches and timeouts from execution failures in the evaluator | [#3468](https://github.com/NVIDIA-NeMo/Gym/pull/3468) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
@@ -99,7 +100,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 76 signals awaiting a verdict**
+**in review — 75 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -129,7 +130,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | remove stray "Configuring global options" debug print | [#611](https://github.com/NVIDIA-NeMo/Run/pull/611) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | treat `DocumentSplitter` separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | fix `split_large_files` RecursionError on single rows larger than target size | [#2377](https://github.com/NVIDIA-NeMo/Curator/pull/2377) | 🟢 open |
-| [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | `SubsamplingReductionModule` pooling computes lengths for a single `MaxPool1d` pass | [#16226](https://github.com/NVIDIA-NeMo/Speech/pull/16226) | 🟢 open |
 | <img src="https://github.com/anthropics.png?size=40" width="22" alt=""/> [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | extract the user request only from word-boundary trigger occurrences | [#1799](https://github.com/anthropics/claude-code-action/pull/1799) | 🟢 open |
 | <img src="https://github.com/huggingface.png?size=40" width="22" alt=""/> [huggingface/transformers](https://github.com/huggingface/transformers) | skip the symlinked hub-cache test on platforms that can't create symlinks | [#48530](https://github.com/huggingface/transformers/pull/48530) | 🟢 open |
 | <img src="https://github.com/huggingface.png?size=40" width="22" alt=""/> [huggingface/datasets](https://github.com/huggingface/datasets) | fix typo in guide template | [#8567](https://github.com/huggingface/datasets/pull/8567) | 🟢 open |
