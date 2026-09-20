@@ -88,6 +88,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 | lab | what shipped | pr | state |
 |-------|----------------|----|-------|
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Speech](https://github.com/NVIDIA-NeMo/Speech) | `SubsamplingReductionModule` pooling computes lengths for a single `MaxPool1d` pass | [#16226](https://github.com/NVIDIA-NeMo/Speech/pull/16226) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | normalize native LiteLLM responses before NeMoGymResponse validation | [#3413](https://github.com/NVIDIA-NeMo/Gym/pull/3413) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | distinguish Bird-SQL result mismatches and timeouts from execution failures in the evaluator | [#3468](https://github.com/NVIDIA-NeMo/Gym/pull/3468) | 🟣 merged |
@@ -100,7 +101,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 75 signals awaiting a verdict**
+**in review — 74 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -112,7 +113,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · autogen | reject stale hunks in `TextCanvas.apply_patch` with context validation | [#8195](https://github.com/microsoft/autogen/pull/8195) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | Garak exploitation scenario — Jinja template injection + SQLi echo | [#2576](https://github.com/microsoft/PyRIT/pull/2576) | 🟢 open |
 | <img src="https://github.com/anthropics.png?size=40" width="22" alt=""/> **Anthropic** · claude-code-action | skip malformed buffered comment lines instead of failing the CI post step | [#1797](https://github.com/anthropics/claude-code-action/pull/1797) | 🟢 open |
-| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Megatron-Bridge | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Speech | repair `ConvSubsampling` forward paths missed by the `MaskedConvSequential` refactor | [#16225](https://github.com/NVIDIA-NeMo/Speech/pull/16225) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · DataDesigner | tolerate literal braces in prompt validation (valid Jinja text) | [#923](https://github.com/NVIDIA-NeMo/DataDesigner/pull/923) | 🟢 open |
 
