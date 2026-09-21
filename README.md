@@ -95,13 +95,17 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · [agent-framework](https://github.com/microsoft/agent-framework) | handle `Literal` annotations in `is_instance_of` | [#8351](https://github.com/microsoft/agent-framework/pull/8351) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | preserve instruction order in `prepend_instructions_to_messages` dedup | [#8353](https://github.com/microsoft/agent-framework/pull/8353) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | accept int timeouts in the A2A agent | [#8516](https://github.com/microsoft/agent-framework/pull/8516) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | preserve dict subclasses in workflow checkpoints | [#8519](https://github.com/microsoft/agent-framework/pull/8519) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | case-insensitive User-Agent detection prevents duplicate headers | [#8521](https://github.com/microsoft/agent-framework/pull/8521) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
+| <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | scope the 16px input font floor to iOS only | [#6085](https://github.com/facebook/astryx/pull/6085) | 🟣 merged |
 | <img src="https://github.com/google-deepmind.png?size=40" width="22" alt=""/> **Google DeepMind** · [mujoco](https://github.com/google-deepmind/mujoco) | corrected misleading terminology in the physics-engine reference docs | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟣 merged |
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 74 signals awaiting a verdict**
+**in review — 70 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -122,7 +126,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | floor `SegmentedControlItem` to a 44px touch target on coarse pointers | [#6084](https://github.com/facebook/astryx/pull/6084) | 🟢 open |
-| <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | scope the 16px input font floor to iOS only | [#6085](https://github.com/facebook/astryx/pull/6085) | 🟢 open |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | render plain `Link` anchors inline so ancestor `Text` clamps can truncate them | [#6038](https://github.com/facebook/astryx/pull/6038) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | only treat delimited run/executor/plugins prefixes as overwrites | [#605](https://github.com/NVIDIA-NeMo/Run/pull/605) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | handle unparameterized list/dict annotations in the CLI value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟢 open |
