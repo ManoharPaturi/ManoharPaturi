@@ -99,7 +99,11 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | preserve dict subclasses in workflow checkpoints | [#8519](https://github.com/microsoft/agent-framework/pull/8519) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | case-insensitive User-Agent detection prevents duplicate headers | [#8521](https://github.com/microsoft/agent-framework/pull/8521) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | skip empty and whitespace-only instructions in `prepend` | [#8524](https://github.com/microsoft/agent-framework/pull/8524) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | allow text events when `response_format` is a json schema dictionary | [#8604](https://github.com/microsoft/agent-framework/pull/8604) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | match empty expected tool call arguments when actual call arguments are `None` | [#8609](https://github.com/microsoft/agent-framework/pull/8609) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | narrow pytest.raises blocks to wrap only `get_response` in error tests | [#8611](https://github.com/microsoft/agent-framework/pull/8611) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | ensure `add_usage_details` returns copies and skips booleans | [#8613](https://github.com/microsoft/agent-framework/pull/8613) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | fix positional invocations in `detect_media_type_from_base64` docstrings | [#8614](https://github.com/microsoft/agent-framework/pull/8614) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · [PyRIT](https://github.com/microsoft/PyRIT) | restore keyboard focus to launch button on preview dismissal | [#2686](https://github.com/microsoft/PyRIT/pull/2686) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
@@ -108,7 +112,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 65 signals awaiting a verdict**
+**in review — 61 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
