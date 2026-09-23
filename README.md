@@ -88,6 +88,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 | lab | what shipped | pr | state |
 |-------|----------------|----|-------|
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Curator](https://github.com/NVIDIA-NeMo/Curator) | treat `DocumentSplitter` separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Speech](https://github.com/NVIDIA-NeMo/Speech) | `SubsamplingReductionModule` pooling computes lengths for a single `MaxPool1d` pass | [#16226](https://github.com/NVIDIA-NeMo/Speech/pull/16226) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | normalize native LiteLLM responses before NeMoGymResponse validation | [#3413](https://github.com/NVIDIA-NeMo/Gym/pull/3413) | 🟣 merged |
@@ -112,7 +113,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 61 signals awaiting a verdict**
+**in review — 60 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -128,7 +129,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/vllm-project.png?size=40" width="22" alt=""/> **vLLM** · [vllm](https://github.com/vllm-project/vllm) | Install numactl in ROCm images so --numa-bind is not a silent no-op | [#55433](https://github.com/vllm-project/vllm/pull/55433) | 🟢 open |
 
 <details>
-<summary><b>rest of the board</b> — 51 more across astryx, NeMo (Curator/Gym/Speech/Run/Bridge), markitdown, semantic-kernel, claude-code-action, autogen, ollama, weaviate, comfyui, mujoco, datasets, presidio, aws-cdk, lm-eval-harness</summary>
+<summary><b>rest of the board</b> — 50 more across astryx, NeMo (Curator/Gym/Speech/Run/Bridge), markitdown, semantic-kernel, claude-code-action, autogen, ollama, weaviate, comfyui, mujoco, datasets, presidio, aws-cdk, lm-eval-harness</summary>
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -138,7 +139,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/data-privacy-stack.png?size=40" width="22" alt=""/> [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | fix(analyzer): keep Stanza multi-word tokens as surface tokens to preserve text and entity offsets | [#2253](https://github.com/data-privacy-stack/presidio/pull/2253) | 🟢 open |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | fix(Markdown): preserve list structure for mixed task and bullet lists (#6330) | [#6424](https://github.com/facebook/astryx/pull/6424) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | fix(utils): split_large_files RecursionError on single row larger than target size | [#2377](https://github.com/NVIDIA-NeMo/Curator/pull/2377) | 🟢 open |
-| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Curator](https://github.com/NVIDIA-NeMo/Curator) | fix(modules): treat DocumentSplitter separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Gym](https://github.com/NVIDIA-NeMo/Gym) | fix(cli): pass config dict via process environment instead of command line (#3383) | [#3472](https://github.com/NVIDIA-NeMo/Gym/pull/3472) | 🟢 open |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | fix(FileInput): dispatch changeAction and update optimistic value on clear and selection | [#6427](https://github.com/facebook/astryx/pull/6427) | 🟢 open |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> [facebook/astryx](https://github.com/facebook/astryx) | fix(ChatComposerInput): anchor programmatic carets into trailing text nodes for IME composition (#6411) | [#6423](https://github.com/facebook/astryx/pull/6423) | 🟢 open |
