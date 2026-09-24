@@ -80,6 +80,8 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
+**31 pull requests merged to date** — 26 upstream across six big-org labs (tabled below) + 5 more in peer and community repos, out of 119 filed overall.
+
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
 </div>
