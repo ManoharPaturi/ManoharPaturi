@@ -80,7 +80,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**31 pull requests merged to date** — 26 upstream across six big-org labs (tabled below) + 5 more in peer and community repos, out of 119 filed overall.
+**32 pull requests merged to date** — 27 upstream across six big-org labs (tabled below) + 5 more in peer and community repos, out of 119 filed overall.
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -90,6 +90,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 | lab | what shipped | pr | state |
 |-------|----------------|----|-------|
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · [PyRIT](https://github.com/microsoft/PyRIT) | Garak exploitation scenario — Jinja template injection + SQLi echo, 1.3k-line security feature | [#2576](https://github.com/microsoft/PyRIT/pull/2576) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Curator](https://github.com/NVIDIA-NeMo/Curator) | treat `DocumentSplitter` separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Curator](https://github.com/NVIDIA-NeMo/Curator) | fix `split_large_files` RecursionError on single rows larger than target size | [#2377](https://github.com/NVIDIA-NeMo/Curator/pull/2377) | 🟣 merged |
@@ -117,7 +118,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 84 signals awaiting a verdict**
+**in review — 83 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -174,7 +175,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): handle unparameterized list/dict annotations in value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): only treat delimited run/executor/plugins prefixes as overwrites | [#605](https://github.com/NVIDIA-NeMo/Run/pull/605) | 🟢 open |
 | <img src="https://github.com/EleutherAI.png?size=40" width="22" alt=""/> [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | Fix typos in task documentation (16 files) | [#4102](https://github.com/EleutherAI/lm-evaluation-harness/pull/4102) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FEAT: Add Garak exploitation scenario (Jinja template injection + SQL injection echo) | [#2576](https://github.com/microsoft/PyRIT/pull/2576) | 🟢 open |
 | <img src="https://github.com/weaviate.png?size=40" width="22" alt=""/> [weaviate/weaviate](https://github.com/weaviate/weaviate) | add rq-4 to ALLOWED_COMPRESSION_TYPES valid entries | [#12950](https://github.com/weaviate/weaviate/pull/12950) | 🟢 open |
 | <img src="https://github.com/weaviate.png?size=40" width="22" alt=""/> [weaviate/weaviate](https://github.com/weaviate/weaviate) | Fix object_count metric Help text (copy-pasted from async_operations_running) | [#12951](https://github.com/weaviate/weaviate/pull/12951) | 🟢 open |
 | <img src="https://github.com/huggingface.png?size=40" width="22" alt=""/> [huggingface/datasets](https://github.com/huggingface/datasets) | Fix typo in guide template | [#8567](https://github.com/huggingface/datasets/pull/8567) | 🟢 open |
