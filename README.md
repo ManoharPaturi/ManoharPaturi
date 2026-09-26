@@ -80,7 +80,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**32 pull requests merged to date** — 27 upstream across six big-org labs (tabled below) + 5 more in peer and community repos, out of 119 filed overall.
+**36 pull requests merged to date** — 31 upstream across six big-org labs (tabled below) + 5 more in peer and community repos.
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -91,6 +91,10 @@ I contribute upstream where a small, precise change removes a real developer pap
 | lab | what shipped | pr | state |
 |-------|----------------|----|-------|
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · [PyRIT](https://github.com/microsoft/PyRIT) | Garak exploitation scenario — Jinja template injection + SQLi echo, 1.3k-line security feature | [#2576](https://github.com/microsoft/PyRIT/pull/2576) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | clamp `TemplateSegmentConverter` split count for short prompts | [#2840](https://github.com/microsoft/PyRIT/pull/2840) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | stop temp-file leak in the remote dataset loader `cache=False` path | [#2842](https://github.com/microsoft/PyRIT/pull/2842) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | fix `krippendorff_alpha` returning NaN for unpairable identical ratings | [#2844](https://github.com/microsoft/PyRIT/pull/2844) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | embed only text pieces in multimodal writes instead of failing them | [#2848](https://github.com/microsoft/PyRIT/pull/2848) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Curator](https://github.com/NVIDIA-NeMo/Curator) | treat `DocumentSplitter` separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Curator](https://github.com/NVIDIA-NeMo/Curator) | fix `split_large_files` RecursionError on single rows larger than target size | [#2377](https://github.com/NVIDIA-NeMo/Curator/pull/2377) | 🟣 merged |
@@ -118,7 +122,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 83 signals awaiting a verdict**
+**in review — 90 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
