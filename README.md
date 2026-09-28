@@ -80,7 +80,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**36 pull requests merged to date** — 31 upstream across six big-org labs (tabled below) + 5 more in peer and community repos.
+**39 pull requests merged to date** — 34 upstream across six big-org labs (tabled below) + 5 more in peer and community repos.
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -114,6 +114,9 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | narrow pytest.raises blocks to wrap only `get_response` in error tests | [#8611](https://github.com/microsoft/agent-framework/pull/8611) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | ensure `add_usage_details` returns copies and skips booleans | [#8613](https://github.com/microsoft/agent-framework/pull/8613) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | fix positional invocations in `detect_media_type_from_base64` docstrings | [#8614](https://github.com/microsoft/agent-framework/pull/8614) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | send `Foundry-Features` header on toolbox requests | [#8722](https://github.com/microsoft/agent-framework/pull/8722) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | allow checkpoint deserialization for orchestrations | [#8723](https://github.com/microsoft/agent-framework/pull/8723) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | cross-reference security patterns from getting-started and provider samples | [#8726](https://github.com/microsoft/agent-framework/pull/8726) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · [PyRIT](https://github.com/microsoft/PyRIT) | restore keyboard focus to launch button on preview dismissal | [#2686](https://github.com/microsoft/PyRIT/pull/2686) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
@@ -122,7 +125,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 
-**in review — 90 signals awaiting a verdict**
+**in review — 102 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
