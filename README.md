@@ -88,6 +88,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 
 **accepted upstream**
 
+| lab | what shipped | pr | state |
+|-------|----------------|----|-------|
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · [agent-framework](https://github.com/microsoft/agent-framework) | handle `Literal` annotations in `is_instance_of` | [#8351](https://github.com/microsoft/agent-framework/pull/8351) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | preserve instruction order in `prepend_instructions_to_messages` dedup | [#8353](https://github.com/microsoft/agent-framework/pull/8353) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | accept int timeouts in the A2A agent | [#8516](https://github.com/microsoft/agent-framework/pull/8516) | 🟣 merged |
