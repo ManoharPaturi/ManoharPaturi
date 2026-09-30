@@ -60,6 +60,8 @@
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3AEleutherAI"><img src="https://img.shields.io/badge/EleutherAI-7C3AED?style=flat-square&logo=eleutherai&logoColor=white" alt="EleutherAI"/></a>
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3AComfy-Org"><img src="https://img.shields.io/badge/ComfyUI-208EA5?style=flat-square" alt="ComfyUI"/></a>
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Apydantic"><img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic"/></a>
+<a href="https://github.com/json-c/json-c/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/json-c-000000?style=flat-square" alt="json-c"/></a>
+<a href="https://github.com/ntop/nDPI/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/nDPI-1F8AC0?style=flat-square&logo=wireshark&logoColor=white" alt="nDPI"/></a>
 
 <br/><br/>
 
@@ -80,7 +82,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**41 pull requests merged to date** — 36 upstream across six big-org labs (tabled below) + 5 more in peer and community repos.
+**43 pull requests merged to date** — 38 upstream across eight labs (tabled below) + 5 more in peer and community repos.
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -126,8 +128,10 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/google-deepmind.png?size=40" width="22" alt=""/> **Google DeepMind** · [mujoco](https://github.com/google-deepmind/mujoco) | corrected misleading terminology in the physics-engine reference docs | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟣 merged |
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
+| <img src="https://github.com/json-c.png?size=40" width="22" alt=""/> **json-c** | `printbuf_memset` maintains the NUL-termination invariant | [#980](https://github.com/json-c/json-c/pull/980) | 🟣 merged |
+| <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | dissect the hostname from the HOST block, not a fixed offset | [#3264](https://github.com/ntop/nDPI/pull/3264) | 🟣 merged |
 
-**in review — 121 signals awaiting a verdict**
+**in review — 138 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
