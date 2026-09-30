@@ -62,6 +62,7 @@
 <a href="https://github.com/pulls?q=is%3Apr+author%3AManoharPaturi+org%3Apydantic"><img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic"/></a>
 <a href="https://github.com/json-c/json-c/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/json-c-000000?style=flat-square" alt="json-c"/></a>
 <a href="https://github.com/ntop/nDPI/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/nDPI-1F8AC0?style=flat-square&logo=wireshark&logoColor=white" alt="nDPI"/></a>
+<a href="https://github.com/PCRE2Project/pcre2/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/PCRE2-00A8EC?style=flat-square" alt="PCRE2"/></a>
 
 <br/><br/>
 
@@ -82,7 +83,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**43 pull requests merged to date** — 38 upstream across eight labs (tabled below) + 5 more in peer and community repos.
+**45 pull requests merged to date** — 40 upstream across nine labs (tabled below) + 5 more in peer and community repos.
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -130,8 +131,10 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
 | <img src="https://github.com/json-c.png?size=40" width="22" alt=""/> **json-c** | `printbuf_memset` maintains the NUL-termination invariant | [#980](https://github.com/json-c/json-c/pull/980) | 🟣 merged |
 | <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | dissect the hostname from the HOST block, not a fixed offset | [#3264](https://github.com/ntop/nDPI/pull/3264) | 🟣 merged |
+| <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2grep | track the file position in `PCRE2_SIZE`, not int | [#1020](https://github.com/PCRE2Project/pcre2/pull/1020) | 🟣 merged |
+| <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2posix | do not truncate the subject length to `int` in `regexec` | [#1022](https://github.com/PCRE2Project/pcre2/pull/1022) | 🟣 merged |
 
-**in review — 138 signals awaiting a verdict**
+**in review — 136 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
