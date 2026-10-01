@@ -83,7 +83,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**45 pull requests merged to date** — 40 upstream across nine labs (tabled below) + 5 more in peer and community repos.
+**49 pull requests merged to date** — 44 upstream across nine labs (tabled below) + 5 more in peer and community repos.
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -104,6 +104,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | narrow pytest.raises blocks to wrap only `get_response` in error tests | [#8611](https://github.com/microsoft/agent-framework/pull/8611) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | ensure `add_usage_details` returns copies and skips booleans | [#8613](https://github.com/microsoft/agent-framework/pull/8613) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | fix positional invocations in `detect_media_type_from_base64` docstrings | [#8614](https://github.com/microsoft/agent-framework/pull/8614) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | route unmarked shell call to registered local executor | [#8720](https://github.com/microsoft/agent-framework/pull/8720) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | send `Foundry-Features` header on toolbox requests | [#8722](https://github.com/microsoft/agent-framework/pull/8722) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | allow checkpoint deserialization for orchestrations | [#8723](https://github.com/microsoft/agent-framework/pull/8723) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | cross-reference security patterns from getting-started and provider samples | [#8726](https://github.com/microsoft/agent-framework/pull/8726) | 🟣 merged |
@@ -129,12 +130,15 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/google-deepmind.png?size=40" width="22" alt=""/> **Google DeepMind** · [mujoco](https://github.com/google-deepmind/mujoco) | corrected misleading terminology in the physics-engine reference docs | [#3550](https://github.com/google-deepmind/mujoco/pull/3550) | 🟣 merged |
 | <img src="https://github.com/langchain-ai.png?size=40" width="22" alt=""/> **LangChain** · [langchain](https://github.com/langchain-ai/langchain) | removed stale `Args` / `Raises` docstrings from core public APIs | [#40211](https://github.com/langchain-ai/langchain/pull/40211) | 🟣 merged |
 | <img src="https://github.com/mistralai.png?size=40" width="22" alt=""/> **Mistral AI** · [mistral-common](https://github.com/mistralai/mistral-common) | fixed an error in the experimental usage guide | [#306](https://github.com/mistralai/mistral-common/pull/306) | 🟣 merged |
+| <img src="https://github.com/json-c.png?size=40" width="22" alt=""/> **json-c** | assert the object type in `json_object_array_shrink` like every array accessor | [#978](https://github.com/json-c/json-c/pull/978) | 🟣 merged |
+| <img src="https://github.com/json-c.png?size=40" width="22" alt=""/> **json-c** | propagate printbuf append failures in `json_escape_str` | [#979](https://github.com/json-c/json-c/pull/979) | 🟣 merged |
 | <img src="https://github.com/json-c.png?size=40" width="22" alt=""/> **json-c** | `printbuf_memset` maintains the NUL-termination invariant | [#980](https://github.com/json-c/json-c/pull/980) | 🟣 merged |
 | <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | dissect the hostname from the HOST block, not a fixed offset | [#3264](https://github.com/ntop/nDPI/pull/3264) | 🟣 merged |
+| <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | guard unsigned length arithmetic in ssh, beckhoff_ads, c1222 and munin dissectors | [#3265](https://github.com/ntop/nDPI/pull/3265) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2grep | track the file position in `PCRE2_SIZE`, not int | [#1020](https://github.com/PCRE2Project/pcre2/pull/1020) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2posix | do not truncate the subject length to `int` in `regexec` | [#1022](https://github.com/PCRE2Project/pcre2/pull/1022) | 🟣 merged |
 
-**in review — 101 signals awaiting a verdict**
+**in review — 97 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -188,8 +192,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/google-gemini.png?size=40" width="22" alt=""/> [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | fix(core): keep glob tool matches inside the validated search directory | [#29522](https://github.com/google-gemini/gemini-cli/pull/29522) | 🟢 open |
 | <img src="https://github.com/google-gemini.png?size=40" width="22" alt=""/> [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | fix(core): minimal env and capped output for external safety checkers | [#29523](https://github.com/google-gemini/gemini-cli/pull/29523) | 🟢 open |
 | <img src="https://github.com/huggingface.png?size=40" width="22" alt=""/> [huggingface/datasets](https://github.com/huggingface/datasets) | Fix typo in guide template | [#8567](https://github.com/huggingface/datasets/pull/8567) | 🟢 open |
-| <img src="https://github.com/json-c.png?size=40" width="22" alt=""/> [json-c/json-c](https://github.com/json-c/json-c) | Assert the object type in json_object_array_shrink like every array accessor | [#978](https://github.com/json-c/json-c/pull/978) | 🟢 open |
-| <img src="https://github.com/json-c.png?size=40" width="22" alt=""/> [json-c/json-c](https://github.com/json-c/json-c) | Propagate printbuf append failures in json_escape_str | [#979](https://github.com/json-c/json-c/pull/979) | 🟢 open |
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | Guard the Huffman-RLE LZ77 fast path against wrapped run lengths | [#4991](https://github.com/libjxl/libjxl/pull/4991) | 🟢 open |
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | PerformBlending: return early for empty segments | [#4992](https://github.com/libjxl/libjxl/pull/4992) | 🟢 open |
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | Patch dictionary: form foreground pointers without unsigned wrap | [#4993](https://github.com/libjxl/libjxl/pull/4993) | 🟢 open |
@@ -199,7 +201,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/Mbed-TLS.png?size=40" width="22" alt=""/> [Mbed-TLS/TF-PSA-Crypto](https://github.com/Mbed-TLS/TF-PSA-Crypto) | PEM: validate PKCS padding in constant time | [#919](https://github.com/Mbed-TLS/TF-PSA-Crypto/pull/919) | 🟢 open |
 | <img src="https://github.com/Mbed-TLS.png?size=40" width="22" alt=""/> [Mbed-TLS/TF-PSA-Crypto](https://github.com/Mbed-TLS/TF-PSA-Crypto) | asn1write: reject NULL integer buffers before dereferencing them | [#920](https://github.com/Mbed-TLS/TF-PSA-Crypto/pull/920) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: fix(core): prevent path collisions between files and directories in InMemoryAgentFileStore | [#8687](https://github.com/microsoft/agent-framework/pull/8687) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: fix(openai): route unmarked shell call to registered local executor | [#8720](https://github.com/microsoft/agent-framework/pull/8720) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: filter non-assistant messages from workflow agent responses | [#8729](https://github.com/microsoft/agent-framework/pull/8729) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | fix(ext): reject stale hunks in TextCanvas.apply_patch with context validation | [#8195](https://github.com/microsoft/autogen/pull/8195) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | docs: fix typos across documentation (16 files) | [#8196](https://github.com/microsoft/autogen/pull/8196) | 🟢 open |
@@ -216,7 +217,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | Python: use field description over pydantic constraint objects in schema builder | [#14444](https://github.com/microsoft/semantic-kernel/pull/14444) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | Python: apply input_variables defaults when rendering prompt templates | [#14459](https://github.com/microsoft/semantic-kernel/pull/14459) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | Python: keep quoted named-arg values as single tokens in CodeTokenizer | [#14461](https://github.com/microsoft/semantic-kernel/pull/14461) | 🟢 open |
-| <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> [ntop/nDPI](https://github.com/ntop/nDPI) | Guard unsigned length arithmetic in ssh, beckhoff_ads, c1222 and munin dissectors | [#3265](https://github.com/ntop/nDPI/pull/3265) | 🟢 open |
 | <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> [ntop/nDPI](https://github.com/ntop/nDPI) | Serializer: reserve worst-case JSON escape space so values are not dropped | [#3266](https://github.com/ntop/nDPI/pull/3266) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/DataDesigner](https://github.com/NVIDIA-NeMo/DataDesigner) | fix(compiler): support columns_added and columns_removed in processor config (#394) | [#943](https://github.com/NVIDIA-NeMo/DataDesigner/pull/943) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Gym](https://github.com/NVIDIA-NeMo/Gym) | fix(cli): pass config dict via process environment instead of command line (#3383) | [#3472](https://github.com/NVIDIA-NeMo/Gym/pull/3472) | 🟢 open |
