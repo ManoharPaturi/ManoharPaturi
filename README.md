@@ -83,7 +83,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**49 pull requests merged to date** — 44 upstream across nine labs (tabled below) + 5 more in peer and community repos.
+**72 pull requests merged to date** — 48 upstream across nine labs (tabled below), 5 in peer repos, and 19 shipping a production e-commerce build phase-by-phase through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp).
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -121,8 +121,12 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [DataDesigner](https://github.com/NVIDIA-NeMo/DataDesigner) | tolerate literal braces in prompt validation (valid Jinja text) | [#923](https://github.com/NVIDIA-NeMo/DataDesigner/pull/923) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | normalize native LiteLLM responses before NeMoGymResponse validation | [#3413](https://github.com/NVIDIA-NeMo/Gym/pull/3413) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | distinguish Bird-SQL result mismatches and timeouts from execution failures in the evaluator | [#3468](https://github.com/NVIDIA-NeMo/Gym/pull/3468) | 🟣 merged |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | pass config dict via process environment instead of command line | [#3472](https://github.com/NVIDIA-NeMo/Gym/pull/3472) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | handle unparameterized list/dict annotations in the CLI value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟣 merged |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | forward entrypoint `skip_confirmation` to the generated command | [#609](https://github.com/NVIDIA-NeMo/Run/pull/609) | 🟣 merged |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | remove stray "Configuring global options" debug print | [#611](https://github.com/NVIDIA-NeMo/Run/pull/611) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Speech](https://github.com/NVIDIA-NeMo/Speech) | `SubsamplingReductionModule` pooling computes lengths for a single `MaxPool1d` pass | [#16226](https://github.com/NVIDIA-NeMo/Speech/pull/16226) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
@@ -138,7 +142,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2grep | track the file position in `PCRE2_SIZE`, not int | [#1020](https://github.com/PCRE2Project/pcre2/pull/1020) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2posix | do not truncate the subject length to `int` in `regexec` | [#1022](https://github.com/PCRE2Project/pcre2/pull/1022) | 🟣 merged |
 
-**in review — 97 signals awaiting a verdict**
+**in review — 91 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -199,7 +203,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | Implicit palette encoding: clamp quantized color indices to prevent int overflow | [#4995](https://github.com/libjxl/libjxl/pull/4995) | 🟢 open |
 | <img src="https://github.com/Mbed-TLS.png?size=40" width="22" alt=""/> [Mbed-TLS/TF-PSA-Crypto](https://github.com/Mbed-TLS/TF-PSA-Crypto) | PKCS#5 PBES2: reject iteration counts below 1 and mismatching keyLength | [#918](https://github.com/Mbed-TLS/TF-PSA-Crypto/pull/918) | 🟢 open |
 | <img src="https://github.com/Mbed-TLS.png?size=40" width="22" alt=""/> [Mbed-TLS/TF-PSA-Crypto](https://github.com/Mbed-TLS/TF-PSA-Crypto) | PEM: validate PKCS padding in constant time | [#919](https://github.com/Mbed-TLS/TF-PSA-Crypto/pull/919) | 🟢 open |
-| <img src="https://github.com/Mbed-TLS.png?size=40" width="22" alt=""/> [Mbed-TLS/TF-PSA-Crypto](https://github.com/Mbed-TLS/TF-PSA-Crypto) | asn1write: reject NULL integer buffers before dereferencing them | [#920](https://github.com/Mbed-TLS/TF-PSA-Crypto/pull/920) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: fix(core): prevent path collisions between files and directories in InMemoryAgentFileStore | [#8687](https://github.com/microsoft/agent-framework/pull/8687) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: filter non-assistant messages from workflow agent responses | [#8729](https://github.com/microsoft/agent-framework/pull/8729) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | fix(ext): reject stale hunks in TextCanvas.apply_patch with context validation | [#8195](https://github.com/microsoft/autogen/pull/8195) | 🟢 open |
@@ -219,13 +222,9 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | Python: keep quoted named-arg values as single tokens in CodeTokenizer | [#14461](https://github.com/microsoft/semantic-kernel/pull/14461) | 🟢 open |
 | <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> [ntop/nDPI](https://github.com/ntop/nDPI) | Serializer: reserve worst-case JSON escape space so values are not dropped | [#3266](https://github.com/ntop/nDPI/pull/3266) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/DataDesigner](https://github.com/NVIDIA-NeMo/DataDesigner) | fix(compiler): support columns_added and columns_removed in processor config (#394) | [#943](https://github.com/NVIDIA-NeMo/DataDesigner/pull/943) | 🟢 open |
-| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Gym](https://github.com/NVIDIA-NeMo/Gym) | fix(cli): pass config dict via process environment instead of command line (#3383) | [#3472](https://github.com/NVIDIA-NeMo/Gym/pull/3472) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | fix(ckpt): pass requested revision to snapshot_download in SafeTensorsStateSource | [#6109](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6109) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | fix(tokenizer): respect offline mode and local_files_only in _resolve_hf_tokenizer_revision | [#6111](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6111) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): only treat delimited run/executor/plugins prefixes as overwrites | [#605](https://github.com/NVIDIA-NeMo/Run/pull/605) | 🟢 open |
-| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): handle unparameterized list/dict annotations in value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟢 open |
-| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): forward entrypoint skip_confirmation to the generated command | [#609](https://github.com/NVIDIA-NeMo/Run/pull/609) | 🟢 open |
-| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): remove stray "Configuring global options" debug print | [#611](https://github.com/NVIDIA-NeMo/Run/pull/611) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): resolve string and future annotations in cli parser (#374) | [#613](https://github.com/NVIDIA-NeMo/Run/pull/613) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | fix(asr): repair ConvSubsampling forward paths missed by the MaskedConvSequential refactor | [#16225](https://github.com/NVIDIA-NeMo/Speech/pull/16225) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | fix(speechlm2): preserve relocated EOS token during early interruption augmentation | [#16268](https://github.com/NVIDIA-NeMo/Speech/pull/16268) | 🟢 open |
@@ -238,7 +237,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/weaviate.png?size=40" width="22" alt=""/> [weaviate/weaviate](https://github.com/weaviate/weaviate) | docs: add rq-4 to ALLOWED_COMPRESSION_TYPES valid entries | [#12950](https://github.com/weaviate/weaviate/pull/12950) | 🟢 open |
 | <img src="https://github.com/weaviate.png?size=40" width="22" alt=""/> [weaviate/weaviate](https://github.com/weaviate/weaviate) | Fix object_count metric Help text (copy-pasted from async_operations_running) | [#12951](https://github.com/weaviate/weaviate/pull/12951) | 🟢 open |
 | <img src="https://github.com/weaviate.png?size=40" width="22" alt=""/> [weaviate/weaviate](https://github.com/weaviate/weaviate) | fix(groupBy): correct minDistance and maxDistance in multi-shard merge and hybrid search (#13108) | [#13131](https://github.com/weaviate/weaviate/pull/13131) | 🟢 open |
-| <img src="https://github.com/wolfSSL.png?size=40" width="22" alt=""/> [wolfSSL/wolfssl](https://github.com/wolfSSL/wolfssl) | OCSP: free the whole SingleResponse chain when reusing a response object | [#11583](https://github.com/wolfSSL/wolfssl/pull/11583) | 🟢 open |
 
 ---
 
