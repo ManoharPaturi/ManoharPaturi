@@ -83,7 +83,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**72 pull requests merged to date** — 48 upstream across nine labs (tabled below), 5 in peer repos, and 19 shipping a production e-commerce build phase-by-phase through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp).
+**73 pull requests merged to date** — 49 upstream across nine labs (tabled below), 5 in peer repos, and 19 shipping a production e-commerce build phase-by-phase through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp).
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -124,6 +124,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Gym](https://github.com/NVIDIA-NeMo/Gym) | pass config dict via process environment instead of command line | [#3472](https://github.com/NVIDIA-NeMo/Gym/pull/3472) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | in-process HashStore for `temporary_distributed_context` rendezvous | [#5989](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5989) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | allow Energon native sequence packing with MTP in the data pipeline | [#5990](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/5990) | 🟣 merged |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | only treat delimited run/executor/plugins prefixes as overwrites | [#605](https://github.com/NVIDIA-NeMo/Run/pull/605) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | handle unparameterized list/dict annotations in the CLI value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | forward entrypoint `skip_confirmation` to the generated command | [#609](https://github.com/NVIDIA-NeMo/Run/pull/609) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | remove stray "Configuring global options" debug print | [#611](https://github.com/NVIDIA-NeMo/Run/pull/611) | 🟣 merged |
@@ -142,7 +143,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2grep | track the file position in `PCRE2_SIZE`, not int | [#1020](https://github.com/PCRE2Project/pcre2/pull/1020) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2posix | do not truncate the subject length to `int` in `regexec` | [#1022](https://github.com/PCRE2Project/pcre2/pull/1022) | 🟣 merged |
 
-**in review — 91 signals awaiting a verdict**
+**in review — 90 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -224,7 +225,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/DataDesigner](https://github.com/NVIDIA-NeMo/DataDesigner) | fix(compiler): support columns_added and columns_removed in processor config (#394) | [#943](https://github.com/NVIDIA-NeMo/DataDesigner/pull/943) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | fix(ckpt): pass requested revision to snapshot_download in SafeTensorsStateSource | [#6109](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6109) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | fix(tokenizer): respect offline mode and local_files_only in _resolve_hf_tokenizer_revision | [#6111](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6111) | 🟢 open |
-| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): only treat delimited run/executor/plugins prefixes as overwrites | [#605](https://github.com/NVIDIA-NeMo/Run/pull/605) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): resolve string and future annotations in cli parser (#374) | [#613](https://github.com/NVIDIA-NeMo/Run/pull/613) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | fix(asr): repair ConvSubsampling forward paths missed by the MaskedConvSequential refactor | [#16225](https://github.com/NVIDIA-NeMo/Speech/pull/16225) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | fix(speechlm2): preserve relocated EOS token during early interruption augmentation | [#16268](https://github.com/NVIDIA-NeMo/Speech/pull/16268) | 🟢 open |
