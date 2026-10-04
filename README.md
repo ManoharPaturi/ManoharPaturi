@@ -83,7 +83,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**73 pull requests merged to date** — 49 upstream across nine labs (tabled below), 5 in peer repos, and 19 shipping a production e-commerce build phase-by-phase through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp).
+**78 pull requests merged to date** — 51 upstream across nine labs (tabled below), 5 in peer repos, and 22 shipping a production e-commerce build phase-by-phase through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp).
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -128,6 +128,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | handle unparameterized list/dict annotations in the CLI value parser | [#607](https://github.com/NVIDIA-NeMo/Run/pull/607) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | forward entrypoint `skip_confirmation` to the generated command | [#609](https://github.com/NVIDIA-NeMo/Run/pull/609) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | remove stray "Configuring global options" debug print | [#611](https://github.com/NVIDIA-NeMo/Run/pull/611) | 🟣 merged |
+| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · Run | resolve string and future annotations in the CLI parser | [#613](https://github.com/NVIDIA-NeMo/Run/pull/613) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Speech](https://github.com/NVIDIA-NeMo/Speech) | `SubsamplingReductionModule` pooling computes lengths for a single `MaxPool1d` pass | [#16226](https://github.com/NVIDIA-NeMo/Speech/pull/16226) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · [astryx](https://github.com/facebook/astryx) | `elevation` prop for `ToggleButton` — survived Meta's full design-system review loop | [#6037](https://github.com/facebook/astryx/pull/6037) | 🟣 merged |
 | <img src="https://github.com/facebook.png?size=40" width="22" alt=""/> **Meta** · astryx | guard `TextInput.onEnter` against Japanese-IME conversion commits | [#6083](https://github.com/facebook/astryx/pull/6083) | 🟣 merged |
@@ -140,10 +141,11 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/json-c.png?size=40" width="22" alt=""/> **json-c** | `printbuf_memset` maintains the NUL-termination invariant | [#980](https://github.com/json-c/json-c/pull/980) | 🟣 merged |
 | <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | dissect the hostname from the HOST block, not a fixed offset | [#3264](https://github.com/ntop/nDPI/pull/3264) | 🟣 merged |
 | <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | guard unsigned length arithmetic in ssh, beckhoff_ads, c1222 and munin dissectors | [#3265](https://github.com/ntop/nDPI/pull/3265) | 🟣 merged |
+| <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | serializer: reserve worst-case JSON escape space so values are not dropped | [#3266](https://github.com/ntop/nDPI/pull/3266) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2grep | track the file position in `PCRE2_SIZE`, not int | [#1020](https://github.com/PCRE2Project/pcre2/pull/1020) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2posix | do not truncate the subject length to `int` in `regexec` | [#1022](https://github.com/PCRE2Project/pcre2/pull/1022) | 🟣 merged |
 
-**in review — 90 signals awaiting a verdict**
+**in review — 89 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -221,11 +223,9 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | Python: use field description over pydantic constraint objects in schema builder | [#14444](https://github.com/microsoft/semantic-kernel/pull/14444) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | Python: apply input_variables defaults when rendering prompt templates | [#14459](https://github.com/microsoft/semantic-kernel/pull/14459) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | Python: keep quoted named-arg values as single tokens in CodeTokenizer | [#14461](https://github.com/microsoft/semantic-kernel/pull/14461) | 🟢 open |
-| <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> [ntop/nDPI](https://github.com/ntop/nDPI) | Serializer: reserve worst-case JSON escape space so values are not dropped | [#3266](https://github.com/ntop/nDPI/pull/3266) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/DataDesigner](https://github.com/NVIDIA-NeMo/DataDesigner) | fix(compiler): support columns_added and columns_removed in processor config (#394) | [#943](https://github.com/NVIDIA-NeMo/DataDesigner/pull/943) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | fix(ckpt): pass requested revision to snapshot_download in SafeTensorsStateSource | [#6109](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6109) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) | fix(tokenizer): respect offline mode and local_files_only in _resolve_hf_tokenizer_revision | [#6111](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6111) | 🟢 open |
-| <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Run](https://github.com/NVIDIA-NeMo/Run) | fix(cli): resolve string and future annotations in cli parser (#374) | [#613](https://github.com/NVIDIA-NeMo/Run/pull/613) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | fix(asr): repair ConvSubsampling forward paths missed by the MaskedConvSequential refactor | [#16225](https://github.com/NVIDIA-NeMo/Speech/pull/16225) | 🟢 open |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | fix(speechlm2): preserve relocated EOS token during early interruption augmentation | [#16268](https://github.com/NVIDIA-NeMo/Speech/pull/16268) | 🟢 open |
 | <img src="https://github.com/ollama.png?size=40" width="22" alt=""/> [ollama/ollama](https://github.com/ollama/ollama) | fix: normalize escaped pattern literals in tool/format schemas passed to llama-server | [#18248](https://github.com/ollama/ollama/pull/18248) | 🟢 open |
