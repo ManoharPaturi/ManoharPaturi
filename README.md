@@ -84,7 +84,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**331 pull requests merged to date** — 72 upstream across ten labs (tabled below), 5 in peer repos, 22 shipping a production e-commerce build through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp), and 232 on my own projects via PR-driven workflows (projX, CallPilot, mano-os, pokermind).
+**335 pull requests merged to date** — 72 upstream across ten labs (tabled below), 5 in peer repos, 22 shipping a production e-commerce build through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp), and 236 on my own projects via PR-driven workflows (projX, CallPilot, mano-os, pokermind).
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
