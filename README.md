@@ -64,6 +64,8 @@
 <a href="https://github.com/ntop/nDPI/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/nDPI-1F8AC0?style=flat-square&logo=wireshark&logoColor=white" alt="nDPI"/></a>
 <a href="https://github.com/PCRE2Project/pcre2/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/PCRE2-00A8EC?style=flat-square" alt="PCRE2"/></a>
 <a href="https://github.com/nih-at/libzip/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/libzip-6E4E9E?style=flat-square" alt="libzip"/></a>
+<a href="https://github.com/c-ares/c-ares/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/c--ares-5397FE?style=flat-square" alt="c-ares"/></a>
+<a href="https://github.com/tpm2-software/tpm2-tss/pulls?q=author%3AManoharPaturi"><img src="https://img.shields.io/badge/tpm2--tss-3E7BFA?style=flat-square" alt="tpm2-tss"/></a>
 
 <br/><br/>
 
@@ -84,7 +86,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**355 pull requests merged to date** — 72 upstream across ten labs (tabled below), 5 in peer repos, 22 shipping a production e-commerce build through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp), and 256 on my own projects via PR-driven workflows (projX, CallPilot, mano-os, pokermind).
+**374 pull requests merged to date** — 79 upstream across eleven labs (tabled below), 5 in peer repos, 22 shipping a production e-commerce build through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp), and 268 on my own projects via PR-driven workflows (projX, CallPilot, mano-os, pokermind).
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -164,10 +166,17 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | guard unsigned length arithmetic in ssh, beckhoff_ads, c1222 and munin dissectors | [#3265](https://github.com/ntop/nDPI/pull/3265) | 🟣 merged |
 | <img src="https://github.com/ntop.png?size=40" width="22" alt=""/> **nDPI** · collectd | serializer: reserve worst-case JSON escape space so values are not dropped | [#3266](https://github.com/ntop/nDPI/pull/3266) | 🟣 merged |
 | <img src="https://github.com/nih-at.png?size=40" width="22" alt=""/> **libzip** | close the descriptor when fdopen fails; report ftruncate errors preparing the clone target | [#609](https://github.com/nih-at/libzip/pull/609) | 🟣 merged |
+| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> **c-ares** | select event backend refuses descriptors ≥ FD_SETSIZE instead of overflowing `fd_set` | [#1312](https://github.com/c-ares/c-ares/pull/1312) | 🟣 merged |
+| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> **c-ares** | clamp DNS record TTLs into the signed int used by public APIs | [#1313](https://github.com/c-ares/c-ares/pull/1313) | 🟣 merged |
+| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> **c-ares** | reject DNS messages larger than 64k | [#1314](https://github.com/c-ares/c-ares/pull/1314) | 🟣 merged |
+| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> **c-ares** | ignore absurd retry/attempts values in resolv.conf options | [#1315](https://github.com/c-ares/c-ares/pull/1315) | 🟣 merged |
+| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> **c-ares** | invalidate the cached hosts file when it is replaced | [#1316](https://github.com/c-ares/c-ares/pull/1316) | 🟣 merged |
+| <img src="https://github.com/tpm2-software.png?size=40" width="22" alt=""/> **tpm2-tss** | FAPI IMA eventlog: verify the digest window fits the template buffer | [#3157](https://github.com/tpm2-software/tpm2-tss/pull/3157) | 🟣 merged |
+| <img src="https://github.com/tpm2-software.png?size=40" width="22" alt=""/> **tpm2-tss** | FAPI IMA eventlog: reject events with an empty template value | [#3158](https://github.com/tpm2-software/tpm2-tss/pull/3158) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2grep | track the file position in `PCRE2_SIZE`, not int | [#1020](https://github.com/PCRE2Project/pcre2/pull/1020) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2posix | do not truncate the subject length to `int` in `regexec` | [#1022](https://github.com/PCRE2Project/pcre2/pull/1022) | 🟣 merged |
 
-**in review — 120 signals awaiting a verdict**
+**in review — 123 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -200,11 +209,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/axboe.png?size=40" width="22" alt=""/> [axboe/liburing](https://github.com/axboe/liburing) | queue: reject a negative reg_index in io_uring_submit_and_wait_reg() | [#1649](https://github.com/axboe/liburing/pull/1649) | 🟢 open |
 | <img src="https://github.com/axboe.png?size=40" width="22" alt=""/> [axboe/liburing](https://github.com/axboe/liburing) | test/sqpoll-disable-exit: pass real output pointers to the setup helper | [#1650](https://github.com/axboe/liburing/pull/1650) | 🟢 open |
 | <img src="https://github.com/axboe.png?size=40" width="22" alt=""/> [axboe/liburing](https://github.com/axboe/liburing) | sanitize: cover user pointers passed to the direct register syscalls | [#1651](https://github.com/axboe/liburing/pull/1651) | 🟢 open |
-| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> [c-ares/c-ares](https://github.com/c-ares/c-ares) | select event backend: refuse descriptors >= FD_SETSIZE instead of overflowing fd_set | [#1312](https://github.com/c-ares/c-ares/pull/1312) | 🟢 open |
-| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> [c-ares/c-ares](https://github.com/c-ares/c-ares) | Clamp DNS record TTLs into the signed int used by public APIs | [#1313](https://github.com/c-ares/c-ares/pull/1313) | 🟢 open |
-| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> [c-ares/c-ares](https://github.com/c-ares/c-ares) | ares_dns_write: reject RDATA and option values that do not fit their 16-bit length prefixes | [#1314](https://github.com/c-ares/c-ares/pull/1314) | 🟢 open |
-| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> [c-ares/c-ares](https://github.com/c-ares/c-ares) | resolv.conf options: ignore absurd retry/attempts values | [#1315](https://github.com/c-ares/c-ares/pull/1315) | 🟢 open |
-| <img src="https://github.com/c-ares.png?size=40" width="22" alt=""/> [c-ares/c-ares](https://github.com/c-ares/c-ares) | hosts file cache: invalidate when the file is replaced with an older mtime | [#1316](https://github.com/c-ares/c-ares/pull/1316) | 🟢 open |
 | <img src="https://github.com/cisco.png?size=40" width="22" alt=""/> [cisco/openh264](https://github.com/cisco/openh264) | Engage the dynamic-slicing slice-count cap that was never set | [#4038](https://github.com/cisco/openh264/pull/4038) | 🟢 open |
 | <img src="https://github.com/cisco.png?size=40" width="22" alt=""/> [cisco/openh264](https://github.com/cisco/openh264) | Fix element-size typos in ExtendLayerBuffer allocations | [#4039](https://github.com/cisco/openh264/pull/4039) | 🟢 open |
 | <img src="https://github.com/cisco.png?size=40" width="22" alt=""/> [cisco/openh264](https://github.com/cisco/openh264) | Guard CalculateNewSliceNum against empty partitions | [#4040](https://github.com/cisco/openh264/pull/4040) | 🟢 open |
@@ -244,9 +248,19 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | jxl_from_tree: catch numeric conversion exceptions instead of aborting | [#4994](https://github.com/libjxl/libjxl/pull/4994) | 🟢 open |
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | Implicit palette encoding: clamp quantized color indices to prevent int overflow | [#4995](https://github.com/libjxl/libjxl/pull/4995) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: count the filtered label options in the overflow hint | [#3232](https://github.com/microsoft/PyRIT/pull/3232) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: keep the source video when audio extraction returns it unchanged | [#3298](https://github.com/microsoft/PyRIT/pull/3298) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: attribute fuzzer jailbreak scores through the scored piece id | [#3300](https://github.com/microsoft/PyRIT/pull/3300) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: carry converted values and metadata through fill_adversarial_placeholders | [#3302](https://github.com/microsoft/PyRIT/pull/3302) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: derive csv header from the union of row keys | [#3304](https://github.com/microsoft/PyRIT/pull/3304) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: repair the truncated sentence in the chunked request template | [#3306](https://github.com/microsoft/PyRIT/pull/3306) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: fix(core): prevent path collisions between files and directories in InMemoryAgentFileStore | [#8687](https://github.com/microsoft/agent-framework/pull/8687) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: filter non-assistant messages from workflow agent responses | [#8729](https://github.com/microsoft/agent-framework/pull/8729) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: fix(lab-gaia): accept local parquet data in _ensure_data | [#9340](https://github.com/microsoft/agent-framework/pull/9340) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: merge both approval lists in get_mcp_tool | [#9499](https://github.com/microsoft/agent-framework/pull/9499) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: coerce Magentic max round count below one up to one | [#9502](https://github.com/microsoft/agent-framework/pull/9502) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: answer unsupported DevUI conversation items with a client error | [#9507](https://github.com/microsoft/agent-framework/pull/9507) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: close the RedisContextProvider index connection when the provider owns it | [#9510](https://github.com/microsoft/agent-framework/pull/9510) | 🟢 open |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: reject misaligned base64 embedding payloads with a descriptive error | [#9512](https://github.com/microsoft/agent-framework/pull/9512) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | fix(ext): reject stale hunks in TextCanvas.apply_patch with context validation | [#8195](https://github.com/microsoft/autogen/pull/8195) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | docs: fix typos across documentation (16 files) | [#8196](https://github.com/microsoft/autogen/pull/8196) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | fix(autogen-ext): fix __unknown_models set difference and outdated docstrings (#8243) | [#8246](https://github.com/microsoft/autogen/pull/8246) | 🟢 open |
@@ -280,8 +294,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/protocolbuffers.png?size=40" width="22" alt=""/> [protocolbuffers/protobuf](https://github.com/protocolbuffers/protobuf) | Reject Duration strings carrying more than nanosecond precision | [#30446](https://github.com/protocolbuffers/protobuf/pull/30446) | 🟢 open |
 | <img src="https://github.com/protocolbuffers.png?size=40" width="22" alt=""/> [protocolbuffers/protobuf](https://github.com/protocolbuffers/protobuf) | Make FieldMaskTree walks over deep mask trees stack safe | [#30447](https://github.com/protocolbuffers/protobuf/pull/30447) | 🟢 open |
 | <img src="https://github.com/tpm2-software.png?size=40" width="22" alt=""/> [tpm2-software/tpm2-tss](https://github.com/tpm2-software/tpm2-tss) | FAPI IMA eventlog: bound the event name read by the template size | [#3156](https://github.com/tpm2-software/tpm2-tss/pull/3156) | 🟢 open |
-| <img src="https://github.com/tpm2-software.png?size=40" width="22" alt=""/> [tpm2-software/tpm2-tss](https://github.com/tpm2-software/tpm2-tss) | FAPI IMA eventlog: verify the digest window fits the template buffer | [#3157](https://github.com/tpm2-software/tpm2-tss/pull/3157) | 🟢 open |
-| <img src="https://github.com/tpm2-software.png?size=40" width="22" alt=""/> [tpm2-software/tpm2-tss](https://github.com/tpm2-software/tpm2-tss) | FAPI IMA eventlog: reject events with an empty template value | [#3158](https://github.com/tpm2-software/tpm2-tss/pull/3158) | 🟢 open |
 | <img src="https://github.com/unicode-org.png?size=40" width="22" alt=""/> [unicode-org/icu](https://github.com/unicode-org/icu) | ICU-23530 Skip leading zero magnitudes in DecimalQuantity::toFractionLong | [#4256](https://github.com/unicode-org/icu/pull/4256) | 🟢 open |
 | <img src="https://github.com/unicode-org.png?size=40" width="22" alt=""/> [unicode-org/icu](https://github.com/unicode-org/icu) | ICU-23531 Validate RBBI state table row fields and section offsets | [#4257](https://github.com/unicode-org/icu/pull/4257) | 🟢 open |
 | <img src="https://github.com/unicode-org.png?size=40" width="22" alt=""/> [unicode-org/icu](https://github.com/unicode-org/icu) | ICU-23078 Use CharString for file names in genrb parseTransliterator and parseDependency | [#4258](https://github.com/unicode-org/icu/pull/4258) | 🟢 open |
