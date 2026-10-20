@@ -86,7 +86,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**374 pull requests merged to date** — 79 upstream across eleven labs (tabled below), 5 in peer repos, 22 shipping a production e-commerce build through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp), and 268 on my own projects via PR-driven workflows (projX, CallPilot, mano-os, pokermind).
+**381 pull requests merged to date** — 85 upstream across eleven labs (tabled below), 5 in peer repos, 22 shipping a production e-commerce build through PRs (Sree Vartali Sarees — CMS, store, cart, orders, WhatsApp), and 269 on my own projects via PR-driven workflows (projX, CallPilot, mano-os, pokermind).
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -133,6 +133,12 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | let concurrent chat converter runs commit their own pieces | [#3225](https://github.com/microsoft/PyRIT/pull/3225) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | separate the fairness bias story prompt sentences | [#3227](https://github.com/microsoft/PyRIT/pull/3227) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | show falsy defaults in list-initializers output | [#3229](https://github.com/microsoft/PyRIT/pull/3229) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | count the filtered label options in the overflow hint | [#3232](https://github.com/microsoft/PyRIT/pull/3232) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | keep the source video when audio extraction returns it unchanged | [#3298](https://github.com/microsoft/PyRIT/pull/3298) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | attribute fuzzer jailbreak scores through the scored piece id | [#3300](https://github.com/microsoft/PyRIT/pull/3300) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | carry converted values and metadata through fill_adversarial_placeholders | [#3302](https://github.com/microsoft/PyRIT/pull/3302) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | derive csv header from the union of row keys | [#3304](https://github.com/microsoft/PyRIT/pull/3304) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · PyRIT | repair the truncated sentence in the chunked request template | [#3306](https://github.com/microsoft/PyRIT/pull/3306) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Curator](https://github.com/NVIDIA-NeMo/Curator) | treat `DocumentSplitter` separator as a literal string | [#2376](https://github.com/NVIDIA-NeMo/Curator/pull/2376) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [Curator](https://github.com/NVIDIA-NeMo/Curator) | fix `split_large_files` RecursionError on single rows larger than target size | [#2377](https://github.com/NVIDIA-NeMo/Curator/pull/2377) | 🟣 merged |
 | <img src="https://github.com/NVIDIA-NeMo.png?size=40" width="22" alt=""/> **NVIDIA** · [DataDesigner](https://github.com/NVIDIA-NeMo/DataDesigner) | tolerate literal braces in prompt validation (valid Jinja text) | [#923](https://github.com/NVIDIA-NeMo/DataDesigner/pull/923) | 🟣 merged |
@@ -176,7 +182,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2grep | track the file position in `PCRE2_SIZE`, not int | [#1020](https://github.com/PCRE2Project/pcre2/pull/1020) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2posix | do not truncate the subject length to `int` in `regexec` | [#1022](https://github.com/PCRE2Project/pcre2/pull/1022) | 🟣 merged |
 
-**in review — 123 signals awaiting a verdict**
+**in review — 117 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -247,12 +253,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | Patch dictionary: form foreground pointers without unsigned wrap | [#4993](https://github.com/libjxl/libjxl/pull/4993) | 🟢 open |
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | jxl_from_tree: catch numeric conversion exceptions instead of aborting | [#4994](https://github.com/libjxl/libjxl/pull/4994) | 🟢 open |
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | Implicit palette encoding: clamp quantized color indices to prevent int overflow | [#4995](https://github.com/libjxl/libjxl/pull/4995) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: count the filtered label options in the overflow hint | [#3232](https://github.com/microsoft/PyRIT/pull/3232) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: keep the source video when audio extraction returns it unchanged | [#3298](https://github.com/microsoft/PyRIT/pull/3298) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: attribute fuzzer jailbreak scores through the scored piece id | [#3300](https://github.com/microsoft/PyRIT/pull/3300) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: carry converted values and metadata through fill_adversarial_placeholders | [#3302](https://github.com/microsoft/PyRIT/pull/3302) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: derive csv header from the union of row keys | [#3304](https://github.com/microsoft/PyRIT/pull/3304) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | FIX: repair the truncated sentence in the chunked request template | [#3306](https://github.com/microsoft/PyRIT/pull/3306) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: fix(core): prevent path collisions between files and directories in InMemoryAgentFileStore | [#8687](https://github.com/microsoft/agent-framework/pull/8687) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: filter non-assistant messages from workflow agent responses | [#8729](https://github.com/microsoft/agent-framework/pull/8729) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: fix(lab-gaia): accept local parquet data in _ensure_data | [#9340](https://github.com/microsoft/agent-framework/pull/9340) | 🟢 open |
