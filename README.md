@@ -86,7 +86,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**531 pull requests merged to date** — 95 upstream across 12 labs (tabled below) · 81 building the Hepsiba school platform (Django/DRF API, React frontend, Terraform infra, OMR worker — tenancy, RLS, MFA, exam engine) · 205 on my open-source projects under We-build-AI-Stuff (AI_Made_Easy releases 2.0→3.9, mano-os) · 125 on my other projects via PR-driven workflows (projX, CallPilot, mocap) · 22 shipping the Sree Vartali Sarees e-commerce build · 5 in peer repos.
+**533 pull requests merged to date** — 97 upstream across 12 labs (tabled below) · 81 building the Hepsiba school platform (Django/DRF API, React frontend, Terraform infra, OMR worker — tenancy, RLS, MFA, exam engine) · 205 on my open-source projects under We-build-AI-Stuff (AI_Made_Easy releases 2.0→3.9, mano-os) · 123 on my other projects via PR-driven workflows (projX, CallPilot, mocap) · 22 shipping the Sree Vartali Sarees e-commerce build · 5 in peer repos.
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
@@ -112,6 +112,8 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | allow checkpoint deserialization for orchestrations | [#8723](https://github.com/microsoft/agent-framework/pull/8723) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | cross-reference security patterns from getting-started and provider samples | [#8726](https://github.com/microsoft/agent-framework/pull/8726) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | filter non-assistant messages from workflow agent responses | [#8729](https://github.com/microsoft/agent-framework/pull/8729) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | coerce Magentic max round count below one up to one | [#9502](https://github.com/microsoft/agent-framework/pull/9502) | 🟣 merged |
+| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | answer unsupported DevUI conversation items with a client error | [#9507](https://github.com/microsoft/agent-framework/pull/9507) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | close the RedisContextProvider index connection when the provider owns it | [#9510](https://github.com/microsoft/agent-framework/pull/9510) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | reject misaligned base64 embedding payloads with a descriptive error | [#9512](https://github.com/microsoft/agent-framework/pull/9512) | 🟣 merged |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> **Microsoft** · agent-framework | prevent path collisions between files and directories in InMemoryAgentFileStore | [#9608](https://github.com/microsoft/agent-framework/pull/9608) | 🟣 merged |
@@ -191,7 +193,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2grep | track the file position in `PCRE2_SIZE`, not int | [#1020](https://github.com/PCRE2Project/pcre2/pull/1020) | 🟣 merged |
 | <img src="https://github.com/PCRE2Project.png?size=40" width="22" alt=""/> **PCRE2** · pcre2posix | do not truncate the subject length to `int` in `regexec` | [#1022](https://github.com/PCRE2Project/pcre2/pull/1022) | 🟣 merged |
 
-**in review — 113 signals awaiting a verdict**
+**in review — 112 signals awaiting a verdict**
 
 | lab | what i shipped | pr | state |
 |-------|----------------|----|-------|
@@ -211,6 +213,7 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/PrestaShop.png?size=40" width="22" alt=""/> [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop) | Neutralize formula injection in the SQL manager CSV export | [#43083](https://github.com/PrestaShop/PrestaShop/pull/43083) | 🟢 open |
 | <img src="https://github.com/PrestaShop.png?size=40" width="22" alt=""/> [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop) | Neutralize formula injection in the legacy admin list export | [#43084](https://github.com/PrestaShop/PrestaShop/pull/43084) | 🟢 open |
 | <img src="https://github.com/PrestaShop.png?size=40" width="22" alt=""/> [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop) | Keep webservice error messages from breaking out of CDATA sections | [#43085](https://github.com/PrestaShop/PrestaShop/pull/43085) | 🟢 open |
+| <img src="https://github.com/We-build-AI-Stuff.png?size=40" width="22" alt=""/> [We-build-AI-Stuff/AI_Made_Easy](https://github.com/We-build-AI-Stuff/AI_Made_Easy) | Fix the Nightly: the Atari ROM test no longer needs ale-py installed | [#85](https://github.com/We-build-AI-Stuff/AI_Made_Easy/pull/85) | 🟢 open |
 | <img src="https://github.com/We-build-AI-Stuff.png?size=40" width="22" alt=""/> [We-build-AI-Stuff/mano-os](https://github.com/We-build-AI-Stuff/mano-os) | Integrate native-approved Broker to Root package apply | [#134](https://github.com/We-build-AI-Stuff/mano-os/pull/134) | 🟢 open |
 | <img src="https://github.com/anthropics.png?size=40" width="22" alt=""/> [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | fix: skip malformed buffered inline comment lines instead of failing the post step | [#1797](https://github.com/anthropics/claude-code-action/pull/1797) | 🟢 open |
 | <img src="https://github.com/anthropics.png?size=40" width="22" alt=""/> [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | fix: only extract the user request from word-boundary trigger occurrences | [#1799](https://github.com/anthropics/claude-code-action/pull/1799) | 🟢 open |
@@ -264,8 +267,6 @@ I contribute upstream where a small, precise change removes a real developer pap
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | jxl_from_tree: catch numeric conversion exceptions instead of aborting | [#4994](https://github.com/libjxl/libjxl/pull/4994) | 🟢 open |
 | <img src="https://github.com/libjxl.png?size=40" width="22" alt=""/> [libjxl/libjxl](https://github.com/libjxl/libjxl) | Implicit palette encoding: clamp quantized color indices to prevent int overflow | [#4995](https://github.com/libjxl/libjxl/pull/4995) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: merge both approval lists in the OpenAI and Foundry MCP tool helpers | [#9499](https://github.com/microsoft/agent-framework/pull/9499) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: coerce Magentic max round count below one up to one | [#9502](https://github.com/microsoft/agent-framework/pull/9502) | 🟢 open |
-| <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: answer unsupported DevUI conversation items with a client error | [#9507](https://github.com/microsoft/agent-framework/pull/9507) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | Python: fix(lab-gaia): accept local parquet data in _ensure_data | [#9609](https://github.com/microsoft/agent-framework/pull/9609) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | fix(ext): reject stale hunks in TextCanvas.apply_patch with context validation | [#8195](https://github.com/microsoft/autogen/pull/8195) | 🟢 open |
 | <img src="https://github.com/microsoft.png?size=40" width="22" alt=""/> [microsoft/autogen](https://github.com/microsoft/autogen) | docs: fix typos across documentation (16 files) | [#8196](https://github.com/microsoft/autogen/pull/8196) | 🟢 open |
