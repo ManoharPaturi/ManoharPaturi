@@ -86,7 +86,7 @@
 
 I contribute upstream where a small, precise change removes a real developer paper-cut — then add the regression test or documentation that keeps it fixed.
 
-**523 pull requests merged to date** — 92 upstream across 12 labs (tabled below) · 81 building the Hepsiba school platform (Django/DRF API, React frontend, Terraform infra, OMR worker — tenancy, RLS, MFA, exam engine) · 205 on my open-source projects under We-build-AI-Stuff (AI_Made_Easy releases 2.0→3.9, mano-os) · 117 on my other projects via PR-driven workflows (projX, CallPilot, mocap) · 22 shipping the Sree Vartali Sarees e-commerce build · 5 in peer repos.
+**523 pull requests merged to date** — 92 upstream across 12 labs (tabled below) · 81 building the Hepsiba school platform (Django/DRF API, React frontend, Terraform infra, OMR worker — tenancy, RLS, MFA, exam engine) · 205 on my open-source projects under We-build-AI-Stuff (AI_Made_Easy releases 2.0→3.9, mano-os) · 118 on my other projects via PR-driven workflows (projX, CallPilot, mocap) · 22 shipping the Sree Vartali Sarees e-commerce build · 5 in peer repos.
 
 <div align="center">
   <img src="assets/now.svg" width="410" alt="live probe — latest review, weekly signal, merged count" />
