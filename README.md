@@ -24,8 +24,6 @@ Merged pull requests over the last 12 months, grouped by upstream organization. 
 | [libzip](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Anih-at&type=pullrequests) | 1 |
 | [Mistral AI](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Amistralai&type=pullrequests) | 1 |
 | **Total** | **102** |
-
-Merged pull requests authored by [@ManoharPaturi](https://github.com/ManoharPaturi) and accepted upstream between 2025-10-29 and 2026-10-29, verified against the GitHub API on 2026-10-29. Recomputed daily by a scheduled workflow from [update-oss-contributions.yml](.github/workflows/update-oss-contributions.yml); open pull requests are not counted. This is a factual count, not a statement of eligibility for any third-party program.
 <!-- OSS_CONTRIBUTIONS_END -->
 
 ## Selected Projects

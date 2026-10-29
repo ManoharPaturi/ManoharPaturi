@@ -268,8 +268,6 @@ def collect_counts(cfg: dict, token: str) -> tuple[dict[str, int], list[str]]:
 
 def build_table(cfg: dict, counts: dict[str, int]) -> str:
     author = cfg["author"]
-    today = datetime.now(timezone.utc).date()
-    cutoff = subtract_months(today, cfg["rolling_window_months"])
     total = sum(counts.values())
     lines = [
         "| Organization | Merged PRs |",
@@ -286,17 +284,6 @@ def build_table(cfg: dict, counts: dict[str, int]) -> str:
         )
         lines.append(f"| [{display}]({url}) | {count} |")
     lines.append(f"| **Total** | **{total}** |")
-    lines.append("")
-    lines.append(
-        f"Merged pull requests authored by [@{author}](https://github.com/{author}) "
-        f"and accepted upstream between {cutoff.isoformat()} and "
-        f"{today.isoformat()}, verified against the GitHub API on "
-        f"{today.isoformat()}. Recomputed daily by a scheduled workflow from "
-        "[update-oss-contributions.yml]"
-        "(.github/workflows/update-oss-contributions.yml); open pull requests "
-        "are not counted. This is a factual count, not a statement of "
-        "eligibility for any third-party program."
-    )
     return "\n".join(lines)
 
 
@@ -308,19 +295,6 @@ def read_section(readme: Path, start: str, end: str) -> str | None:
     if start not in text or end not in text:
         return None
     return text.split(start, 1)[1].split(end, 1)[0].strip()
-
-
-def parse_counts(block: str | None) -> dict[str, int] | None:
-    """Read the org counts back out of a generated table (idempotency check)."""
-    if block is None or not block.strip():
-        return None
-    found: dict[str, int] = {}
-    for line in block.splitlines():
-        m = re.match(r"^\|\s*\[([^\]]+)\]\([^)]*\)\s*\|\s*(\d+)\s*\|$", line)
-        if not m:
-            continue
-        found[m.group(1)] = int(m.group(2))
-    return found or None
 
 
 def write_section(readme: Path, start: str, end: str, body: str) -> None:
@@ -393,7 +367,9 @@ def main() -> int:
             "mistake)"
         )
 
-    if parse_counts(existing) == counts:
+    # The block is deterministic from the counts (no timestamps inside), so
+    # an exact match means the file would not change and no commit is needed.
+    if existing.strip() == body.strip():
         print("\nCounts unchanged; README left untouched (no commit needed).")
         return 0
 
