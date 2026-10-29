@@ -1,0 +1,73 @@
+{
+  "author": "ManoharPaturi",
+  "rolling_window_months": 12,
+  "section_markers": {
+    "start": "<!-- OSS_CONTRIBUTIONS_START -->",
+    "end": "<!-- OSS_CONTRIBUTIONS_END -->"
+  },
+  "groups": [
+    {
+      "display": "Microsoft",
+      "owners": ["microsoft", "Azure"],
+      "note": "PyRIT and agent-framework; Azure kept because PyRIT historically lived at Azure/PyRIT"
+    },
+    {
+      "display": "NVIDIA NeMo",
+      "owners": ["NVIDIA-NeMo"],
+      "note": "NeMo Run, Gym, Megatron-Bridge, DataDesigner, Curator, Speech"
+    },
+    {
+      "display": "Meta",
+      "owners": ["meta"],
+      "note": "astryx lives under Meta's github.com/meta organization"
+    },
+    {
+      "display": "c-ares",
+      "owners": ["c-ares"]
+    },
+    {
+      "display": "json-c",
+      "owners": ["json-c"]
+    },
+    {
+      "display": "nDPI",
+      "owners": ["ntop"],
+      "note": "upstream repository is ntop/nDPI"
+    },
+    {
+      "display": "PCRE2",
+      "owners": ["PCRE2Project"]
+    },
+    {
+      "display": "tpm2-software",
+      "owners": ["tpm2-software"]
+    },
+    {
+      "display": "libzip",
+      "owners": ["nih-at"],
+      "note": "upstream repository is nih-at/libzip"
+    },
+    {
+      "display": "Mistral AI",
+      "owners": ["mistralai"]
+    },
+    {
+      "display": "LangChain",
+      "owners": ["langchain-ai"]
+    },
+    {
+      "display": "Google DeepMind",
+      "owners": ["google-deepmind"]
+    }
+  ],
+  "exclude_owners": [
+    "ManoharPaturi",
+    "We-build-AI-Stuff",
+    "manohar-test123",
+    "Hepsiba-Software-Solutions",
+    "Pushpak731",
+    "bodapatisaikrishna",
+    "init-club"
+  ],
+  "exclude_repos": []
+}
