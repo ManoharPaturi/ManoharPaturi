@@ -34,6 +34,10 @@ Merged pull requests over the last 12 months, grouped by upstream organization. 
 | [mano-OS](https://github.com/We-build-AI-Stuff/mano-os) | AI-native Linux operating environment for agent workflows, controlled execution, and system automation, under active development. | Python, C, Shell |
 | [projX](https://github.com/ManoharPaturi/projX) | Offline Android app that grades OMR answer sheets from a phone photo, sending doubtful sheets to a human check instead of guessing. | Flutter, Dart, OpenCV |
 | [Markerless Motion Capture](https://github.com/ManoharPaturi/mocap) | Stereo-camera motion-capture system combining pose estimation, 3D reconstruction, and joint kinematics. | Python, OpenCV, MediaPipe |
+| [DSC-GAN](https://github.com/ManoharPaturi/DSC-GAN-Sketch-to-Photo) | GAN-based sketch-to-photo translation with identity-aware training and reproducible Kaggle evaluation. | Python, PyTorch |
+| [Probabilistic Sketch-to-Face](https://github.com/ManoharPaturi/probabilistic-sketch-to-face) | Bayesian latent-variable U-Net that turns a face sketch into a colour face and reports pixel-wise uncertainty. | Python, PyTorch |
+| [ACE-PruningRAG](https://github.com/ManoharPaturi/ace-pruningrag) | Research engineering for adaptive cross-source evidence selection in multi-source retrieval-augmented generation. | Python |
+| [CallPilot AI](https://github.com/ManoharPaturi/techie-cooks-callpilot-ai) | Privacy-first AI call copilot that runs entirely on a Mac, transcribing both sides of a call and flagging scam requests as they are spoken. | Python, whisper.cpp, Ollama |
 | [Sri Vartali Sarees](https://github.com/manohar-test123/sri-vartali-commerce) (freelance) | E-commerce development for a saree business: storefront, order management, and fulfilment. | TypeScript, PostgreSQL |
 
 ## Technical Interests
