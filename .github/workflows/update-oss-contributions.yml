@@ -1,0 +1,78 @@
+name: Update OSS contribution counts
+
+# Recomputes the merged-PR table between the OSS_CONTRIBUTIONS markers in
+# README.md and commits it when the counts changed. Only README.md is ever
+# touched; on any API failure the script exits nonzero and the README is
+# left exactly as it was.
+#
+# GitHub disables scheduled workflows in public repositories after roughly
+# 60 days without repository activity. To re-enable: open the Actions tab,
+# select this workflow, and either toggle "Enable workflow" or run it once
+# with "Run workflow" (workflow_dispatch also wakes the schedule).
+
+on:
+  schedule:
+    - cron: "37 2 * * *" # daily at 02:37 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-oss-contributions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Recompute merged-PR counts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_oss_contributions.py
+
+      - name: Commit the updated table
+        id: commit
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Counts unchanged; nothing to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "docs: refresh OSS contribution counts"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Push to the default branch
+        id: push
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          if git push origin HEAD; then
+            echo "mode=direct" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=pr" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Fallback for branch protection: land the refresh through a PR
+      # instead of a direct push.
+      - name: Open a PR when direct pushes are blocked
+        if: steps.push.outputs.mode == 'pr'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE: ${{ github.ref_name }}
+        run: |
+          BRANCH=bot/oss-contributions
+          git push --force origin "HEAD:refs/heads/$BRANCH"
+          gh pr create --head "$BRANCH" --base "$BASE" \
+            --title "Refresh OSS contribution counts" \
+            --body "Automated refresh of the generated contribution table in README.md by github-actions[bot]." \
+          || gh pr edit "$BRANCH" \
+            --body "Automated refresh of the generated contribution table in README.md by github-actions[bot]."
