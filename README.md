@@ -17,13 +17,13 @@ Merged pull requests over the last 12 months, grouped by upstream organization. 
 | [c-ares](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Ac-ares&type=pullrequests) | 5 |
 | [json-c](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Ajson-c&type=pullrequests) | 3 |
 | [nDPI](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Antop&type=pullrequests) | 3 |
+| [tpm2-software](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Atpm2-software&type=pullrequests) | 3 |
 | [PCRE2](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3APCRE2Project&type=pullrequests) | 2 |
-| [tpm2-software](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Atpm2-software&type=pullrequests) | 2 |
 | [Google DeepMind](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Agoogle-deepmind&type=pullrequests) | 1 |
 | [LangChain](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Alangchain-ai&type=pullrequests) | 1 |
 | [libzip](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Anih-at&type=pullrequests) | 1 |
 | [Mistral AI](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Amistralai&type=pullrequests) | 1 |
-| **Total** | **106** |
+| **Total** | **107** |
 <!-- OSS_CONTRIBUTIONS_END -->
 
 ## Selected Projects
