@@ -220,7 +220,6 @@ def collect_counts(cfg: dict, token: str) -> tuple[dict[str, int], list[str]]:
     base_query = f"is:pr is:merged author:{author} {repo_quals}".strip()
 
     counts: dict[str, int] = {g["display"]: 0 for g in cfg["groups"]}
-    unapproved: dict[str, int] = {}
     dedupe: set[tuple[str, int]] = set()
 
     for group in cfg["groups"]:
@@ -263,7 +262,22 @@ def collect_counts(cfg: dict, token: str) -> tuple[dict[str, int], list[str]]:
                 continue
             counts[display] += 1
 
-    return counts, sorted(unapproved.items())
+    # Discovery sweep: the per-group searches above can never see merges in
+    # unapproved organizations, so report them explicitly for human review.
+    # Candidates are never counted until they are added to the config.
+    candidate_counts: dict[str, int] = {}
+    discovery_query = f"is:pr is:merged author:{author} {repo_quals}".strip()
+    for item in search_merged_prs(discovery_query, token, cutoff, tomorrow):
+        repo_url = item.get("repository_url", "")
+        match = re.search(r"/repos/([^/]+)/", repo_url)
+        if not match:
+            continue
+        owner = match.group(1).lower()
+        if owner in owner_to_display or owner in excluded_owners:
+            continue
+        candidate_counts[owner] = candidate_counts.get(owner, 0) + 1
+
+    return counts, sorted(candidate_counts.items())
 
 
 def build_table(cfg: dict, counts: dict[str, int]) -> str:
