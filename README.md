@@ -21,9 +21,10 @@ Merged pull requests over the last 12 months, grouped by upstream organization. 
 | [PCRE2](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3APCRE2Project&type=pullrequests) | 2 |
 | [Google DeepMind](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Agoogle-deepmind&type=pullrequests) | 1 |
 | [LangChain](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Alangchain-ai&type=pullrequests) | 1 |
+| [libjxl](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Alibjxl&type=pullrequests) | 1 |
 | [libzip](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Anih-at&type=pullrequests) | 1 |
 | [Mistral AI](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Amistralai&type=pullrequests) | 1 |
-| **Total** | **109** |
+| **Total** | **110** |
 <!-- OSS_CONTRIBUTIONS_END -->
 
 ## Selected Projects

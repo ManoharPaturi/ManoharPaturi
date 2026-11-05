@@ -48,6 +48,11 @@
       "note": "upstream repository is nih-at/libzip"
     },
     {
+      "display": "libjxl",
+      "owners": ["libjxl"],
+      "note": "approved 2026-11-05; first counted merge is #4992"
+    },
+    {
       "display": "Mistral AI",
       "owners": ["mistralai"]
     },
