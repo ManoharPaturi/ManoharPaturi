@@ -12,7 +12,7 @@ name: Update OSS contribution counts
 
 on:
   schedule:
-    - cron: "23 2,8,14,20 * * *" # every 6 hours; GitHub may delay scheduled runs under load
+    - cron: "23 * * * *" # hourly; GitHub skips delayed slots, so more slots = less lag (free on public repos)
   workflow_dispatch:
 
 permissions:
