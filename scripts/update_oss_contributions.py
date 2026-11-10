@@ -99,10 +99,13 @@ def api_get(url: str, token: str) -> dict:
         except urllib.error.HTTPError as err:
             if err.code == 403 and err.headers.get("X-RateLimit-Remaining") == "0":
                 raise RateLimitError(f"Rate limit exhausted requesting {url}") from err
-            if err.code == 403 and "retry-after" in {k.lower() for k in err.headers}:
-                wait = int(err.headers.get("retry-after", "30"))
-                last_err = ApiError(f"Secondary rate limit on {url}")
-                time.sleep(min(wait, 60))
+            if err.code in (403, 429):
+                # Secondary rate limits and abuse detection usually arrive as
+                # 403/429 without a retry-after header; back off well before
+                # retrying instead of failing the run.
+                body = err.read()[:200]
+                last_err = ApiError(f"HTTP {err.code} for {url}: {body}")
+                time.sleep(60)
                 continue
             if err.code in (401, 404, 422):
                 raise ApiError(f"HTTP {err.code} for {url}: {err.read()[:300]}") from err
@@ -129,6 +132,8 @@ def search_prs(query: str, token: str) -> tuple[list[dict], bool]:
             {"q": query, "per_page": PER_PAGE, "page": page}
         )
         data = api_get(f"{API_BASE}/search/issues?{qs}", token)
+        if page > 1:
+            time.sleep(2)  # stay clear of search burst detection
         if data.get("incomplete_results"):
             # Transient some of the time; retry the page once before giving up.
             data = api_get(f"{API_BASE}/search/issues?{qs}", token)
@@ -217,65 +222,52 @@ def collect_counts(cfg: dict, token: str) -> tuple[dict[str, int], list[str]]:
     excluded_owners = {o.lower() for o in cfg.get("exclude_owners", [])}
     excluded_repos = {r.lower() for r in cfg.get("exclude_repos", [])}
     repo_quals = " ".join(f"-user:{o}" for o in cfg.get("exclude_owners", []))
-    base_query = f"is:pr is:merged author:{author} {repo_quals}".strip()
+    # One search over all merged PRs outside excluded accounts. Per-org
+    # queries multiply the search volume and trip GitHub's secondary rate
+    # limits on an hourly cadence; grouping happens locally instead. PRs in
+    # organizations absent from the config surface as candidates, never as
+    # counts, until a human approves them.
+    query = f"is:pr is:merged author:{author} {repo_quals}".strip()
+    candidates = search_merged_prs(query, token, cutoff, tomorrow)
 
     counts: dict[str, int] = {g["display"]: 0 for g in cfg["groups"]}
+    candidate_counts: dict[str, int] = {}
     dedupe: set[tuple[str, int]] = set()
 
-    for group in cfg["groups"]:
-        owners = group.get("owners", [])
-        owner_quals = " ".join(f"user:{o}" for o in owners)
-        query = f"{base_query} {owner_quals}".strip()
-        candidates = search_merged_prs(query, token, cutoff, tomorrow)
-        for item in candidates:
-            repo_url = item.get("repository_url", "")
-            match = re.search(r"/repos/([^/]+/[^/]+)$", repo_url)
-            if not match:
-                continue
-            full_name = match.group(1)
-            number = item.get("number")
-            key = (full_name.lower(), number)
-            if key in dedupe:
-                continue
-            dedupe.add(key)
-
-            verified = verify_pr(full_name, number, token)
-            # Requirements: count only merged PRs in the window, never from
-            # forks, never from owned/affiliated accounts, grouped by the
-            # repository's actual owner.
-            if not verified["merged"] or not verified["merged_at"]:
-                continue
-            merged_on = datetime.fromisoformat(
-                verified["merged_at"].replace("Z", "+00:00")
-            ).date()
-            if merged_on < cutoff or merged_on >= tomorrow:
-                continue
-            if verified["fork"]:
-                continue
-            owner = verified["owner"].lower()
-            full = verified["full_name"].lower()
-            if owner in excluded_owners or full in excluded_repos:
-                continue
-            display = owner_to_display.get(owner)
-            if display is None:
-                unapproved[owner] = unapproved.get(owner, 0) + 1
-                continue
-            counts[display] += 1
-
-    # Discovery sweep: the per-group searches above can never see merges in
-    # unapproved organizations, so report them explicitly for human review.
-    # Candidates are never counted until they are added to the config.
-    candidate_counts: dict[str, int] = {}
-    discovery_query = f"is:pr is:merged author:{author} {repo_quals}".strip()
-    for item in search_merged_prs(discovery_query, token, cutoff, tomorrow):
+    for item in candidates:
         repo_url = item.get("repository_url", "")
-        match = re.search(r"/repos/([^/]+)/", repo_url)
+        match = re.search(r"/repos/([^/]+/[^/]+)$", repo_url)
         if not match:
             continue
-        owner = match.group(1).lower()
-        if owner in owner_to_display or owner in excluded_owners:
+        full_name = match.group(1)
+        number = item.get("number")
+        key = (full_name.lower(), number)
+        if key in dedupe:
             continue
-        candidate_counts[owner] = candidate_counts.get(owner, 0) + 1
+        dedupe.add(key)
+
+        verified = verify_pr(full_name, number, token)
+        # Requirements: count only merged PRs in the window, never from
+        # forks, never from owned/affiliated accounts, grouped by the
+        # repository's actual owner.
+        if not verified["merged"] or not verified["merged_at"]:
+            continue
+        merged_on = datetime.fromisoformat(
+            verified["merged_at"].replace("Z", "+00:00")
+        ).date()
+        if merged_on < cutoff or merged_on >= tomorrow:
+            continue
+        if verified["fork"]:
+            continue
+        owner = verified["owner"].lower()
+        full = verified["full_name"].lower()
+        if owner in excluded_owners or full in excluded_repos:
+            continue
+        display = owner_to_display.get(owner)
+        if display is None:
+            candidate_counts[owner] = candidate_counts.get(owner, 0) + 1
+            continue
+        counts[display] += 1
 
     return counts, sorted(candidate_counts.items())
 
