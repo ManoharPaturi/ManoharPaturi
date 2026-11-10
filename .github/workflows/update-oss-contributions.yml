@@ -13,7 +13,11 @@ name: Update OSS contribution counts
 on:
   schedule:
     - cron: "23 * * * *" # hourly; GitHub skips delayed slots, so more slots = less lag (free on public repos)
+    - cron: "53 * * * *" # second hourly slot: whichever survives GitHub's skipping
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Refresh stats cards"] # guaranteed daily refresh chained to the telemetry run
+    types: [completed]
 
 permissions:
   contents: write
