@@ -11,8 +11,8 @@ Merged pull requests over the last 12 months, grouped by upstream organization. 
 <!-- OSS_CONTRIBUTIONS_START -->
 | Organization | Merged PRs |
 | --- | --: |
-| [Microsoft](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Amicrosoft+user%3AAzure&type=pullrequests) | 75 |
-| [Meta](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Ameta&type=pullrequests) | 16 |
+| [Microsoft](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Amicrosoft+user%3AAzure&type=pullrequests) | 77 |
+| [Meta](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Ameta&type=pullrequests) | 17 |
 | [NVIDIA NeMo](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3ANVIDIA-NeMo&type=pullrequests) | 15 |
 | [c-ares](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Ac-ares&type=pullrequests) | 5 |
 | [json-c](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Ajson-c&type=pullrequests) | 3 |
@@ -24,7 +24,7 @@ Merged pull requests over the last 12 months, grouped by upstream organization. 
 | [libjxl](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Alibjxl&type=pullrequests) | 1 |
 | [libzip](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Anih-at&type=pullrequests) | 1 |
 | [Mistral AI](https://github.com/search?q=is%3Apr+is%3Amerged+author%3AManoharPaturi+user%3Amistralai&type=pullrequests) | 1 |
-| **Total** | **127** |
+| **Total** | **130** |
 <!-- OSS_CONTRIBUTIONS_END -->
 
 ## Selected Projects
