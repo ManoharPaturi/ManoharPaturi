@@ -31,6 +31,7 @@ Merged pull requests over the last 12 months, grouped by upstream organization. 
 
 | Project | Description | Technologies |
 | --- | --- | --- |
+| [Portfolio Website](https://manoharpaturi.github.io/portfolio/) | Interactive 3D deep-space portfolio where each project is a solar system. Described it in one prompt to Google AI Studio, shipped the result to GitHub Pages. | React, TypeScript, three.js |
 | [AI Made Easy](https://github.com/We-build-AI-Stuff/AI_Made_Easy) | Visual ML development environment for designing, training, evaluating, and exporting machine-learning models. | Python, TypeScript, Docker |
 | [mano-OS](https://github.com/We-build-AI-Stuff/mano-os) | AI-native Linux operating environment for agent workflows, controlled execution, and system automation, under active development. | Python, C, Shell |
 | [projX](https://github.com/ManoharPaturi/projX) | Offline Android app that grades OMR answer sheets from a phone photo, sending doubtful sheets to a human check instead of guessing. | Flutter, Dart, OpenCV |
